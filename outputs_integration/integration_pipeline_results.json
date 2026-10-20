@@ -1,0 +1,153 @@
+{
+  "repo_root": "D:\\INFRA_ TEST\\repo",
+  "n_assets": 100,
+  "n_month_rows": 20331,
+  "feature_cols": [
+    "rd_dist_nh_m",
+    "rd_hwy_len_10km_m",
+    "rd_nh_len_10km_m",
+    "rd_node_count_10km",
+    "rd_node_degree_mean_10km",
+    "rd_on_corridor_flag",
+    "mt_coast_dist_m",
+    "mt_coastal_flag",
+    "mt_dist_major_port_m",
+    "mt_in_port_polygon",
+    "mt_nearest_major_port_id",
+    "mt_nearest_major_port_name",
+    "mt_ports_within_100km",
+    "mt_pw_dist_m",
+    "mt_pw_nearest_port_id",
+    "mt_pw_nearest_port_name",
+    "mt_pw_share_export_pct",
+    "mt_pw_share_import_pct",
+    "mt_pw_vessel_count_container_yr",
+    "mt_pw_vessel_count_total_yr",
+    "mt_throughput_source",
+    "mt_throughput_teu_yr",
+    "mt_throughput_year",
+    "wx_up_covered",
+    "wx_up_district",
+    "wx_up_distance_km",
+    "wx_point_covered",
+    "pan_wx_precip_month_mm_mean",
+    "pan_wx_precip_month_mm_std",
+    "pan_wx_precip_month_mm_max",
+    "pan_wx_rain_days_month_mean",
+    "pan_wx_rain_days_month_std",
+    "pan_wx_rain_days_month_max",
+    "pan_wx_monsoon_JJAS_mm_mean",
+    "pan_wx_monsoon_JJAS_mm_std",
+    "pan_wx_monsoon_JJAS_mm_max",
+    "pan_wx_anomaly_z_mean",
+    "pan_wx_anomaly_z_std",
+    "pan_wx_anomaly_z_max",
+    "up_wx_precip_month_mm_mean",
+    "up_wx_precip_month_mm_std",
+    "up_wx_precip_month_mm_max",
+    "up_wx_rain_days_month_mean",
+    "up_wx_rain_days_month_std",
+    "up_wx_rain_days_month_max",
+    "up_wx_monsoon_JJAS_mm_mean",
+    "up_wx_monsoon_JJAS_mm_std",
+    "up_wx_monsoon_JJAS_mm_max",
+    "up_wx_anomaly_z_mean",
+    "up_wx_anomaly_z_std",
+    "up_wx_anomaly_z_max"
+  ],
+  "target": "synthetic_cost_dev_pct (demonstrative only \u2014 not real ground truth)",
+  "timeseries": {
+    "skipped": true,
+    "reason": "no cost time series per asset"
+  },
+  "arima": {
+    "skipped": true,
+    "reason": "no cost time series per asset"
+  },
+  "regression": {
+    "n_train": 75,
+    "n_test": 25,
+    "r2": 0.8256319948280471,
+    "rmse": 5.9612721106365365,
+    "mae": 4.841407260207443,
+    "n_features": 65,
+    "top_features": [
+      {
+        "feature": "cat__mt_nearest_major_port_name_missing",
+        "coef": -3.2395313292715486
+      },
+      {
+        "feature": "cat__mt_pw_nearest_port_id_missing",
+        "coef": -3.239531329271547
+      },
+      {
+        "feature": "cat__mt_pw_nearest_port_name_missing",
+        "coef": -3.239531329271524
+      },
+      {
+        "feature": "cat__mt_nearest_major_port_id_missing",
+        "coef": -3.2395313292714984
+      },
+      {
+        "feature": "cat__wx_point_covered_False",
+        "coef": -3.2395313292714905
+      },
+      {
+        "feature": "cat__wx_point_covered_True",
+        "coef": 3.239531329271403
+      },
+      {
+        "feature": "num__pan_wx_anomaly_z_mean",
+        "coef": 2.8481618727189693
+      },
+      {
+        "feature": "cat__mt_nearest_major_port_id_infrequent_sklearn",
+        "coef": 2.462348486058157
+      },
+      {
+        "feature": "cat__mt_nearest_major_port_name_infrequent_sklearn",
+        "coef": 2.46234848605815
+      },
+      {
+        "feature": "cat__wx_up_district_missing",
+        "coef": -2.200605391894455
+      },
+      {
+        "feature": "cat__wx_up_district_infrequent_sklearn",
+        "coef": 2.200605391894455
+      },
+      {
+        "feature": "num__rd_on_corridor_flag",
+        "coef": 1.9198460382614277
+      },
+      {
+        "feature": "num__mt_in_port_polygon",
+        "coef": -1.7410988405630867
+      },
+      {
+        "feature": "cat__wx_up_covered_False",
+        "coef": -1.6818752080277135
+      },
+      {
+        "feature": "cat__wx_up_covered_True",
+        "coef": 1.6818752080276866
+      }
+    ]
+  },
+  "monte_carlo": {
+    "n_sim": 10000,
+    "monte_carlo": {
+      "label": "monte_carlo",
+      "n": 10000,
+      "mean": 21.68239097620965,
+      "median": 22.464014032153326,
+      "std": 14.089465877898819,
+      "p5": -2.572629674906472,
+      "p25": 12.672024721450217,
+      "p75": 31.26787288948918,
+      "p95": 44.695515567584124,
+      "min": -18.47071667244851,
+      "max": 59.40507044840819
+    }
+  }
+}

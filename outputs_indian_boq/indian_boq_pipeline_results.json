@@ -1,0 +1,164 @@
+{
+  "dataset": "kaiwalyaatulraut/construction-and-electrical-boq-dataset",
+  "source": "Kaggle (CC0 public domain)",
+  "note": "SYNTHETIC data - programmatically generated Indian BOQ rates, not real projects",
+  "n_projects_loaded": 800,
+  "n_line_items": 25644,
+  "n_modeling_rows": 785,
+  "feature_cols": [
+    "built_up_area_sqft",
+    "num_floors",
+    "estimated_duration_months",
+    "start_year",
+    "start_month",
+    "start_quarter",
+    "building_type",
+    "city",
+    "state",
+    "n_items",
+    "avg_rate",
+    "max_rate",
+    "n_categories",
+    "n_subcategories"
+  ],
+  "target": "total_project_cost_inr",
+  "timeseries": {
+    "n_quarters": 20,
+    "date_min": "2021-01-01 00:00:00",
+    "date_max": "2025-10-01 00:00:00",
+    "adf_p_level": 7.173405294173442e-08,
+    "adf_p_diff": 1.2109631010231714e-05
+  },
+  "arima": {
+    "order": [
+      0,
+      1,
+      1
+    ],
+    "aic": 914.6221528729249,
+    "params": {
+      "ma.L1": -0.94128,
+      "sigma2": 4.679378652330739e+19
+    },
+    "forecast": [
+      26508575024.0,
+      26508575024.0,
+      26508575024.0,
+      26508575024.0
+    ],
+    "forecast_ci_lower": [
+      13036095570.0,
+      13013112089.0,
+      12990167685.0,
+      12967262157.0
+    ],
+    "forecast_ci_upper": [
+      39981054478.0,
+      40004037958.0,
+      40026982363.0,
+      40049887890.0
+    ]
+  },
+  "regression": {
+    "n_train": 628,
+    "n_test": 157,
+    "r2": 0.888225324861364,
+    "rmse": 237805806.77726007,
+    "mae": 130043103.41881032,
+    "mape": 65.2573632911622,
+    "resid_mean": 55617842.40954539,
+    "resid_std": 231950293.1222607,
+    "n_features": 63,
+    "top_features": [
+      {
+        "feature": "num__avg_rate",
+        "coef": -5775.712903726554
+      },
+      {
+        "feature": "num__built_up_area_sqft",
+        "coef": 5250.786511447454
+      },
+      {
+        "feature": "num__max_rate",
+        "coef": 435.11527069884573
+      },
+      {
+        "feature": "num__n_items",
+        "coef": 4.81962975290547
+      },
+      {
+        "feature": "num__n_subcategories",
+        "coef": 1.8873442137821261
+      },
+      {
+        "feature": "num__num_floors",
+        "coef": -0.7030678021016101
+      },
+      {
+        "feature": "num__estimated_duration_months",
+        "coef": 0.6764701684106363
+      },
+      {
+        "feature": "cat__city_Mumbai",
+        "coef": 0.11620484551591989
+      },
+      {
+        "feature": "cat__state_Maharashtra",
+        "coef": 0.09462005616903969
+      },
+      {
+        "feature": "cat__start_quarter_4",
+        "coef": -0.0902729171668294
+      },
+      {
+        "feature": "cat__city_Indore",
+        "coef": -0.08584730967265314
+      },
+      {
+        "feature": "cat__state_Madhya Pradesh",
+        "coef": -0.08584730967265314
+      },
+      {
+        "feature": "cat__start_year_2021",
+        "coef": 0.08423889951706436
+      },
+      {
+        "feature": "cat__city_Delhi",
+        "coef": 0.08141341095936154
+      },
+      {
+        "feature": "cat__state_Delhi",
+        "coef": 0.08141341095936154
+      }
+    ]
+  },
+  "monte_carlo": {
+    "n_sim": 10000,
+    "total_cost_inr": {
+      "label": "monte_carlo_total_cost",
+      "n": 10000,
+      "mean": 749632184.1193191,
+      "median": 624075949.9091247,
+      "std": 618975991.9212584,
+      "p5": 0.0,
+      "p25": 268822503.12711245,
+      "p75": 1088094432.3313756,
+      "p95": 2026463136.1836412,
+      "min": 0.0,
+      "max": 3517938863.466421
+    },
+    "cost_per_sqft_inr": {
+      "label": "monte_carlo_cost_per_sqft",
+      "n": 10000,
+      "mean": 13415.884558546139,
+      "median": 5552.833186027981,
+      "std": 38936.97439816709,
+      "p5": 0.0,
+      "p25": 4218.1046077254105,
+      "p75": 7395.959396383375,
+      "p95": 51413.15698968648,
+      "min": 0.0,
+      "max": 729653.60912287
+    }
+  }
+}

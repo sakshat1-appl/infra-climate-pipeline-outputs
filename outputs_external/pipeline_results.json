@@ -1,0 +1,102 @@
+{
+  "source": "http://training.theodi.org/resources/dataset2.csv",
+  "n_rows_loaded": 2494,
+  "n_rows_clean": 2430,
+  "timeseries": {
+    "n_quarters": 4,
+    "date_min": "2011-09-30 00:00:00",
+    "date_max": "2012-06-30 00:00:00",
+    "adf_p_level": null,
+    "adf_p_diff": null
+  },
+  "arima": {
+    "skipped": true,
+    "reason": "insufficient observations (0 quarters)"
+  },
+  "regression": {
+    "n_train": 1944,
+    "n_test": 486,
+    "r2": 0.9359696833105599,
+    "rmse": 11.56193606446421,
+    "mae": 1.7877344976624703,
+    "resid_mean": -0.17340711621171617,
+    "resid_std": 11.57254764633722,
+    "n_features": 58,
+    "top_features": [
+      {
+        "feature": "num__planned_cost_m",
+        "coef": 1.0236588039364796
+      },
+      {
+        "feature": "num__cost_var_pct",
+        "coef": -0.03249252487620144
+      },
+      {
+        "feature": "num__sched_var_days",
+        "coef": 0.004526338669789507
+      },
+      {
+        "feature": "cat__Investment Title_infrequent_sklearn",
+        "coef": 8.60890118803676e-05
+      },
+      {
+        "feature": "cat__Agency Name_Department of Education",
+        "coef": 7.190321223594532e-05
+      },
+      {
+        "feature": "cat__Agency Name_Department of Agriculture",
+        "coef": 7.060883206511337e-05
+      },
+      {
+        "feature": "cat__Agency Name_Department of Defense",
+        "coef": 5.681403339872492e-05
+      },
+      {
+        "feature": "cat__Agency Name_Department of Commerce",
+        "coef": -3.022806248671745e-05
+      },
+      {
+        "feature": "cat__Agency Name_Department of Homeland Security",
+        "coef": -2.8399492493561402e-05
+      },
+      {
+        "feature": "cat__Agency Name_Department of Veterans Affairs",
+        "coef": -2.4943508424390928e-05
+      }
+    ]
+  },
+  "monte_carlo": {
+    "n_sim": 10000,
+    "empirical": {
+      "label": "empirical-bootstrap",
+      "n": 10000,
+      "mean": 19.93071630607632,
+      "median": 1.908266,
+      "std": 188.43877350468892,
+      "p5": 0.064719359,
+      "p25": 0.50497785,
+      "p75": 6.3536422,
+      "p95": 40.353857749999854,
+      "min": 0.0,
+      "max": 6119.0,
+      "prob_overrun": 0.2945,
+      "mean_overrun_pct": 1.0350139999999999
+    },
+    "regression": {
+      "label": "regression-residual",
+      "n": 10000,
+      "mean": 22.16126193686167,
+      "median": 4.368064185795804,
+      "std": 186.06785559983243,
+      "p5": 0.0,
+      "p25": 0.0,
+      "p75": 14.429199133897141,
+      "p95": 41.14888829452495,
+      "min": 0.0,
+      "max": 5660.093299883464,
+      "prob_overrun": 0.4704,
+      "mean_overrun_pct": 465853.453127648
+    },
+    "var95_overrun_pct": 31.980000000000004
+  }
+}
