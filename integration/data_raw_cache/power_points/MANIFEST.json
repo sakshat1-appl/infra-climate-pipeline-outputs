@@ -1,0 +1,834 @@
+{
+  "source": "NASA POWER point API (daily)",
+  "endpoint": "https://power.larc.nasa.gov/api/temporal/daily/point",
+  "community": "AG",
+  "parameters": [
+    "PRECTOTCORR",
+    "T2M_MAX",
+    "T2M_MIN",
+    "RH2M",
+    "WS50M",
+    "PS",
+    "T2M"
+  ],
+  "start": "20050101",
+  "end": "20251129",
+  "window_days": 7638,
+  "assets": {
+    "GP_081": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=22.5700&longitude=74.9900&format=JSON",
+      "latitude": 22.57,
+      "longitude": 74.99,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b995a60def022e6ed132dcdce132730d8062a10f4a07106f7c4d8b965c0b6322",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 885729
+    },
+    "GP_082": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=19.3400&longitude=77.6300&format=JSON",
+      "latitude": 19.34,
+      "longitude": 77.63,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "76016ac67cd464973c5e31efee226bf35735c645fb075a1d630f0cb419fd25ef",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886397
+    },
+    "GP_083": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=15.2800&longitude=75.3800&format=JSON",
+      "latitude": 15.28,
+      "longitude": 75.38,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "e11eac8cfad4f6f3867b7a8f6803adf493673548bac58d1e02de6bf838efa4cc",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887500
+    },
+    "GP_084": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=10.3500&longitude=76.2000&format=JSON",
+      "latitude": 10.35,
+      "longitude": 76.2,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "56cb393d86e032a807d68e1597e197ae9a276a5e038764f870d1771976c9877a",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 892298
+    },
+    "GP_085": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=24.2700&longitude=84.8700&format=JSON",
+      "latitude": 24.27,
+      "longitude": 84.87,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "1a5e8c4d0c58775441e0a91d4af9400e41486d025325bceb25768d560b182fcf",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886019
+    },
+    "GP_086": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.4600&longitude=79.9300&format=JSON",
+      "latitude": 26.46,
+      "longitude": 79.93,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b96a329117dfca677e1b34baca239f094168629c725cb2560285da7bee319d51",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886107
+    },
+    "GP_088": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=17.3300&longitude=82.7800&format=JSON",
+      "latitude": 17.33,
+      "longitude": 82.78,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "4c54debffe16aaca42e3659406c81f9cbe333fbd65be25ed5446aa2dc4a7c3a5",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887841
+    },
+    "GP_089": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.9000&longitude=73.6600&format=JSON",
+      "latitude": 26.9,
+      "longitude": 73.66,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "864d30fbdc0f8a1f03d29bdbb7803a2aa69c386b7966e38dbc131a57a94bb83b",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884068
+    },
+    "GP_090": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=9.3700&longitude=78.8300&format=JSON",
+      "latitude": 9.37,
+      "longitude": 78.83,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "ef151d10890619065f4be4823143b45ae325160e31d54925574978709a2f030f",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 896270
+    },
+    "GP_091": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=25.6100&longitude=73.6800&format=JSON",
+      "latitude": 25.61,
+      "longitude": 73.68,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "186598195641d05c1b26afe4f8777a769e80ac099c185a67d6bd6904121b9e1e",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884242
+    },
+    "GP_093": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=22.4300&longitude=71.8700&format=JSON",
+      "latitude": 22.43,
+      "longitude": 71.87,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "cfce5ef07abc74adadc27d2aac6efd35ccc56c5d68f74384de454701d9d21d7b",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890280
+    },
+    "GP_094": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=24.0400&longitude=70.1900&format=JSON",
+      "latitude": 24.04,
+      "longitude": 70.19,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "fbbf46674c0bc797d06137586519215fc5dfe565c2170631234342445937aec2",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890653
+    },
+    "GP_095": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=18.8300&longitude=82.5900&format=JSON",
+      "latitude": 18.83,
+      "longitude": 82.59,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "11d7c923368410715c4512a48760b0f322e816f44ee4b00beec355172e3eca0e",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887173
+    },
+    "GP_096": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=19.4700&longitude=82.4600&format=JSON",
+      "latitude": 19.47,
+      "longitude": 82.46,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "cf4e93358a8bae25facc64ed4fa47ba0fe05ddb08625ba3c2a24881e0f4d8b27",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887192
+    },
+    "GP_097": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=25.9700&longitude=88.8600&format=JSON",
+      "latitude": 25.97,
+      "longitude": 88.86,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "9ac3286ee2c32a2651ce23b05342c83d18595b17db26b2a5da700e93ac1e2552",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 892092
+    },
+    "GP_099": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=31.4700&longitude=74.9000&format=JSON",
+      "latitude": 31.47,
+      "longitude": 74.9,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "2f25882249d831a4a429f1ee733b9a970b775c13460927dd1d849befcc16bfa7",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884292
+    },
+    "GP_100": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=19.5700&longitude=84.5000&format=JSON",
+      "latitude": 19.57,
+      "longitude": 84.5,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "ed4b6facabfb80290c715b1589a555f58e31a3b362959f23fc9bb49e716fbd18",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887411
+    },
+    "HW_001": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=18.7500&longitude=73.4100&format=JSON",
+      "latitude": 18.75,
+      "longitude": 73.41,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "50731b033e21cd68d910132d3ff790b767a6264f0c2eb65718a245149b8eeaf5",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890115
+    },
+    "HW_002": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=27.8900&longitude=77.6100&format=JSON",
+      "latitude": 27.89,
+      "longitude": 77.61,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "7261f8da9aebcd2ca0e78f2788054c1d147d188ad8400eda4e9bf4c634f19153",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884363
+    },
+    "HW_003": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=12.6300&longitude=77.1200&format=JSON",
+      "latitude": 12.63,
+      "longitude": 77.12,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b72688ced80b0b5946644bc5e23e008f2830543b0dfbea3d31e49c272850cf26",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887862
+    },
+    "HW_004": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=27.8100&longitude=77.7400&format=JSON",
+      "latitude": 27.81,
+      "longitude": 77.74,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "7dad43be3d8bbb50268cae707ed524530456f771b378f8ffb7448f604060dc75",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884363
+    },
+    "HW_005": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=22.6700&longitude=72.8800&format=JSON",
+      "latitude": 22.67,
+      "longitude": 72.88,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "285478b868ac3cb1b8f8f09d5a48a14944632ca8254fb789959cbada3c5e0b23",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890478
+    },
+    "HW_006": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=20.1800&longitude=76.0700&format=JSON",
+      "latitude": 20.18,
+      "longitude": 76.07,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "4f86266f516fb6e2f089d81ba2bb132b6e263f1a51cebc90435b054aff82d5bc",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886427
+    },
+    "HW_007": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=28.5500&longitude=77.4000&format=JSON",
+      "latitude": 28.55,
+      "longitude": 77.4,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "834494147d89603bbd8bfb8c17f230aa80f240824f238210a2521e037c9b739a",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884404
+    },
+    "HW_008": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.7400&longitude=75.3300&format=JSON",
+      "latitude": 26.74,
+      "longitude": 75.33,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "64eae558a40389229cbe87cc73b664d6a23cfb7142de3a30f85c5e97aa597108",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884497
+    },
+    "HW_009": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=21.1400&longitude=72.7300&format=JSON",
+      "latitude": 21.14,
+      "longitude": 72.73,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "d0495b141ffe7e1e8cedb21f96725646ed54a7975ce3603429e5f588f5df329b",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894040
+    },
+    "HW_010": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=17.4000&longitude=78.4700&format=JSON",
+      "latitude": 17.4,
+      "longitude": 78.47,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "f8f8443b31eca41513781cad6821c5343d40995077ac94a202186f6d6c77d02f",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886883
+    },
+    "HW_011": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=13.0500&longitude=80.1600&format=JSON",
+      "latitude": 13.05,
+      "longitude": 80.16,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "18a3ebe04bf7be6c55e6a1ed5fa184a534b790aaa99530efde81fe95dbd7ffbf",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894120
+    },
+    "HW_013": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=27.0000&longitude=79.5000&format=JSON",
+      "latitude": 27.0,
+      "longitude": 79.5,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "3b5bcdebad536c528cba6559c9737191946d631e782de1c125cced1e8433de7d",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 885232
+    },
+    "HW_014": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.1800&longitude=82.3400&format=JSON",
+      "latitude": 26.18,
+      "longitude": 82.34,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "826d881e86e6f0cd9aec37462d8a7c08a4ab4c015cf36cb251efb55033412aba",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 888245
+    },
+    "HW_015": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.0000&longitude=79.9400&format=JSON",
+      "latitude": 26.0,
+      "longitude": 79.94,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "87b65a061b1f8ca8aa064c3d9767eed45cd36252f65ac432bede5b2cef7bd50b",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886499
+    },
+    "HW_017": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=28.5200&longitude=77.0400&format=JSON",
+      "latitude": 28.52,
+      "longitude": 77.04,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "77bc0667baab74e6864b7b28168a6c78304e4ab1d5398f276b31ae65a12ac043",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884489
+    },
+    "HW_018": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=24.2000&longitude=75.4000&format=JSON",
+      "latitude": 24.2,
+      "longitude": 75.4,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "4d295c275238fd5844f6cd4e4506216e6d08b99e529ad8b954c024c6b33e6049",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 885021
+    },
+    "HW_019": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=32.3100&longitude=74.9100&format=JSON",
+      "latitude": 32.31,
+      "longitude": 74.91,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "3353a4efedcf27e8169b9947fca714750ccf3ffa9b534a09bcbe4ebeecb11ec6",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 885520
+    },
+    "PT_021": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=18.9490&longitude=72.9370&format=JSON",
+      "latitude": 18.949,
+      "longitude": 72.937,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "434d264273d8259e21259ed4009cdf0daa95429e9a38986d01f4c84353913033",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890117
+    },
+    "PT_022": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=22.7300&longitude=69.7100&format=JSON",
+      "latitude": 22.73,
+      "longitude": 69.71,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "a7897a05ac9e66a304959153f58db5db69e302acb38b3ce6843fbd2d04064a89",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 891412
+    },
+    "PT_023": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=13.0990&longitude=80.2940&format=JSON",
+      "latitude": 13.099,
+      "longitude": 80.294,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "edbe6797d1ba71ed33918161f82cad60016c28f1dc311bd7a224d2bfb6a9907c",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894122
+    },
+    "PT_024": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=17.6860&longitude=83.2810&format=JSON",
+      "latitude": 17.686,
+      "longitude": 83.281,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "7145a565a0fc6392abf43e6520fd3fd7a770d9e32909e85ed1d661e322a5146a",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894337
+    },
+    "PT_025": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=23.0330&longitude=70.2170&format=JSON",
+      "latitude": 23.033,
+      "longitude": 70.217,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "f4c73ed3f010bfdb336e97ae4921b1573ff14c9da00bb540e251abc73dfef093",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 889929
+    },
+    "PT_026": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=20.2650&longitude=86.6830&format=JSON",
+      "latitude": 20.265,
+      "longitude": 86.683,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "12bbead5f866fd7ba197577a7a11dcce59c2157b54d50c784c7860f9e87a6284",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 895706
+    },
+    "PT_027": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=9.9740&longitude=76.2630&format=JSON",
+      "latitude": 9.974,
+      "longitude": 76.263,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b4cc98c87b19ae501ef3215c28f6ef071a50c790b4f34432789fe1a6c61ea381",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 897577
+    },
+    "PT_028": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=21.0960&longitude=72.6260&format=JSON",
+      "latitude": 21.096,
+      "longitude": 72.626,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "8a0c16524fb031ea1f538ed51100adbb84fb1ccfa85f64248ce0fbf3b8e42900",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894042
+    },
+    "PT_029": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=22.5410&longitude=88.3040&format=JSON",
+      "latitude": 22.541,
+      "longitude": 88.304,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "2f8eecf0fb24524176065bb613d96a6fe298ac66f31a5d24d55369ae55e25a88",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 893764
+    },
+    "PT_030": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=8.7500&longitude=78.2010&format=JSON",
+      "latitude": 8.75,
+      "longitude": 78.201,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "1a282a4d9ed9ffe698774380ae358e17dbb248eb3011f4634914e593b943f65a",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 896309
+    },
+    "PT_031": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=13.2520&longitude=80.3320&format=JSON",
+      "latitude": 13.252,
+      "longitude": 80.332,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "88498ef481c44a58c3a8186cfa46b53942b440b0fa5e6a8f8a6a31c95eea19d5",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 895653
+    },
+    "PT_032": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=15.4100&longitude=73.7980&format=JSON",
+      "latitude": 15.41,
+      "longitude": 73.798,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "817d9396af5cb144c19e403b18fcdf4fad41c27dd35619ac141069ae27b4a861",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 892791
+    },
+    "PT_033": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=12.9180&longitude=74.8020&format=JSON",
+      "latitude": 12.918,
+      "longitude": 74.802,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "1ad851b9f7b4890a71156a14886d80d009c485bfe2771a6174b7a0aa3956b8d8",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890057
+    },
+    "PT_034": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=20.9060&longitude=71.4990&format=JSON",
+      "latitude": 20.906,
+      "longitude": 71.499,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "41cd9876fd4ae557c8aea36dd198ddad1c8a82451e5eaaebf55fe03f940d0d37",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 888936
+    },
+    "PT_035": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=20.7910&longitude=86.9600&format=JSON",
+      "latitude": 20.791,
+      "longitude": 86.96,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b4e930f778c90300f0a59da795f53d619e45380ed7b5b914ce36a41dd144d448",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894992
+    },
+    "PT_036": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=16.9690&longitude=82.2810&format=JSON",
+      "latitude": 16.969,
+      "longitude": 82.281,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "a3afb93f3a329ee500a1a10bb9700cffb36fb112f652e345c3def8b7f10e6d01",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 895112
+    },
+    "PT_037": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=19.2720&longitude=84.9070&format=JSON",
+      "latitude": 19.272,
+      "longitude": 84.907,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "63e0fa21b70ead0c0c6840db1e6931543a84fc3b77b46fe0a5f41096a15a6848",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 892068
+    },
+    "PT_038": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=10.8400&longitude=79.8310&format=JSON",
+      "latitude": 10.84,
+      "longitude": 79.831,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "37da613fb82db8270d97fa4fb35e651f78e55f63ee0352951a75ad0af4514945",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 897090
+    },
+    "PT_039": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=17.6180&longitude=83.2290&format=JSON",
+      "latitude": 17.618,
+      "longitude": 83.229,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b369e4b9a2e1d5676220540a4b2028ec521cb83725cf879ff128b14b6205c7e5",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894337
+    },
+    "PT_040": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=14.2490&longitude=80.1320&format=JSON",
+      "latitude": 14.249,
+      "longitude": 80.132,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "19e82f08639e7efdafdcb93f44c3bad12885f7f6659417763ab881a916372d67",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 894084
+    },
+    "RE_061": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=27.5397&longitude=71.9153&format=JSON",
+      "latitude": 27.5397,
+      "longitude": 71.9153,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "46885b50a39ca6b82ae750d9eb7fc154435421af28ed4b4dbd9d456d9cdbbf73",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 883514
+    },
+    "RE_062": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=14.2700&longitude=77.2800&format=JSON",
+      "latitude": 14.27,
+      "longitude": 77.28,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "137bcadbdf5f2185294e4811d07187f856c9f46ea0edb72f562826e8e49d7bd1",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887191
+    },
+    "RE_063": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=15.6800&longitude=77.6000&format=JSON",
+      "latitude": 15.68,
+      "longitude": 77.6,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "7de57094300ec612a9579d0aa253891bdb8a31ed6302dde62866d6c3829893f6",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886914
+    },
+    "RE_064": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=24.4802&longitude=81.5744&format=JSON",
+      "latitude": 24.4802,
+      "longitude": 81.5744,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "54aa99ac61b22bb813ce2c460d71f956f16d02669dddd0202db02a1b2be3929e",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 885457
+    },
+    "RE_065": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=23.9100&longitude=71.2100&format=JSON",
+      "latitude": 23.91,
+      "longitude": 71.21,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "63a27b18333d271bd8abf5309ba508e99ff1ace17e26ba7ad8dbab9f6b6b9ed4",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890487
+    },
+    "RE_066": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=8.2500&longitude=77.5700&format=JSON",
+      "latitude": 8.25,
+      "longitude": 77.57,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "c6472caff25f9d3a8c2cb827047094c32464d70b7a79ee60e11c962a8e4ec621",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 888565
+    },
+    "RE_067": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.9000&longitude=70.9000&format=JSON",
+      "latitude": 26.9,
+      "longitude": 70.9,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "515d5f23f7b16b33b046488d454bcf63665473bb433dd2f6d08f20c31e1f5e39",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 883702
+    },
+    "RE_068": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=9.3500&longitude=78.3900&format=JSON",
+      "latitude": 9.35,
+      "longitude": 78.39,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "2933a1afd520a65da6528a2f5df960e5c8ab1b742225a0d5c27d9f4d0501a1d7",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 891428
+    },
+    "RE_069": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=14.0300&longitude=78.0200&format=JSON",
+      "latitude": 14.03,
+      "longitude": 78.02,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "933201c8079113b011e9be7228fe8393ffdc5bb4e53c1eb6128252b26b062dc3",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887536
+    },
+    "RE_070": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=24.0700&longitude=75.7600&format=JSON",
+      "latitude": 24.07,
+      "longitude": 75.76,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "46e248de5921af217bc30ea56dd0fa4c8a3502444d23d58e85152dafccf372f0",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 885023
+    },
+    "RE_071": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=22.2300&longitude=72.1900&format=JSON",
+      "latitude": 22.23,
+      "longitude": 72.19,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "db750503a6c6f748390239086be1aaff8f385e9dfbe6e0847d9f4be29b204424",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 892457
+    },
+    "RE_072": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=23.8500&longitude=69.6500&format=JSON",
+      "latitude": 23.85,
+      "longitude": 69.65,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "72760b319070bbe1d5fe3d0a8867297c2947b5de72cf6a22e8329499eaa0a30b",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 890496
+    },
+    "RE_073": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=13.9700&longitude=78.5100&format=JSON",
+      "latitude": 13.97,
+      "longitude": 78.51,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "e9edd20ba8fecf8a3f1277ced9b420ebf315a2002cf70ef4f51cce41adde68c3",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887396
+    },
+    "RE_076": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=8.9500&longitude=77.7900&format=JSON",
+      "latitude": 8.95,
+      "longitude": 77.79,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "61dec65ca4d9704b56716efc53a1e20612e96b3ecc54e39e7fb822245fdbc6df",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 888420
+    },
+    "TL_044": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=22.0800&longitude=76.0900&format=JSON",
+      "latitude": 22.08,
+      "longitude": 76.09,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b6addbe07e2c551e25a937ac4d2290c2956e060c5e6c5f1fde01997267fea924",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886004
+    },
+    "TL_047": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=16.4900&longitude=80.6200&format=JSON",
+      "latitude": 16.49,
+      "longitude": 80.62,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "0480bd61f7abd578ca6429baef460bf0282af58ccca9063554fb3bd8c0e5ffc4",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 892418
+    },
+    "TL_049": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=28.3000&longitude=77.1800&format=JSON",
+      "latitude": 28.3,
+      "longitude": 77.18,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "a261986502f2976c5555ff7509c43dc55ec08b91f1de123e0a011b696c95b045",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884488
+    },
+    "TL_051": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=16.9100&longitude=79.7300&format=JSON",
+      "latitude": 16.91,
+      "longitude": 79.73,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "c94464d968e7fc5267ffcdbfba8cc3df0bcfd4eb1381f72fae340f95fa9025a8",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887632
+    },
+    "TL_052": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.0000&longitude=79.7700&format=JSON",
+      "latitude": 26.0,
+      "longitude": 79.77,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "1c0ac0076789239776e28b30a0a31ec12a6aa22578e338dc7b26fc99910990b1",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886500
+    },
+    "TL_053": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=24.6800&longitude=82.6400&format=JSON",
+      "latitude": 24.68,
+      "longitude": 82.64,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "70581791ae5521869ea2731895253f7a60b7e8d26060417d04b7ea9251576ceb",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 885553
+    },
+    "TL_054": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=17.2000&longitude=75.0700&format=JSON",
+      "latitude": 17.2,
+      "longitude": 75.07,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "8b35c9136e469eebece91b086b250042ae7c449d684d477672112dc865ee8803",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 887133
+    },
+    "TL_055": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=20.1100&longitude=79.1200&format=JSON",
+      "latitude": 20.11,
+      "longitude": 79.12,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "e625e70e0ee43df7117bb23ace19b96b08adfd169058669fd3723d2cb0f2ac48",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886640
+    },
+    "TL_056": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=25.7500&longitude=71.3800&format=JSON",
+      "latitude": 25.75,
+      "longitude": 71.38,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "03878f2c821d879703564cff1a2e1b7b7417062763d9a1f185ec342dd3dd7a6c",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 883773
+    },
+    "TL_057": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=23.2100&longitude=78.6700&format=JSON",
+      "latitude": 23.21,
+      "longitude": 78.67,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "b1b95c1e176f14a4dc11a265c27241f21373361a137ceaefc728947a31023ca8",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886093
+    },
+    "TL_058": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=18.0300&longitude=78.5200&format=JSON",
+      "latitude": 18.03,
+      "longitude": 78.52,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "556fbbd97adf881feeca90c46f85c6a7127ed98223ed7a9f49cad63f296e3366",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 886898
+    },
+    "TL_059": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=26.9900&longitude=71.1000&format=JSON",
+      "latitude": 26.99,
+      "longitude": 71.1,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "9cbd00a38002e520e15f81a1312cd8fd38f7d09565260e71756135fd70d75b5d",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 883457
+    },
+    "TL_060": {
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&parameters=PRECTOTCORR,T2M_MAX,T2M_MIN,RH2M,WS50M,PS,T2M&start=20050101&end=20251129&latitude=28.0000&longitude=74.5500&format=JSON",
+      "latitude": 28.0,
+      "longitude": 74.55,
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "1be10467b9a025f7943d98525bf23031ebf73e93f0a7e025d41ea375fd7ef23a",
+      "n_days_returned": 7638,
+      "requests_issued": 1,
+      "bytes_downloaded": 884148
+    }
+  },
+  "totals": {
+    "assets": 81,
+    "requests_issued": 81,
+    "bytes_downloaded": 71999880
+  }
+}

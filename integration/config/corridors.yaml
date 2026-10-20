@@ -1,0 +1,241 @@
+# Highway corridors used for the rd_on_corridor_flag feature.
+#
+# Each corridor is an open polyline (or, for Hyderabad ORR, a closed ring)
+# of [lat, lon] waypoints marking documented endpoints and major
+# intermediate places on the alignment. An asset whose geodesic distance to
+# the polyline is < 5 km receives rd_on_corridor_flag = true and the
+# corridor's short name in rd_corridor_name.
+#
+# LIMITATION (read before reusing): these are straight-line approximations
+# between documented places, NOT surveyed alignments. Real expressways curve
+# between these points, so a flag near the 5 km boundary can be wrong in
+# either direction. Waypoint coordinates are city/interchange midpoints from
+# the public descriptions in the linked source articles, rounded to two
+# decimals. Do not use this file for navigation or engineering.
+#
+# source_url is the public article from which the endpoint/interchange list
+# for that corridor was taken (all Wikipedia, verified live on 2026-10-15;
+# two of them are redirects to the canonical article, noted below).
+
+corridors:
+  - name: delhi_mumbai_expressway
+    label: Delhi-Mumbai Expressway (NE-4)
+    endpoints:
+      a: {label: Delhi (DND), lat: 28.53, lon: 77.30}
+      b: {label: Mumbai (JNPT link), lat: 18.95, lon: 73.05}
+    waypoints:
+      - [28.53, 77.30]
+      - [28.25, 77.07]
+      - [26.90, 76.33]
+      - [25.21, 75.86]
+      - [23.33, 75.08]
+      - [22.30, 73.18]
+      - [21.17, 72.83]
+      - [18.95, 73.05]
+    source_url: https://en.wikipedia.org/wiki/Delhi%E2%80%93Mumbai_Expressway
+    notes: Via Sohna, Dausa, Kota, Ratlam, Vadodara, Surat (major interchanges per article).
+
+  - name: yamuna_expressway
+    label: Yamuna Expressway (Greater Noida-Agra)
+    endpoints:
+      a: {label: Greater Noida, lat: 28.47, lon: 77.51}
+      b: {label: Agra, lat: 27.16, lon: 78.04}
+    waypoints:
+      - [28.47, 77.51]
+      - [27.49, 77.67]
+      - [27.16, 78.04]
+    source_url: https://en.wikipedia.org/wiki/Yamuna_Expressway
+    notes: Via Mathura. Documented length 165.5 km.
+
+  - name: mumbai_pune_expressway
+    label: Mumbai-Pune Expressway
+    endpoints:
+      a: {label: Kalamboli (Mumbai), lat: 19.03, lon: 73.10}
+      b: {label: Pune, lat: 18.52, lon: 73.85}
+    waypoints:
+      - [19.03, 73.10]
+      - [18.75, 73.41]
+      - [18.52, 73.85]
+    source_url: https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway
+    notes: Via Lonavala.
+
+  - name: lucknow_agra_expressway
+    label: Lucknow-Agra Expressway
+    endpoints:
+      a: {label: Agra, lat: 27.16, lon: 78.05}
+      b: {label: Lucknow, lat: 26.85, lon: 80.95}
+    waypoints:
+      - [27.16, 78.05]
+      - [27.15, 78.42]
+      - [27.06, 79.90]
+      - [26.85, 80.95]
+    source_url: https://en.wikipedia.org/wiki/Lucknow%E2%80%93Agra_Expressway
+    notes: Via Firozabad and Kannauj districts.
+
+  - name: purvanchal_expressway
+    label: Purvanchal Expressway (Lucknow-Ghazipur)
+    endpoints:
+      a: {label: Lucknow, lat: 26.85, lon: 81.00}
+      b: {label: Ghazipur, lat: 25.59, lon: 83.59}
+    waypoints:
+      - [26.85, 81.00]
+      - [26.26, 82.07]
+      - [25.59, 83.59]
+    source_url: https://en.wikipedia.org/wiki/Purvanchal_Expressway
+    notes: Via Sultanpur.
+
+  - name: bundelkhand_expressway
+    label: Bundelkhand Expressway (Etawah-Chitrakoot)
+    endpoints:
+      a: {label: Kudrail, Etawah, lat: 26.77, lon: 79.03}
+      b: {label: Bharatkup, Chitrakoot, lat: 25.21, lon: 80.87}
+    waypoints:
+      - [26.77, 79.03]
+      - [26.14, 79.34]
+      - [25.95, 80.15]
+      - [25.21, 80.87]
+    source_url: https://en.wikipedia.org/wiki/Bundelkhand_Expressway
+    notes: Via Jalaun and Hamirpur districts; intermediate waypoints approximate (see file header).
+
+  - name: eastern_peripheral_expressway
+    label: Eastern Peripheral Expressway (Kundli-Palwal)
+    endpoints:
+      a: {label: Kundli, lat: 28.93, lon: 77.20}
+      b: {label: Palwal, lat: 28.14, lon: 77.33}
+    waypoints:
+      - [28.93, 77.20]
+      - [28.67, 77.45]
+      - [28.14, 77.33]
+    source_url: https://en.wikipedia.org/wiki/Eastern_Peripheral_Expressway
+    notes: Eastern ring around Delhi via Ghaziabad.
+
+  - name: delhi_agra_nh19
+    label: Delhi-Agra highway (NH-19, old NH-2)
+    endpoints:
+      a: {label: Delhi, lat: 28.61, lon: 77.23}
+      b: {label: Agra, lat: 27.16, lon: 78.01}
+    waypoints:
+      - [28.61, 77.23]
+      - [28.14, 77.33]
+      - [27.79, 77.43]
+      - [27.49, 77.67]
+      - [27.16, 78.01]
+    source_url: https://en.wikipedia.org/wiki/National_Highway_19_(India)
+    notes: Old NH-2 renumbered NH-19 in 2010. Via Palwal, Kosi, Mathura.
+
+  - name: ahmedabad_vadodara_expressway
+    label: Ahmedabad-Vadodara Expressway (NE-1)
+    endpoints:
+      a: {label: Ahmedabad, lat: 23.03, lon: 72.58}
+      b: {label: Vadodara, lat: 22.30, lon: 73.18}
+    waypoints:
+      - [23.03, 72.58]
+      - [22.30, 73.18]
+    source_url: https://en.wikipedia.org/wiki/Ahmedabad%E2%80%93Vadodara_Expressway
+    notes: Direct two-endpoint segment; the expressway is nearly straight.
+
+  - name: jaipur_kishangarh_nh48
+    label: Jaipur-Kishangarh highway (NH-48)
+    endpoints:
+      a: {label: Jaipur, lat: 26.91, lon: 75.79}
+      b: {label: Kishangarh, lat: 26.57, lon: 74.86}
+    waypoints:
+      - [26.91, 75.79]
+      - [26.57, 74.86]
+    source_url: https://en.wikipedia.org/wiki/National_Highway_48_(India)
+    notes: Part of the Delhi-Chennai trunk (Golden Quadrilateral Delhi-Mumbai leg).
+
+  - name: surat_hazira_nh53
+    label: Surat-Hazira highway (NH-53; old NH-6)
+    endpoints:
+      a: {label: Surat, lat: 21.17, lon: 72.83}
+      b: {label: Hazira, lat: 21.10, lon: 72.63}
+    waypoints:
+      - [21.17, 72.83]
+      - [21.10, 72.63]
+    source_url: https://en.wikipedia.org/wiki/National_Highway_53_(India)
+    notes: Asset names use the old NH-6 number; renumbered NH-53 in 2010.
+
+  - name: bengaluru_mysuru_nh275
+    label: Bengaluru-Mysuru Expressway (NH-275)
+    endpoints:
+      a: {label: Bengaluru, lat: 12.97, lon: 77.59}
+      b: {label: Mysuru, lat: 12.30, lon: 76.65}
+    waypoints:
+      - [12.97, 77.59]
+      - [12.72, 77.28]
+      - [12.52, 76.90]
+      - [12.30, 76.65]
+    source_url: https://en.wikipedia.org/wiki/Bengaluru%E2%80%93Mysuru_Expressway
+    notes: URL redirects to the canonical National Highway 275 (India) article (verified 2026-10-15). Via Ramanagara and Mandya.
+
+  - name: chennai_bypass
+    label: Chennai Bypass Road (Perungalathur-Puzhal)
+    endpoints:
+      a: {label: Perungalathur (Tambaram), lat: 12.91, lon: 80.09}
+      b: {label: Puzhal, lat: 13.17, lon: 80.21}
+    waypoints:
+      - [12.91, 80.09]
+      - [13.07, 80.19]
+      - [13.17, 80.21]
+    source_url: https://en.wikipedia.org/wiki/Chennai_Bypass
+    notes: URL redirects to the canonical Chennai Bypass Road article (verified 2026-10-15). Via Maduravoyal; interconnects NH-32, NH-48, NH-716, NH-16.
+
+  - name: hyderabad_outer_ring_road
+    label: Hyderabad Outer Ring Road
+    endpoints:
+      a: {label: North (Medchal side), lat: 17.58, lon: 78.49}
+      b: {label: North (closed ring), lat: 17.58, lon: 78.49}
+    waypoints:
+      - [17.58, 78.49]
+      - [17.52, 78.62]
+      - [17.38, 78.64]
+      - [17.25, 78.60]
+      - [17.20, 78.47]
+      - [17.25, 78.34]
+      - [17.38, 78.32]
+      - [17.52, 78.35]
+      - [17.58, 78.49]
+    source_url: https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad
+    notes: Closed ring (~20 km radius around the city centre); the asset coordinate is a city midpoint, so distance-to-ring is expected to exceed 5 km.
+
+  - name: delhi_amritsar_katra_expressway
+    label: Delhi-Amritsar-Katra Expressway (NE-5)
+    endpoints:
+      a: {label: Delhi (Kundli), lat: 28.93, lon: 77.13}
+      b: {label: Katra, lat: 32.99, lon: 74.93}
+    waypoints:
+      - [28.93, 77.13]
+      - [31.33, 75.58]
+      - [31.63, 74.87]
+      - [32.99, 74.93]
+    source_url: https://en.wikipedia.org/wiki/Delhi%E2%80%93Amritsar%E2%80%93Katra_Expressway
+    notes: Via Jalandhar and Amritsar; the long Delhi-Jalandhar leg is a straight-line approximation (see file header).
+
+  - name: samruddhi_mahamarg
+    label: Samruddhi Mahamarg (Mumbai-Nagpur Expressway)
+    endpoints:
+      a: {label: Thane (Mumbai), lat: 19.22, lon: 73.00}
+      b: {label: Nagpur, lat: 21.15, lon: 79.10}
+    waypoints:
+      - [19.22, 73.00]
+      - [19.94, 73.56]
+      - [19.77, 74.48]
+      - [19.88, 75.34]
+      - [19.84, 76.18]
+      - [20.15, 76.57]
+      - [20.93, 77.75]
+      - [21.15, 79.10]
+    source_url: https://en.wikipedia.org/wiki/Samruddhi_Mahamarg
+    notes: Via Igatpuri, Shirdi, Aurangabad, Jalna, Mehkar, Amravati; intermediate points approximate (see file header).
+
+  - name: dwarka_expressway
+    label: Dwarka Expressway (Delhi-Gurgaon)
+    endpoints:
+      a: {label: Dwarka (Delhi), lat: 28.59, lon: 77.05}
+      b: {label: Gurgaon, lat: 28.47, lon: 77.03}
+    waypoints:
+      - [28.59, 77.05]
+      - [28.47, 77.03]
+    source_url: https://en.wikipedia.org/wiki/Dwarka_Expressway
+    notes: Short urban expressway; nearly straight.

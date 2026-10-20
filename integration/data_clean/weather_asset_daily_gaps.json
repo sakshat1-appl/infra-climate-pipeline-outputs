@@ -1,0 +1,9 @@
+{
+  "expected_window": [
+    "2005-01-01",
+    "2025-11-29"
+  ],
+  "expected_days": 7638,
+  "gaps": {},
+  "n_assets_with_gaps": 0
+}

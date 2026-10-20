@@ -1,0 +1,1478 @@
+{
+  "source": "OpenStreetMap via Overpass API (highways)",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "bbox_buffer_km": 25.0,
+  "highway_classes": [
+    "motorway",
+    "trunk",
+    "primary",
+    "secondary"
+  ],
+  "overpass_timeout_s": 170,
+  "tiles": {
+    "GP_081": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.345422,74.746795,22.794578,75.233205);way[\"highway\"=\"trunk\"](22.345422,74.746795,22.794578,75.233205);way[\"highway\"=\"primary\"](22.345422,74.746795,22.794578,75.233205);way[\"highway\"=\"secondary\"](22.345422,74.746795,22.794578,75.233205););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.345422206252245,
+        74.7467954907873,
+        22.794577793747756,
+        75.23320450921268
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-14T23:55:36Z",
+      "response_sha256": "156764d7765d7280244ce30c30c2b0d9882b39fa5924598119882c9491a1c9a6",
+      "n_ways": 128,
+      "n_nodes": 6854,
+      "requests_issued": 1,
+      "bytes_downloaded": 473278
+    },
+    "GP_082": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](19.115422,77.391991,19.564578,77.868009);way[\"highway\"=\"trunk\"](19.115422,77.391991,19.564578,77.868009);way[\"highway\"=\"primary\"](19.115422,77.391991,19.564578,77.868009);way[\"highway\"=\"secondary\"](19.115422,77.391991,19.564578,77.868009););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        19.115422206252244,
+        77.39199137452525,
+        19.564577793747755,
+        77.86800862547474
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-14T23:55:36Z",
+      "response_sha256": "64731561a48720b1c0828a8d98005ad9dfd7a343dae447661972c72e34fc0cab",
+      "n_ways": 237,
+      "n_nodes": 5375,
+      "requests_issued": 1,
+      "bytes_downloaded": 428799
+    },
+    "GP_083": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](15.055422,75.147192,15.504578,75.612808);way[\"highway\"=\"trunk\"](15.055422,75.147192,15.504578,75.612808);way[\"highway\"=\"primary\"](15.055422,75.147192,15.504578,75.612808);way[\"highway\"=\"secondary\"](15.055422,75.147192,15.504578,75.612808););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        15.055422206252246,
+        75.14719233149437,
+        15.504577793747753,
+        75.61280766850562
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-14T23:55:36Z",
+      "response_sha256": "1ac38e347c02650f591c27e12a455fae3ec6e85c7b0ab0bca36edf01889d7e21",
+      "n_ways": 643,
+      "n_nodes": 11331,
+      "requests_issued": 1,
+      "bytes_downloaded": 956714
+    },
+    "GP_084": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](10.125422,75.971708,10.574578,76.428292);way[\"highway\"=\"trunk\"](10.125422,75.971708,10.574578,76.428292);way[\"highway\"=\"primary\"](10.125422,75.971708,10.574578,76.428292);way[\"highway\"=\"secondary\"](10.125422,75.971708,10.574578,76.428292););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        10.125422206252246,
+        75.97170757550529,
+        10.574577793747753,
+        76.42829242449471
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-14T23:55:36Z",
+      "response_sha256": "b4b33927630c571e17228fe04e28706ce4fc1b346abaa9e3353e6f7938aa6f70",
+      "n_ways": 1873,
+      "n_nodes": 45089,
+      "requests_issued": 1,
+      "bytes_downloaded": 3707489
+    },
+    "GP_085": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](24.045422,84.623649,24.494578,85.116351);way[\"highway\"=\"trunk\"](24.045422,84.623649,24.494578,85.116351);way[\"highway\"=\"primary\"](24.045422,84.623649,24.494578,85.116351);way[\"highway\"=\"secondary\"](24.045422,84.623649,24.494578,85.116351););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        24.045422206252244,
+        84.6236494003145,
+        24.494577793747755,
+        85.1163505996855
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-14T23:56:35Z",
+      "response_sha256": "63de670746d248214fe01c4a2a1c8a53a1719863456ee114c854b514a6cf61ba",
+      "n_ways": 183,
+      "n_nodes": 4107,
+      "requests_issued": 1,
+      "bytes_downloaded": 364050
+    },
+    "GP_086": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](26.235422,79.679144,26.684578,80.180856);way[\"highway\"=\"trunk\"](26.235422,79.679144,26.684578,80.180856);way[\"highway\"=\"primary\"](26.235422,79.679144,26.684578,80.180856);way[\"highway\"=\"secondary\"](26.235422,79.679144,26.684578,80.180856););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        26.235422206252245,
+        79.67914394259499,
+        26.684577793747756,
+        80.18085605740502
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-14T23:56:35Z",
+      "response_sha256": "71317a70ae75b812d91b09bbd33b8058a0a69bedb0ba06745d15c5b93c5a4871",
+      "n_ways": 179,
+      "n_nodes": 4115,
+      "requests_issued": 1,
+      "bytes_downloaded": 328928
+    },
+    "GP_088": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](17.105422,82.544743,17.554578,83.015257);way[\"highway\"=\"trunk\"](17.105422,82.544743,17.554578,83.015257);way[\"highway\"=\"primary\"](17.105422,82.544743,17.554578,83.015257);way[\"highway\"=\"secondary\"](17.105422,82.544743,17.554578,83.015257););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        17.105422206252243,
+        82.54474269218002,
+        17.554577793747754,
+        83.01525730781998
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-14T23:57:35Z",
+      "response_sha256": "da9a92ee56f4449c1a875e6cc929a808aa64d21b5ed34a14eb9b7a60d62b68f4",
+      "n_ways": 159,
+      "n_nodes": 6205,
+      "requests_issued": 1,
+      "bytes_downloaded": 450045
+    },
+    "GP_089": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](26.675422,73.408174,27.124578,73.911826);way[\"highway\"=\"trunk\"](26.675422,73.408174,27.124578,73.911826);way[\"highway\"=\"primary\"](26.675422,73.408174,27.124578,73.911826);way[\"highway\"=\"secondary\"](26.675422,73.408174,27.124578,73.911826););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        26.675422206252243,
+        73.40817401227028,
+        27.124577793747754,
+        73.91182598772971
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:02:39Z",
+      "response_sha256": "d27b0574c65e5d5f32e5d6e65143c5e6b51ffc63def173a00d134fb8e651423b",
+      "n_ways": 48,
+      "n_nodes": 3376,
+      "requests_issued": 1,
+      "bytes_downloaded": 226422
+    },
+    "GP_090": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](9.145422,78.602385,9.594578,79.057615);way[\"highway\"=\"trunk\"](9.145422,78.602385,9.594578,79.057615);way[\"highway\"=\"primary\"](9.145422,78.602385,9.594578,79.057615);way[\"highway\"=\"secondary\"](9.145422,78.602385,9.594578,79.057615););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        9.145422206252245,
+        78.60238526660497,
+        9.594577793747753,
+        79.05761473339503
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:02:39Z",
+      "response_sha256": "fb0f5d94bd294aae72113ec905f8b5d9c199c402f779d80268c6aaadbb746461",
+      "n_ways": 403,
+      "n_nodes": 6909,
+      "requests_issued": 1,
+      "bytes_downloaded": 620863
+    },
+    "GP_091": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](25.385422,73.430955,25.834578,73.929045);way[\"highway\"=\"trunk\"](25.385422,73.430955,25.834578,73.929045);way[\"highway\"=\"primary\"](25.385422,73.430955,25.834578,73.929045);way[\"highway\"=\"secondary\"](25.385422,73.430955,25.834578,73.929045););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        25.385422206252244,
+        73.430955336113,
+        25.834577793747755,
+        73.92904466388701
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:02:39Z",
+      "response_sha256": "4ff59234997d785267a45a318162beeaa12962fe3d1ac1e3e5eec67d9f092031",
+      "n_ways": 133,
+      "n_nodes": 7113,
+      "requests_issued": 1,
+      "bytes_downloaded": 487669
+    },
+    "GP_093": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.205422,71.627042,22.654578,72.112958);way[\"highway\"=\"trunk\"](22.205422,71.627042,22.654578,72.112958);way[\"highway\"=\"primary\"](22.205422,71.627042,22.654578,72.112958);way[\"highway\"=\"secondary\"](22.205422,71.627042,22.654578,72.112958););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.205422206252244,
+        71.62704151725679,
+        22.654577793747755,
+        72.11295848274322
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:02:39Z",
+      "response_sha256": "f0cd756622fb071d51030cf0bd19c80b78bf226213fa5889309aaef0c9a30f66",
+      "n_ways": 163,
+      "n_nodes": 2579,
+      "requests_issued": 1,
+      "bytes_downloaded": 222557
+    },
+    "GP_094": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](23.815422,69.944093,24.264578,70.435907);way[\"highway\"=\"trunk\"](23.815422,69.944093,24.264578,70.435907);way[\"highway\"=\"primary\"](23.815422,69.944093,24.264578,70.435907);way[\"highway\"=\"secondary\"](23.815422,69.944093,24.264578,70.435907););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        23.815422206252244,
+        69.94409250469819,
+        24.264577793747755,
+        70.4359074953018
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:02:39Z",
+      "response_sha256": "57239e0099ce0de0d016b5bb5913452e537c61d95f8ab1178263fecdb06429b4",
+      "n_ways": 11,
+      "n_nodes": 135,
+      "requests_issued": 1,
+      "bytes_downloaded": 12521
+    },
+    "GP_095": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](18.605422,82.352723,19.054578,82.827277);way[\"highway\"=\"trunk\"](18.605422,82.352723,19.054578,82.827277);way[\"highway\"=\"primary\"](18.605422,82.352723,19.054578,82.827277);way[\"highway\"=\"secondary\"](18.605422,82.352723,19.054578,82.827277););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        18.605422206252243,
+        82.35272324757842,
+        19.054577793747754,
+        82.82727675242158
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:03:41Z",
+      "response_sha256": "65956eb4ffd23a7ca8a680fa44838ad7d273ab2e302e6bd8ea7ef22808a40a14",
+      "n_ways": 118,
+      "n_nodes": 4598,
+      "requests_issued": 1,
+      "bytes_downloaded": 326455
+    },
+    "GP_096": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](19.245422,82.221801,19.694578,82.698199);way[\"highway\"=\"trunk\"](19.245422,82.221801,19.694578,82.698199);way[\"highway\"=\"primary\"](19.245422,82.221801,19.694578,82.698199);way[\"highway\"=\"secondary\"](19.245422,82.221801,19.694578,82.698199););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        19.245422206252243,
+        82.22180107279765,
+        19.694577793747754,
+        82.69819892720234
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:04:41Z",
+      "response_sha256": "391fd7044994770e9061166e5acfbdfe7fd498e60c0f26ac137d927a99c60837",
+      "n_ways": 107,
+      "n_nodes": 8250,
+      "requests_issued": 1,
+      "bytes_downloaded": 555363
+    },
+    "GP_097": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](25.745422,88.610198,26.194578,89.109802);way[\"highway\"=\"trunk\"](25.745422,88.610198,26.194578,89.109802);way[\"highway\"=\"primary\"](25.745422,88.610198,26.194578,89.109802);way[\"highway\"=\"secondary\"](25.745422,88.610198,26.194578,89.109802););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        25.745422206252243,
+        88.61019807010754,
+        26.194577793747754,
+        89.10980192989246
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:04:41Z",
+      "response_sha256": "63b4492f278d54b62a1365aa03bec62cec6fd9418f39c7fce904a9f3a6d0505f",
+      "n_ways": 347,
+      "n_nodes": 5919,
+      "requests_issued": 1,
+      "bytes_downloaded": 500304
+    },
+    "GP_099": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](31.245422,74.636693,31.694578,75.163307);way[\"highway\"=\"trunk\"](31.245422,74.636693,31.694578,75.163307);way[\"highway\"=\"primary\"](31.245422,74.636693,31.694578,75.163307);way[\"highway\"=\"secondary\"](31.245422,74.636693,31.694578,75.163307););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        31.245422206252243,
+        74.6366933923677,
+        31.694577793747754,
+        75.16330660763231
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:04:41Z",
+      "response_sha256": "7800b3ba5f0c62ca92a9a43a672c5607e98cdefad3e265fc61afeb41158e6538",
+      "n_ways": 710,
+      "n_nodes": 8247,
+      "requests_issued": 1,
+      "bytes_downloaded": 810269
+    },
+    "GP_100": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](19.345422,84.261654,19.794578,84.738346);way[\"highway\"=\"trunk\"](19.345422,84.261654,19.794578,84.738346);way[\"highway\"=\"primary\"](19.345422,84.261654,19.794578,84.738346);way[\"highway\"=\"secondary\"](19.345422,84.261654,19.794578,84.738346););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        19.345422206252245,
+        84.26165364413163,
+        19.794577793747756,
+        84.73834635586837
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:04:41Z",
+      "response_sha256": "2f515a37c24fe9752e3b6325b154370c84fc208a24867d1e5bc97326e7fe9bd7",
+      "n_ways": 111,
+      "n_nodes": 3988,
+      "requests_issued": 1,
+      "bytes_downloaded": 290484
+    },
+    "HW_001": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](18.525422,73.172836,18.974578,73.647164);way[\"highway\"=\"trunk\"](18.525422,73.172836,18.974578,73.647164);way[\"highway\"=\"primary\"](18.525422,73.172836,18.974578,73.647164);way[\"highway\"=\"secondary\"](18.525422,73.172836,18.974578,73.647164););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        18.525422206252244,
+        73.17283594031642,
+        18.974577793747756,
+        73.64716405968358
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:05:47Z",
+      "response_sha256": "05587edc58e091f69ce0051ccceeba4966aea1ffb9c5a38d062ee95ae06eb81d",
+      "n_ways": 561,
+      "n_nodes": 13887,
+      "requests_issued": 1,
+      "bytes_downloaded": 1192525
+    },
+    "HW_002": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](27.665422,77.355909,28.114578,77.864091);way[\"highway\"=\"trunk\"](27.665422,77.355909,28.114578,77.864091);way[\"highway\"=\"primary\"](27.665422,77.355909,28.114578,77.864091);way[\"highway\"=\"secondary\"](27.665422,77.355909,28.114578,77.864091););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        27.665422206252245,
+        77.35590882683113,
+        28.114577793747756,
+        77.86409117316887
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:05:47Z",
+      "response_sha256": "ed14ce156f84797a074afd0eda259c45a3a2df33fc006acc2b7d8ef0db333101",
+      "n_ways": 450,
+      "n_nodes": 3994,
+      "requests_issued": 1,
+      "bytes_downloaded": 472731
+    },
+    "HW_003": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](12.405422,76.889853,12.854578,77.350147);way[\"highway\"=\"trunk\"](12.405422,76.889853,12.854578,77.350147);way[\"highway\"=\"primary\"](12.405422,76.889853,12.854578,77.350147);way[\"highway\"=\"secondary\"](12.405422,76.889853,12.854578,77.350147););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        12.405422206252247,
+        76.88985320823066,
+        12.854577793747755,
+        77.35014679176935
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:05:47Z",
+      "response_sha256": "4587ea164ed888ac235aa2c3294282643c031f48dd58fe387a5df5f3c78678b9",
+      "n_ways": 396,
+      "n_nodes": 12674,
+      "requests_issued": 1,
+      "bytes_downloaded": 998023
+    },
+    "HW_004": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](27.585422,77.486096,28.034578,77.993904);way[\"highway\"=\"trunk\"](27.585422,77.486096,28.034578,77.993904);way[\"highway\"=\"primary\"](27.585422,77.486096,28.034578,77.993904);way[\"highway\"=\"secondary\"](27.585422,77.486096,28.034578,77.993904););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        27.585422206252243,
+        77.4860962069209,
+        28.034577793747754,
+        77.99390379307908
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:06:42Z",
+      "response_sha256": "5ffefbc5aa81701ad4f5145966572b689f98e1db292984eb24961dc4ad9744ee",
+      "n_ways": 406,
+      "n_nodes": 4066,
+      "requests_issued": 1,
+      "bytes_downloaded": 449179
+    },
+    "HW_005": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.445422,72.636619,22.894578,73.123381);way[\"highway\"=\"trunk\"](22.445422,72.636619,22.894578,73.123381);way[\"highway\"=\"primary\"](22.445422,72.636619,22.894578,73.123381);way[\"highway\"=\"secondary\"](22.445422,72.636619,22.894578,73.123381););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.445422206252246,
+        72.63661856192452,
+        22.894577793747757,
+        73.12338143807547
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:06:42Z",
+      "response_sha256": "7e341d016f1b51e2ea4a1dcb71808c0dd93fa96fda0e229ac262ccad761dcc34",
+      "n_ways": 1163,
+      "n_nodes": 14103,
+      "requests_issued": 1,
+      "bytes_downloaded": 1332661
+    },
+    "HW_006": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](19.955422,75.830735,20.404578,76.309265);way[\"highway\"=\"trunk\"](19.955422,75.830735,20.404578,76.309265);way[\"highway\"=\"primary\"](19.955422,75.830735,20.404578,76.309265);way[\"highway\"=\"secondary\"](19.955422,75.830735,20.404578,76.309265););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        19.955422206252244,
+        75.83073453623652,
+        20.404577793747755,
+        76.30926546376347
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:06:42Z",
+      "response_sha256": "c5ff282a8fa8a8ecafc170b7b9276024ed35914c4fd7af45b74fefde139a085d",
+      "n_ways": 189,
+      "n_nodes": 7540,
+      "requests_issued": 1,
+      "bytes_downloaded": 595113
+    },
+    "HW_007": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](28.325422,77.144333,28.774578,77.655667);way[\"highway\"=\"trunk\"](28.325422,77.144333,28.774578,77.655667);way[\"highway\"=\"primary\"](28.325422,77.144333,28.774578,77.655667);way[\"highway\"=\"secondary\"](28.325422,77.144333,28.774578,77.655667););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        28.325422206252245,
+        77.14433322293485,
+        28.774577793747756,
+        77.65566677706516
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:07:49Z",
+      "response_sha256": "d78e6087c8b2549997c1a274f43026ed7dffc1bf942383c74e7b41beb07e0c6b",
+      "n_ways": 6837,
+      "n_nodes": 45761,
+      "requests_issued": 1,
+      "bytes_downloaded": 6099914
+    },
+    "HW_008": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](26.515422,75.078529,26.964578,75.581471);way[\"highway\"=\"trunk\"](26.515422,75.078529,26.964578,75.581471);way[\"highway\"=\"primary\"](26.515422,75.078529,26.964578,75.581471);way[\"highway\"=\"secondary\"](26.515422,75.078529,26.964578,75.581471););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        26.515422206252243,
+        75.07852929731254,
+        26.964577793747754,
+        75.58147070268745
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:09:48Z",
+      "response_sha256": "f73a23696afa9d002e267c52fc0b001e442728b3bb4b7847cb07fa2776e5b248",
+      "n_ways": 123,
+      "n_nodes": 5265,
+      "requests_issued": 1,
+      "bytes_downloaded": 374750
+    },
+    "HW_009": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](20.915422,72.489218,21.364578,72.970782);way[\"highway\"=\"trunk\"](20.915422,72.489218,21.364578,72.970782);way[\"highway\"=\"primary\"](20.915422,72.489218,21.364578,72.970782);way[\"highway\"=\"secondary\"](20.915422,72.489218,21.364578,72.970782););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        20.915422206252245,
+        72.48921805892135,
+        21.364577793747756,
+        72.97078194107866
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:10:42Z",
+      "response_sha256": "67d6542d8570925e5e80bdcaeca7a21ccc1d28451129bd760de17e2c7e4c7395",
+      "n_ways": 1903,
+      "n_nodes": 20662,
+      "requests_issued": 1,
+      "bytes_downloaded": 2033773
+    },
+    "HW_010": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](17.175422,78.234653,17.624578,78.705347);way[\"highway\"=\"trunk\"](17.175422,78.234653,17.624578,78.705347);way[\"highway\"=\"primary\"](17.175422,78.234653,17.624578,78.705347);way[\"highway\"=\"secondary\"](17.175422,78.234653,17.624578,78.705347););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        17.175422206252243,
+        78.23465279548923,
+        17.624577793747754,
+        78.70534720451077
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:10:42Z",
+      "response_sha256": "7aee7e7d149a9d17ccfd2e4ed1da9f8103528306c5c547bc6db5ff2b7556c556",
+      "n_ways": 6607,
+      "n_nodes": 57424,
+      "requests_issued": 1,
+      "bytes_downloaded": 7242253
+    },
+    "HW_011": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](12.825422,79.929468,13.274578,80.390532);way[\"highway\"=\"trunk\"](12.825422,79.929468,13.274578,80.390532);way[\"highway\"=\"primary\"](12.825422,79.929468,13.274578,80.390532);way[\"highway\"=\"secondary\"](12.825422,79.929468,13.274578,80.390532););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        12.825422206252247,
+        79.92946835465676,
+        13.274577793747754,
+        80.39053164534323
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:11:43Z",
+      "response_sha256": "e207fb6d083937601e43309884769110b556e192e7afa00e9b6fa359dacae05e",
+      "n_ways": 5482,
+      "n_nodes": 46438,
+      "requests_issued": 1,
+      "bytes_downloaded": 5581396
+    },
+    "HW_013": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](26.775422,79.247950,27.224578,79.752050);way[\"highway\"=\"trunk\"](26.775422,79.247950,27.224578,79.752050);way[\"highway\"=\"primary\"](26.775422,79.247950,27.224578,79.752050);way[\"highway\"=\"secondary\"](26.775422,79.247950,27.224578,79.752050););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        26.775422206252244,
+        79.24795044968685,
+        27.224577793747756,
+        79.75204955031315
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:12:47Z",
+      "response_sha256": "c883a5c8fdcef0425b470286f8eb0f164ba68071e34788aed7d2e7a45365f0f2",
+      "n_ways": 437,
+      "n_nodes": 4737,
+      "requests_issued": 1,
+      "bytes_downloaded": 516735
+    },
+    "HW_014": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](25.955422,82.089750,26.404578,82.590250);way[\"highway\"=\"trunk\"](25.955422,82.089750,26.404578,82.590250);way[\"highway\"=\"primary\"](25.955422,82.089750,26.404578,82.590250);way[\"highway\"=\"secondary\"](25.955422,82.089750,26.404578,82.590250););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        25.955422206252244,
+        82.08974962867175,
+        26.404577793747755,
+        82.59025037132825
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:14:48Z",
+      "response_sha256": "80f90ed1f590ccb526f6ff4dfe76d5b521e957927396e4b0a08b4dbbf6290487",
+      "n_ways": 275,
+      "n_nodes": 6076,
+      "requests_issued": 1,
+      "bytes_downloaded": 491871
+    },
+    "HW_015": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](25.775422,79.690134,26.224578,80.189866);way[\"highway\"=\"trunk\"](25.775422,79.690134,26.224578,80.189866);way[\"highway\"=\"primary\"](25.775422,79.690134,26.224578,80.189866);way[\"highway\"=\"secondary\"](25.775422,79.690134,26.224578,80.189866););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        25.775422206252244,
+        79.69013431088861,
+        26.224577793747756,
+        80.18986568911139
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:14:48Z",
+      "response_sha256": "4c36736f9bdb5e254277c4ed0d478b22e32fe012725bb04bb47b8037557d8a00",
+      "n_ways": 63,
+      "n_nodes": 3218,
+      "requests_issued": 1,
+      "bytes_downloaded": 225065
+    },
+    "HW_017": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](28.295422,76.784406,28.744578,77.295594);way[\"highway\"=\"trunk\"](28.295422,76.784406,28.744578,77.295594);way[\"highway\"=\"primary\"](28.295422,76.784406,28.744578,77.295594);way[\"highway\"=\"secondary\"](28.295422,76.784406,28.744578,77.295594););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        28.295422206252244,
+        76.78440600224138,
+        28.744577793747755,
+        77.29559399775863
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:16:53Z",
+      "response_sha256": "0a2da11cf7696ea25a1091a990eee8e12c0a0762bdbb08d3001aba92291f6aeb",
+      "n_ways": 6597,
+      "n_nodes": 52990,
+      "requests_issued": 1,
+      "bytes_downloaded": 6342697
+    },
+    "HW_018": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](23.975422,75.153785,24.424578,75.646215);way[\"highway\"=\"trunk\"](23.975422,75.153785,24.424578,75.646215);way[\"highway\"=\"primary\"](23.975422,75.153785,24.424578,75.646215);way[\"highway\"=\"secondary\"](23.975422,75.153785,24.424578,75.646215););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        23.975422206252244,
+        75.15378484723021,
+        24.424577793747755,
+        75.6462151527698
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:16:53Z",
+      "response_sha256": "35d22ae66ef88609ff28a07899c10ec24f820e7ce3aefa1e20239d0b4df70d4c",
+      "n_ways": 209,
+      "n_nodes": 4004,
+      "requests_issued": 1,
+      "bytes_downloaded": 369715
+    },
+    "HW_019": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](32.085422,74.644280,32.534578,75.175720);way[\"highway\"=\"trunk\"](32.085422,74.644280,32.534578,75.175720);way[\"highway\"=\"primary\"](32.085422,74.644280,32.534578,75.175720);way[\"highway\"=\"secondary\"](32.085422,74.644280,32.534578,75.175720););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        32.08542220625225,
+        74.64428046801983,
+        32.53457779374776,
+        75.17571953198016
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:16:53Z",
+      "response_sha256": "d067721462f2294fe0ec2d24cb67974340da3ebe61cd2796b31866974273a8cf",
+      "n_ways": 192,
+      "n_nodes": 4903,
+      "requests_issued": 1,
+      "bytes_downloaded": 378726
+    },
+    "PT_021": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](18.724422,72.699555,19.173578,73.174445);way[\"highway\"=\"trunk\"](18.724422,72.699555,19.173578,73.174445);way[\"highway\"=\"primary\"](18.724422,72.699555,19.173578,73.174445);way[\"highway\"=\"secondary\"](18.724422,72.699555,19.173578,73.174445););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        18.724422206252246,
+        72.69955456189189,
+        19.173577793747757,
+        73.17444543810811
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:16:53Z",
+      "response_sha256": "dcae7555744c08fac4647767d097005ca5a183957d4e1c623884714a74d1958b",
+      "n_ways": 6044,
+      "n_nodes": 38118,
+      "requests_issued": 1,
+      "bytes_downloaded": 5212088
+    },
+    "PT_022": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.505422,69.466512,22.954578,69.953488);way[\"highway\"=\"trunk\"](22.505422,69.466512,22.954578,69.953488);way[\"highway\"=\"primary\"](22.505422,69.466512,22.954578,69.953488);way[\"highway\"=\"secondary\"](22.505422,69.466512,22.954578,69.953488););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.505422206252245,
+        69.46651192477805,
+        22.954577793747756,
+        69.95348807522194
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:17:55Z",
+      "response_sha256": "8832683818e8e3fa6eadc9da3ad2687687ee66be82c5c2c54180b0f89b4023d7",
+      "n_ways": 222,
+      "n_nodes": 2415,
+      "requests_issued": 1,
+      "bytes_downloaded": 241271
+    },
+    "PT_023": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](12.874422,80.063423,13.323578,80.524577);way[\"highway\"=\"trunk\"](12.874422,80.063423,13.323578,80.524577);way[\"highway\"=\"primary\"](12.874422,80.063423,13.323578,80.524577);way[\"highway\"=\"secondary\"](12.874422,80.063423,13.323578,80.524577););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        12.874422206252246,
+        80.06342256358906,
+        13.323577793747754,
+        80.52457743641094
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:17:55Z",
+      "response_sha256": "b14f0bb425693cc896d42fa6ad53a11894002d5c173dd9439800ab731f487d52",
+      "n_ways": 4967,
+      "n_nodes": 39576,
+      "requests_issued": 1,
+      "bytes_downloaded": 4907448
+    },
+    "PT_024": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](17.461422,83.045281,17.910578,83.516719);way[\"highway\"=\"trunk\"](17.461422,83.045281,17.910578,83.516719);way[\"highway\"=\"primary\"](17.461422,83.045281,17.910578,83.516719);way[\"highway\"=\"secondary\"](17.461422,83.045281,17.910578,83.516719););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        17.461422206252244,
+        83.04528112872977,
+        17.910577793747755,
+        83.51671887127024
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:17:55Z",
+      "response_sha256": "b3220691ed8084f0490b0d3ff3214a6f59a9a88289063d90b77da05999a8a17a",
+      "n_ways": 1364,
+      "n_nodes": 20841,
+      "requests_issued": 1,
+      "bytes_downloaded": 1884160
+    },
+    "PT_025": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.808422,69.972968,23.257578,70.461032);way[\"highway\"=\"trunk\"](22.808422,69.972968,23.257578,70.461032);way[\"highway\"=\"primary\"](22.808422,69.972968,23.257578,70.461032);way[\"highway\"=\"secondary\"](22.808422,69.972968,23.257578,70.461032););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.808422206252246,
+        69.972967881796,
+        23.257577793747757,
+        70.461032118204
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:18:57Z",
+      "response_sha256": "3ab0a7511a76bff900b3228cff7a6b30a97de499152b9ee4a4fa3a2d29dbd424",
+      "n_ways": 386,
+      "n_nodes": 4475,
+      "requests_issued": 1,
+      "bytes_downloaded": 438804
+    },
+    "PT_026": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](20.040422,86.443604,20.489578,86.922396);way[\"highway\"=\"trunk\"](20.040422,86.443604,20.489578,86.922396);way[\"highway\"=\"primary\"](20.040422,86.443604,20.489578,86.922396);way[\"highway\"=\"secondary\"](20.040422,86.443604,20.489578,86.922396););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        20.040422206252245,
+        86.44360374327321,
+        20.489577793747756,
+        86.9223962567268
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:18:57Z",
+      "response_sha256": "87d1354081690bdf60f5313137d81a7e887839d88d7ab5dfbee96893353fe668",
+      "n_ways": 88,
+      "n_nodes": 1815,
+      "requests_issued": 1,
+      "bytes_downloaded": 155374
+    },
+    "PT_027": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](9.749422,76.034976,10.198578,76.491024);way[\"highway\"=\"trunk\"](9.749422,76.034976,10.198578,76.491024);way[\"highway\"=\"primary\"](9.749422,76.034976,10.198578,76.491024);way[\"highway\"=\"secondary\"](9.749422,76.034976,10.198578,76.491024););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        9.749422206252246,
+        76.0349759535751,
+        10.198577793747754,
+        76.49102404642491
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:19:50Z",
+      "response_sha256": "2fa49712154d79920c340a72f60df61cf29a125822318122e9da9becd759f7c5",
+      "n_ways": 2921,
+      "n_nodes": 44370,
+      "requests_issued": 1,
+      "bytes_downloaded": 4265508
+    },
+    "PT_028": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](20.871422,72.385289,21.320578,72.866711);way[\"highway\"=\"trunk\"](20.871422,72.385289,21.320578,72.866711);way[\"highway\"=\"primary\"](20.871422,72.385289,21.320578,72.866711);way[\"highway\"=\"secondary\"](20.871422,72.385289,21.320578,72.866711););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        20.871422206252245,
+        72.3852894648552,
+        21.320577793747756,
+        72.8667105351448
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:20:58Z",
+      "response_sha256": "e3abfa08bdd3bdbf412e68c00cd0e95d27b747e174a4de059c5edc189a6e8e5d",
+      "n_ways": 1283,
+      "n_nodes": 12569,
+      "requests_issued": 1,
+      "bytes_downloaded": 1279556
+    },
+    "PT_029": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.316422,88.060847,22.765578,88.547153);way[\"highway\"=\"trunk\"](22.316422,88.060847,22.765578,88.547153);way[\"highway\"=\"primary\"](22.316422,88.060847,22.765578,88.547153);way[\"highway\"=\"secondary\"](22.316422,88.060847,22.765578,88.547153););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.316422206252245,
+        88.06084661355816,
+        22.765577793747756,
+        88.54715338644185
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:20:58Z",
+      "response_sha256": "a3207bf0ff4a74dbc796004213e2337ee1b1125812ba354e6602206ec721477d",
+      "n_ways": 3782,
+      "n_nodes": 46535,
+      "requests_issued": 1,
+      "bytes_downloaded": 4475601
+    },
+    "PT_030": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](8.525422,77.973778,8.974578,78.428222);way[\"highway\"=\"trunk\"](8.525422,77.973778,8.974578,78.428222);way[\"highway\"=\"primary\"](8.525422,77.973778,8.974578,78.428222);way[\"highway\"=\"secondary\"](8.525422,77.973778,8.974578,78.428222););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        8.525422206252246,
+        77.97377768167897,
+        8.974577793747754,
+        78.42822231832102
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:20:58Z",
+      "response_sha256": "b515cea2bbbbcb16dca7f7c4f7f138a621ccb23ba3813fea33ea3ce021436ca5",
+      "n_ways": 335,
+      "n_nodes": 5222,
+      "requests_issued": 1,
+      "bytes_downloaded": 477182
+    },
+    "PT_031": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](13.027422,80.101278,13.476578,80.562722);way[\"highway\"=\"trunk\"](13.027422,80.101278,13.476578,80.562722);way[\"highway\"=\"primary\"](13.027422,80.101278,13.476578,80.562722);way[\"highway\"=\"secondary\"](13.027422,80.101278,13.476578,80.562722););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        13.027422206252247,
+        80.10127837957852,
+        13.476577793747754,
+        80.56272162042147
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:20:58Z",
+      "response_sha256": "9a22ac6f0ac52c221bc38ce8ac460e2a62d8e00ffd34ffb0c996efb62b9ea684",
+      "n_ways": 3403,
+      "n_nodes": 27281,
+      "requests_issued": 1,
+      "bytes_downloaded": 3299009
+    },
+    "PT_032": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](15.185422,73.565047,15.634578,74.030953);way[\"highway\"=\"trunk\"](15.185422,73.565047,15.634578,74.030953);way[\"highway\"=\"primary\"](15.185422,73.565047,15.634578,74.030953);way[\"highway\"=\"secondary\"](15.185422,73.565047,15.634578,74.030953););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        15.185422206252246,
+        73.56504733459076,
+        15.634577793747754,
+        74.03095266540925
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:21:59Z",
+      "response_sha256": "0602a24b6a10bc0ff28f970f40b589b1adea4c3d588bb147f55fcb208b7e3787",
+      "n_ways": 1444,
+      "n_nodes": 19419,
+      "requests_issued": 1,
+      "bytes_downloaded": 1804121
+    },
+    "PT_033": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](12.693422,74.571591,13.142578,75.032409);way[\"highway\"=\"trunk\"](12.693422,74.571591,13.142578,75.032409);way[\"highway\"=\"primary\"](12.693422,74.571591,13.142578,75.032409);way[\"highway\"=\"secondary\"](12.693422,74.571591,13.142578,75.032409););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        12.693422206252245,
+        74.57159078164848,
+        13.142577793747753,
+        75.03240921835153
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:21:59Z",
+      "response_sha256": "647c468b8b125abf122db1bfa36b23f3eb20041bfabe6348a29cfa35cc5ddbc9",
+      "n_ways": 885,
+      "n_nodes": 27214,
+      "requests_issued": 1,
+      "bytes_downloaded": 2074559
+    },
+    "PT_034": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](20.681422,71.258596,21.130578,71.739404);way[\"highway\"=\"trunk\"](20.681422,71.258596,21.130578,71.739404);way[\"highway\"=\"primary\"](20.681422,71.258596,21.130578,71.739404);way[\"highway\"=\"secondary\"](20.681422,71.258596,21.130578,71.739404););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        20.681422206252243,
+        71.25859569659522,
+        21.130577793747754,
+        71.73940430340477
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:21:59Z",
+      "response_sha256": "11286cff7aa2225c473978260519de765529ba70140ffbf3f27d8553cdd57684",
+      "n_ways": 126,
+      "n_nodes": 2255,
+      "requests_issued": 1,
+      "bytes_downloaded": 191913
+    },
+    "PT_035": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](20.566422,86.719779,21.015578,87.200221);way[\"highway\"=\"trunk\"](20.566422,86.719779,21.015578,87.200221);way[\"highway\"=\"primary\"](20.566422,86.719779,21.015578,87.200221);way[\"highway\"=\"secondary\"](20.566422,86.719779,21.015578,87.200221););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        20.566422206252245,
+        86.71977938703917,
+        21.015577793747756,
+        87.20022061296082
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:21:59Z",
+      "response_sha256": "273addc815eb3ef83269971962ce57d1134385b8c47e24f40f94fdcaea3ff268",
+      "n_ways": 17,
+      "n_nodes": 688,
+      "requests_issued": 1,
+      "bytes_downloaded": 48614
+    },
+    "PT_036": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](16.744422,82.046200,17.193578,82.515800);way[\"highway\"=\"trunk\"](16.744422,82.046200,17.193578,82.515800);way[\"highway\"=\"primary\"](16.744422,82.046200,17.193578,82.515800);way[\"highway\"=\"secondary\"](16.744422,82.046200,17.193578,82.515800););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        16.744422206252246,
+        82.04619965780307,
+        17.193577793747757,
+        82.51580034219694
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:24:01Z",
+      "response_sha256": "84796faca9f3a6b7257366a86e3ecd3854528a4c6fda2e07404cde6873db10d3",
+      "n_ways": 831,
+      "n_nodes": 20029,
+      "requests_issued": 1,
+      "bytes_downloaded": 1573500
+    },
+    "PT_037": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](19.047422,84.669090,19.496578,85.144910);way[\"highway\"=\"trunk\"](19.047422,84.669090,19.496578,85.144910);way[\"highway\"=\"primary\"](19.047422,84.669090,19.496578,85.144910);way[\"highway\"=\"secondary\"](19.047422,84.669090,19.496578,85.144910););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        19.047422206252243,
+        84.66909030828117,
+        19.496577793747754,
+        85.14490969171882
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:24:01Z",
+      "response_sha256": "ddb4c41f3d357f40328b03ed046e7849123c994006054b2b4888472324185404",
+      "n_ways": 387,
+      "n_nodes": 6426,
+      "requests_issued": 1,
+      "bytes_downloaded": 565167
+    },
+    "PT_038": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](10.615422,79.602342,11.064578,80.059658);way[\"highway\"=\"trunk\"](10.615422,79.602342,11.064578,80.059658);way[\"highway\"=\"primary\"](10.615422,79.602342,11.064578,80.059658);way[\"highway\"=\"secondary\"](10.615422,79.602342,11.064578,80.059658););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        10.615422206252246,
+        79.60234207878602,
+        11.064577793747754,
+        80.05965792121398
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:24:01Z",
+      "response_sha256": "88a4f991b221ab27882c1baa0f6226e5ec05212520fe5ddbc3eabaaf874f7a32",
+      "n_ways": 400,
+      "n_nodes": 13332,
+      "requests_issued": 1,
+      "bytes_downloaded": 996483
+    },
+    "PT_039": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](17.393422,82.993370,17.842578,83.464630);way[\"highway\"=\"trunk\"](17.393422,82.993370,17.842578,83.464630);way[\"highway\"=\"primary\"](17.393422,82.993370,17.842578,83.464630);way[\"highway\"=\"secondary\"](17.393422,82.993370,17.842578,83.464630););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        17.393422206252243,
+        82.99337013554232,
+        17.842577793747754,
+        83.46462986445768
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:24:01Z",
+      "response_sha256": "11930ab07215463c0ef57a44e8e8fa6df29d4b4f0363eeaa4cbcde3ed6247ad0",
+      "n_ways": 1245,
+      "n_nodes": 18941,
+      "requests_issued": 1,
+      "bytes_downloaded": 1717733
+    },
+    "PT_040": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](14.024422,79.900294,14.473578,80.363706);way[\"highway\"=\"trunk\"](14.024422,79.900294,14.473578,80.363706);way[\"highway\"=\"primary\"](14.024422,79.900294,14.473578,80.363706);way[\"highway\"=\"secondary\"](14.024422,79.900294,14.473578,80.363706););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        14.024422206252247,
+        79.90029381308408,
+        14.473577793747754,
+        80.36370618691593
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:24:59Z",
+      "response_sha256": "ddcbbc69994e3437469523b2b929dcde8de0769d701c28bfdbb6c5a3bc57e21e",
+      "n_ways": 516,
+      "n_nodes": 10213,
+      "requests_issued": 1,
+      "bytes_downloaded": 845290
+    },
+    "RE_061": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](27.315122,71.662024,27.764278,72.168576);way[\"highway\"=\"trunk\"](27.315122,71.662024,27.764278,72.168576);way[\"highway\"=\"primary\"](27.315122,71.662024,27.764278,72.168576);way[\"highway\"=\"secondary\"](27.315122,71.662024,27.764278,72.168576););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        27.315122206252244,
+        71.6620236324186,
+        27.764277793747755,
+        72.16857636758141
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:24:59Z",
+      "response_sha256": "87f52dac0fb7e4b46e1da0f83b16d016c9692181c5345bc0aac95c2deda177c2",
+      "n_ways": 20,
+      "n_nodes": 1269,
+      "requests_issued": 1,
+      "bytes_downloaded": 85404
+    },
+    "RE_062": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](14.045422,77.048272,14.494578,77.511728);way[\"highway\"=\"trunk\"](14.045422,77.048272,14.494578,77.511728);way[\"highway\"=\"primary\"](14.045422,77.048272,14.494578,77.511728);way[\"highway\"=\"secondary\"](14.045422,77.048272,14.494578,77.511728););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        14.045422206252246,
+        77.04827222894899,
+        14.494577793747753,
+        77.51172777105101
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:26:05Z",
+      "response_sha256": "b3993fb5e0456d6647ce7cb973732034a318b33cefa1bef98732908dff284913",
+      "n_ways": 81,
+      "n_nodes": 5827,
+      "requests_issued": 1,
+      "bytes_downloaded": 391587
+    },
+    "RE_063": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](15.455422,77.366742,15.904578,77.833258);way[\"highway\"=\"trunk\"](15.455422,77.366742,15.904578,77.833258);way[\"highway\"=\"primary\"](15.455422,77.366742,15.904578,77.833258);way[\"highway\"=\"secondary\"](15.455422,77.366742,15.904578,77.833258););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        15.455422206252246,
+        77.36674176827394,
+        15.904577793747753,
+        77.83325823172605
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:26:05Z",
+      "response_sha256": "7144ece5907453b49f66d6d803c2767eff24338a8047e9b468188245a6619f64",
+      "n_ways": 340,
+      "n_nodes": 12643,
+      "requests_issued": 1,
+      "bytes_downloaded": 911972
+    },
+    "RE_064": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](24.255622,81.327640,24.704778,81.821160);way[\"highway\"=\"trunk\"](24.255622,81.327640,24.704778,81.821160);way[\"highway\"=\"primary\"](24.255622,81.327640,24.704778,81.821160);way[\"highway\"=\"secondary\"](24.255622,81.327640,24.704778,81.821160););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        24.255622206252244,
+        81.32763955900963,
+        24.704777793747756,
+        81.82116044099037
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:27:04Z",
+      "response_sha256": "eb8cd9b59ffca9972044e0564d3aeb1b1e7244aaa59d1949dd7809ab7fa25269",
+      "n_ways": 471,
+      "n_nodes": 9890,
+      "requests_issued": 1,
+      "bytes_downloaded": 783157
+    },
+    "RE_065": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](23.685422,70.964341,24.134578,71.455659);way[\"highway\"=\"trunk\"](23.685422,70.964341,24.134578,71.455659);way[\"highway\"=\"primary\"](23.685422,70.964341,24.134578,71.455659);way[\"highway\"=\"secondary\"](23.685422,70.964341,24.134578,71.455659););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        23.685422206252245,
+        70.96434050178298,
+        24.134577793747756,
+        71.455659498217
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:27:04Z",
+      "response_sha256": "7cf2eb2c668a6e1ac69a2c88042aaed2811992b400beb6b4c8dbd473466c75e2",
+      "n_ways": 118,
+      "n_nodes": 2583,
+      "requests_issued": 1,
+      "bytes_downloaded": 231576
+    },
+    "RE_066": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](8.025422,77.343074,8.474578,77.796926);way[\"highway\"=\"trunk\"](8.025422,77.343074,8.474578,77.796926);way[\"highway\"=\"primary\"](8.025422,77.343074,8.474578,77.796926);way[\"highway\"=\"secondary\"](8.025422,77.343074,8.474578,77.796926););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        8.025422206252246,
+        77.34307383515173,
+        8.474577793747754,
+        77.79692616484826
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:27:04Z",
+      "response_sha256": "db1cc3bee3399008cc06c4abad8db904d69dc80d9dc3f6adb40059f2051f2fd0",
+      "n_ways": 609,
+      "n_nodes": 10220,
+      "requests_issued": 1,
+      "bytes_downloaded": 903914
+    },
+    "RE_067": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](26.675422,70.648174,27.124578,71.151826);way[\"highway\"=\"trunk\"](26.675422,70.648174,27.124578,71.151826);way[\"highway\"=\"primary\"](26.675422,70.648174,27.124578,71.151826);way[\"highway\"=\"secondary\"](26.675422,70.648174,27.124578,71.151826););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        26.675422206252243,
+        70.64817401227029,
+        27.124577793747754,
+        71.15182598772972
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:27:04Z",
+      "response_sha256": "2b58a363d78bc428b842c3337df589607cfc1363c95914fa088aeb49bd7a8180",
+      "n_ways": 133,
+      "n_nodes": 2333,
+      "requests_issued": 1,
+      "bytes_downloaded": 194048
+    },
+    "RE_068": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](9.125422,78.162398,9.574578,78.617602);way[\"highway\"=\"trunk\"](9.125422,78.162398,9.574578,78.617602);way[\"highway\"=\"primary\"](9.125422,78.162398,9.574578,78.617602);way[\"highway\"=\"secondary\"](9.125422,78.162398,9.574578,78.617602););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        9.125422206252246,
+        78.16239836252754,
+        9.574577793747753,
+        78.61760163747246
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:28:01Z",
+      "response_sha256": "4e72d9a44ae3d282761cc9891a1373b9a21452dd49eb5b1fc719937b9cf7bb0d",
+      "n_ways": 307,
+      "n_nodes": 7047,
+      "requests_issued": 1,
+      "bytes_downloaded": 581569
+    },
+    "RE_069": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](13.805422,77.788517,14.254578,78.251483);way[\"highway\"=\"trunk\"](13.805422,77.788517,14.254578,78.251483);way[\"highway\"=\"primary\"](13.805422,77.788517,14.254578,78.251483);way[\"highway\"=\"secondary\"](13.805422,77.788517,14.254578,78.251483););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        13.805422206252246,
+        77.7885168135551,
+        14.254577793747753,
+        78.25148318644489
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:28:01Z",
+      "response_sha256": "88400a9004555631350c84feb0e5a42deebe4bae1732f5c0ef34fac6ddd9e0bc",
+      "n_ways": 304,
+      "n_nodes": 11525,
+      "requests_issued": 1,
+      "bytes_downloaded": 836402
+    },
+    "RE_070": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](23.845422,75.514035,24.294578,76.005965);way[\"highway\"=\"trunk\"](23.845422,75.514035,24.294578,76.005965);way[\"highway\"=\"primary\"](23.845422,75.514035,24.294578,76.005965);way[\"highway\"=\"secondary\"](23.845422,75.514035,24.294578,76.005965););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        23.845422206252245,
+        75.51403502356881,
+        24.294577793747756,
+        76.0059649764312
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:30:11Z",
+      "response_sha256": "0b3c36faf4b7aacb8ed6498784051dc60862ccc47bb22bd7be7c298c9b433402",
+      "n_ways": 207,
+      "n_nodes": 4683,
+      "requests_issued": 1,
+      "bytes_downloaded": 397345
+    },
+    "RE_071": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.005422,71.947390,22.454578,72.432610);way[\"highway\"=\"trunk\"](22.005422,71.947390,22.454578,72.432610);way[\"highway\"=\"primary\"](22.005422,71.947390,22.454578,72.432610);way[\"highway\"=\"secondary\"](22.005422,71.947390,22.454578,72.432610););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.005422206252245,
+        71.94738961197504,
+        22.454577793747756,
+        72.43261038802495
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:30:11Z",
+      "response_sha256": "2882697a405ee56d5f13d2ce17c968e75e644398f60f85f560ca67bc55cfb3c1",
+      "n_ways": 194,
+      "n_nodes": 1842,
+      "requests_issued": 1,
+      "bytes_downloaded": 212105
+    },
+    "RE_072": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](23.625422,69.404454,24.074578,69.895546);way[\"highway\"=\"trunk\"](23.625422,69.404454,24.074578,69.895546);way[\"highway\"=\"primary\"](23.625422,69.404454,24.074578,69.895546);way[\"highway\"=\"secondary\"](23.625422,69.404454,24.074578,69.895546););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        23.625422206252246,
+        69.4044543672748,
+        24.074577793747757,
+        69.89554563272522
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:30:11Z",
+      "response_sha256": "cdf152b141e8dca65cc3fab7fc965553b8f416c4519814d9bb82d0da9bc7d3b8",
+      "n_ways": 77,
+      "n_nodes": 1123,
+      "requests_issued": 1,
+      "bytes_downloaded": 96818
+    },
+    "RE_073": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](13.745422,78.278577,14.194578,78.741423);way[\"highway\"=\"trunk\"](13.745422,78.278577,14.194578,78.741423);way[\"highway\"=\"primary\"](13.745422,78.278577,14.194578,78.741423);way[\"highway\"=\"secondary\"](13.745422,78.278577,14.194578,78.741423););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        13.745422206252247,
+        78.27857724493003,
+        14.194577793747754,
+        78.74142275506998
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:30:11Z",
+      "response_sha256": "98b42ef59afe51cdc73c3e11baf9397035300176d396d94d7148b7e76c4980aa",
+      "n_ways": 248,
+      "n_nodes": 19591,
+      "requests_issued": 1,
+      "bytes_downloaded": 1308688
+    },
+    "RE_076": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](8.725422,77.562654,9.174578,78.017346);way[\"highway\"=\"trunk\"](8.725422,77.562654,9.174578,78.017346);way[\"highway\"=\"primary\"](8.725422,77.562654,9.174578,78.017346);way[\"highway\"=\"secondary\"](8.725422,77.562654,9.174578,78.017346););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        8.725422206252246,
+        77.56265415218013,
+        9.174577793747753,
+        78.01734584781988
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T01:01:36Z",
+      "response_sha256": "5362e765141f24557b9849f1f68562d80a7fff2edd6b1faae57bc8affb7f1c88",
+      "n_ways": 435,
+      "n_nodes": 10339,
+      "requests_issued": 1,
+      "bytes_downloaded": 833392
+    },
+    "TL_044": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](21.855422,75.847648,22.304578,76.332352);way[\"highway\"=\"trunk\"](21.855422,75.847648,22.304578,76.332352);way[\"highway\"=\"primary\"](21.855422,75.847648,22.304578,76.332352);way[\"highway\"=\"secondary\"](21.855422,75.847648,22.304578,76.332352););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        21.855422206252243,
+        75.84764809355309,
+        22.304577793747754,
+        76.33235190644692
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T01:00:35Z",
+      "response_sha256": "c2d7345eea10720487208254315b5d58123e8a500fbd957fa0b12f4581f3d4e2",
+      "n_ways": 542,
+      "n_nodes": 8651,
+      "requests_issued": 1,
+      "bytes_downloaded": 739516
+    },
+    "TL_047": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](16.265422,80.385789,16.714578,80.854211);way[\"highway\"=\"trunk\"](16.265422,80.385789,16.714578,80.854211);way[\"highway\"=\"primary\"](16.265422,80.385789,16.714578,80.854211);way[\"highway\"=\"secondary\"](16.265422,80.385789,16.714578,80.854211););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        16.265422206252243,
+        80.38578893909609,
+        16.714577793747754,
+        80.85421106090392
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:38:19Z",
+      "response_sha256": "7c78cb33536387e5fc1210511b3d8ba28aec3776954d532ffe442ac3fd92d973",
+      "n_ways": 1869,
+      "n_nodes": 33636,
+      "requests_issued": 1,
+      "bytes_downloaded": 2905256
+    },
+    "TL_049": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](28.075422,76.924936,28.524578,77.435064);way[\"highway\"=\"trunk\"](28.075422,76.924936,28.524578,77.435064);way[\"highway\"=\"primary\"](28.075422,76.924936,28.524578,77.435064);way[\"highway\"=\"secondary\"](28.075422,76.924936,28.524578,77.435064););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        28.075422206252245,
+        76.92493632022142,
+        28.524577793747756,
+        77.4350636797786
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:38:19Z",
+      "response_sha256": "4e2c2a8d00cc631683052955f1e675676063c732d174b0ef84db252ac43e2229",
+      "n_ways": 2627,
+      "n_nodes": 22490,
+      "requests_issued": 1,
+      "bytes_downloaded": 2735353
+    },
+    "TL_051": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](16.685422,79.495273,17.134578,79.964727);way[\"highway\"=\"trunk\"](16.685422,79.495273,17.134578,79.964727);way[\"highway\"=\"primary\"](16.685422,79.495273,17.134578,79.964727);way[\"highway\"=\"secondary\"](16.685422,79.495273,17.134578,79.964727););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        16.685422206252245,
+        79.49527328806349,
+        17.134577793747756,
+        79.96472671193652
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:38:19Z",
+      "response_sha256": "94a53b1acc21ec75403b6ccb5d6e27c4eb9744a6dc43c935f2d2f5d08788a274",
+      "n_ways": 266,
+      "n_nodes": 5923,
+      "requests_issued": 1,
+      "bytes_downloaded": 468388
+    },
+    "TL_052": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](25.775422,79.520134,26.224578,80.019866);way[\"highway\"=\"trunk\"](25.775422,79.520134,26.224578,80.019866);way[\"highway\"=\"primary\"](25.775422,79.520134,26.224578,80.019866);way[\"highway\"=\"secondary\"](25.775422,79.520134,26.224578,80.019866););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        25.775422206252244,
+        79.52013431088861,
+        26.224577793747756,
+        80.01986568911138
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:39:20Z",
+      "response_sha256": "98063f8c71bd23592d9ee6d9d58ad7ed3cf70751d6aaf0d6d6edb713e7e46f66",
+      "n_ways": 61,
+      "n_nodes": 2602,
+      "requests_issued": 1,
+      "bytes_downloaded": 187382
+    },
+    "TL_053": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](24.455422,82.392846,24.904578,82.887154);way[\"highway\"=\"trunk\"](24.455422,82.392846,24.904578,82.887154);way[\"highway\"=\"primary\"](24.455422,82.392846,24.904578,82.887154);way[\"highway\"=\"secondary\"](24.455422,82.392846,24.904578,82.887154););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        24.455422206252244,
+        82.39284564049574,
+        24.904577793747755,
+        82.88715435950427
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:39:20Z",
+      "response_sha256": "2a820a8b6836976b73c78fb80b130ac7768548ba665d83f63de853c9ffffbc6f",
+      "n_ways": 69,
+      "n_nodes": 3295,
+      "requests_issued": 1,
+      "bytes_downloaded": 228237
+    },
+    "TL_054": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](16.975422,74.834909,17.424578,75.305091);way[\"highway\"=\"trunk\"](16.975422,74.834909,17.424578,75.305091);way[\"highway\"=\"primary\"](16.975422,74.834909,17.424578,75.305091);way[\"highway\"=\"secondary\"](16.975422,74.834909,17.424578,75.305091););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        16.975422206252244,
+        74.8349085306938,
+        17.424577793747755,
+        75.30509146930619
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:39:20Z",
+      "response_sha256": "c56235f943693f6c0c61244f0b95efcc19fe737c715c1b3ffa34b693a8cca19d",
+      "n_ways": 260,
+      "n_nodes": 8976,
+      "requests_issued": 1,
+      "bytes_downloaded": 654536
+    },
+    "TL_055": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](19.885422,78.880842,20.334578,79.359158);way[\"highway\"=\"trunk\"](19.885422,78.880842,20.334578,79.359158);way[\"highway\"=\"primary\"](19.885422,78.880842,20.334578,79.359158);way[\"highway\"=\"secondary\"](19.885422,78.880842,20.334578,79.359158););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        19.885422206252244,
+        78.88084174579579,
+        20.334577793747755,
+        79.35915825420422
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:40:19Z",
+      "response_sha256": "789b9a191e65dde3966eea609abeeeee697c9d2a59401bca2963c984e20a72fd",
+      "n_ways": 344,
+      "n_nodes": 7045,
+      "requests_issued": 1,
+      "bytes_downloaded": 580264
+    },
+    "TL_056": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](25.525422,71.130663,25.974578,71.629337);way[\"highway\"=\"trunk\"](25.525422,71.130663,25.974578,71.629337);way[\"highway\"=\"primary\"](25.525422,71.130663,25.974578,71.629337);way[\"highway\"=\"secondary\"](25.525422,71.130663,25.974578,71.629337););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        25.525422206252244,
+        71.13066255939762,
+        25.974577793747756,
+        71.62933744060237
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:41:21Z",
+      "response_sha256": "7a452dee5dbba1b05f6e152fe896b5acdd4db903094debaf42bb156fca7e5e9b",
+      "n_ways": 113,
+      "n_nodes": 1702,
+      "requests_issued": 1,
+      "bytes_downloaded": 147569
+    },
+    "TL_057": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](22.985422,78.425646,23.434578,78.914354);way[\"highway\"=\"trunk\"](22.985422,78.425646,23.434578,78.914354);way[\"highway\"=\"primary\"](22.985422,78.425646,23.434578,78.914354);way[\"highway\"=\"secondary\"](22.985422,78.425646,23.434578,78.914354););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        22.985422206252245,
+        78.42564578103536,
+        23.434577793747756,
+        78.91435421896465
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:41:21Z",
+      "response_sha256": "1903a70544ec08583a9328954d1024b6a78fbdd59cc0a2f4f407e1aaa2a1ce95",
+      "n_ways": 142,
+      "n_nodes": 11003,
+      "requests_issued": 1,
+      "bytes_downloaded": 733996
+    },
+    "TL_058": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](17.805422,78.283825,18.254578,78.756175);way[\"highway\"=\"trunk\"](17.805422,78.283825,18.254578,78.756175);way[\"highway\"=\"primary\"](17.805422,78.283825,18.254578,78.756175);way[\"highway\"=\"secondary\"](17.805422,78.283825,18.254578,78.756175););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        17.805422206252246,
+        78.28382472117613,
+        18.254577793747757,
+        78.75617527882386
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:42:19Z",
+      "response_sha256": "fe59dc6338a32f539b037455c829ea7d363763611d39c05c9332900f2c2135e1",
+      "n_ways": 403,
+      "n_nodes": 8039,
+      "requests_issued": 1,
+      "bytes_downloaded": 660026
+    },
+    "TL_059": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](26.765422,70.847973,27.214578,71.352027);way[\"highway\"=\"trunk\"](26.765422,70.847973,27.214578,71.352027);way[\"highway\"=\"primary\"](26.765422,70.847973,27.214578,71.352027);way[\"highway\"=\"secondary\"](26.765422,70.847973,27.214578,71.352027););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        26.765422206252243,
+        70.84797285836154,
+        27.214577793747754,
+        71.35202714163844
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:42:19Z",
+      "response_sha256": "143f64000ce4b0f4acfff49a9eea4e78872848e3229518dfb820f8ec778a7c00",
+      "n_ways": 124,
+      "n_nodes": 1968,
+      "requests_issued": 1,
+      "bytes_downloaded": 168200
+    },
+    "TL_060": {
+      "query": "[out:json][timeout:170];(way[\"highway\"=\"motorway\"](27.775422,74.295650,28.224578,74.804350);way[\"highway\"=\"trunk\"](27.775422,74.295650,28.224578,74.804350);way[\"highway\"=\"primary\"](27.775422,74.295650,28.224578,74.804350);way[\"highway\"=\"secondary\"](27.775422,74.295650,28.224578,74.804350););out geom;",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "bbox": [
+        27.775422206252244,
+        74.29564991675147,
+        28.224577793747756,
+        74.80435008324852
+      ],
+      "bbox_buffer_km": 25.0,
+      "retrieval_date": "2026-10-15",
+      "osm_extract_date": "2026-10-15T00:43:18Z",
+      "response_sha256": "6a0fcef4f24fd266f261d7715bfa8f319f764ae99fbf02fd671874c56a2a337f",
+      "n_ways": 44,
+      "n_nodes": 2802,
+      "requests_issued": 1,
+      "bytes_downloaded": 189186
+    }
+  },
+  "failures": {},
+  "totals": {
+    "tiles": 81,
+    "requests_issued": 81,
+    "bytes_downloaded": 100078604
+  }
+}

@@ -1,0 +1,2968 @@
+{
+  "families": {
+    "wx": {
+      "sources": {
+        "up_district_panel": {
+          "covered": 11,
+          "no_coverage": 89,
+          "by_reason_code": {
+            "asset_coordinate_unverified": 19,
+            "no_district_within_75km": 2,
+            "non_UP_asset": 68
+          }
+        },
+        "nasa_power_point": {
+          "covered": 81,
+          "no_coverage": 19,
+          "by_reason_code": {
+            "asset_coordinate_unverified": 19
+          }
+        }
+      }
+    },
+    "rd": {
+      "sources": {
+        "osm_highways": {
+          "covered": 78,
+          "no_coverage": 22,
+          "by_reason_code": {
+            "asset_coordinate_unverified": 19,
+            "no_nh_in_25km": 3
+          }
+        }
+      }
+    },
+    "mt": {
+      "sources": {
+        "portwatch_ports": {
+          "covered": 81,
+          "no_coverage": 19,
+          "by_reason_code": {
+            "asset_coordinate_unverified": 19
+          }
+        },
+        "hdx_sea_ports": {
+          "covered": 81,
+          "no_coverage": 19,
+          "by_reason_code": {
+            "asset_coordinate_unverified": 19
+          }
+        },
+        "natural_earth_coastline": {
+          "covered": 81,
+          "no_coverage": 19,
+          "by_reason_code": {
+            "asset_coordinate_unverified": 19
+          }
+        }
+      },
+      "throughput": {
+        "status": "unavailable",
+        "reason_code": "throughput_gated",
+        "explanation": "No licenced programmatic throughput (TEU) source exists: official IPA/Sagarmala tables are HTML/PDF-only and unreachable from this network. PortWatch vessel counts are activity, not throughput, and are never presented as such. mt_throughput_teu_yr is NULL on every row."
+      }
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "GP_081",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_082",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_083",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_084",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_085",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "no_district_within_75km"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_086",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_087",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "GP_088",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_089",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_090",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_091",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_092",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "GP_093",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_094",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "no_nh_in_25km"
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_095",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_096",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_097",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "no_nh_in_25km"
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_098",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "GP_099",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "GP_100",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_001",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_002",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_003",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_004",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_005",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_006",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_007",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_008",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_009",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_010",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_011",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_012",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "HW_013",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_014",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_015",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_016",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "HW_017",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_018",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_019",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "HW_020",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "PT_021",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_022",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_023",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_024",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_025",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_026",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_027",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_028",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_029",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_030",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_031",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_032",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_033",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_034",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_035",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_036",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_037",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_038",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_039",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "PT_040",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_061",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_062",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "no_nh_in_25km"
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_063",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_064",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "no_district_within_75km"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_065",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_066",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_067",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_068",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_069",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_070",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_071",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_072",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_073",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_074",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "RE_075",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "RE_076",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "RE_077",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "RE_078",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "RE_079",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "RE_080",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_041",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_042",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_043",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_044",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_045",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_046",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_047",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_048",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_049",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_050",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "nasa_power_point": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "osm_highways": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "portwatch_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "hdx_sea_ports": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        },
+        "natural_earth_coastline": {
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified"
+        }
+      }
+    },
+    {
+      "asset_id": "TL_051",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_052",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_053",
+      "families": {
+        "up_district_panel": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_054",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_055",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_056",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_057",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_058",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_059",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    },
+    {
+      "asset_id": "TL_060",
+      "families": {
+        "up_district_panel": {
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset"
+        },
+        "nasa_power_point": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "osm_highways": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "portwatch_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "hdx_sea_ports": {
+          "status": "covered",
+          "reason_code": null
+        },
+        "natural_earth_coastline": {
+          "status": "covered",
+          "reason_code": null
+        }
+      }
+    }
+  ]
+}

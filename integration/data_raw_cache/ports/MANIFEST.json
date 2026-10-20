@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "key": "portwatch",
+      "url": "https://data.humdata.org/dataset/6cd84ca4-63e9-43b8-8dd9-32d4a0f3d128/resource/eddb3a76-29c1-45cb-bf7f-0fc62a375336/download/ports.csv",
+      "endpoint": "data.humdata.org",
+      "filename": "portwatch_ports.csv",
+      "licence": "Other (HDX); see IMF copyright and terms https://www.imf.org/en/about/copyright-and-terms; source: UN Global Platform; IMF PortWatch"
+    },
+    {
+      "key": "hotosm_ports",
+      "url": "https://production-raw-data-api.s3.amazonaws.com/ISO3/IND/sea_ports/hotosm_ind_sea_ports_osm_geojson.zip",
+      "endpoint": "production-raw-data-api.s3.amazonaws.com",
+      "filename": "hotosm_ind_sea_ports_geojson.zip",
+      "licence": "ODbL 1.0 (HDX licence hdx-odc-odbl); (c) OpenStreetMap contributors"
+    },
+    {
+      "key": "ne_coastline",
+      "url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_coastline.zip",
+      "endpoint": "naturalearth.s3.amazonaws.com",
+      "filename": "ne_10m_coastline.zip",
+      "licence": "Public domain (Natural Earth)"
+    }
+  ],
+  "files": {
+    "portwatch": {
+      "url": "https://data.humdata.org/dataset/6cd84ca4-63e9-43b8-8dd9-32d4a0f3d128/resource/eddb3a76-29c1-45cb-bf7f-0fc62a375336/download/ports.csv",
+      "endpoint": "data.humdata.org",
+      "filename": "portwatch_ports.csv",
+      "licence": "Other (HDX); see IMF copyright and terms https://www.imf.org/en/about/copyright-and-terms; source: UN Global Platform; IMF PortWatch",
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "a342c7cbff3c4a852c4cc1047d0169fe34df919c826a10153232788613bf90eb",
+      "bytes_downloaded": 451506,
+      "n_rows": 2065,
+      "n_india_rows": 37
+    },
+    "hotosm_ports": {
+      "url": "https://production-raw-data-api.s3.amazonaws.com/ISO3/IND/sea_ports/hotosm_ind_sea_ports_osm_geojson.zip",
+      "endpoint": "production-raw-data-api.s3.amazonaws.com",
+      "filename": "hotosm_ind_sea_ports_geojson.zip",
+      "licence": "ODbL 1.0 (HDX licence hdx-odc-odbl); (c) OpenStreetMap contributors",
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "85323d5b60f52933d47b7d758045b66b055149f75f2458cf96e2c407d27531b0",
+      "bytes_downloaded": 87467,
+      "n_features": 772
+    },
+    "ne_coastline": {
+      "url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_coastline.zip",
+      "endpoint": "naturalearth.s3.amazonaws.com",
+      "filename": "ne_10m_coastline.zip",
+      "licence": "Public domain (Natural Earth)",
+      "retrieval_date": "2026-10-15",
+      "response_sha256": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
+      "bytes_downloaded": 3069451,
+      "n_shp_records": 4133
+    }
+  }
+}

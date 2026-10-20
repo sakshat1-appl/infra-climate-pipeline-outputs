@@ -1,0 +1,132 @@
+{
+  "generated_date": "2026-10-14",
+  "total_assets": 100,
+  "usable_with_coordinates": 81,
+  "counts_by_sector": {
+    "Gas Pipelines": 20,
+    "Highways": 20,
+    "Ports": 20,
+    "Power Tx": 20,
+    "Renewable Energy": 20
+  },
+  "counts_by_verification_status": {
+    "approximate_midpoint": 45,
+    "unverified": 19,
+    "verified": 36
+  },
+  "unverified_assets": [
+    {
+      "asset_id": "GP_087",
+      "reason": "Names no defined route; the Assam grid has several proposed sections and none matches this label."
+    },
+    {
+      "asset_id": "GP_092",
+      "reason": "Offshore-basin label with no defined onshore route or endpoints."
+    },
+    {
+      "asset_id": "GP_098",
+      "reason": "No documented pipeline between Chhajli (Sangrur village) and Ludhiana found in PNGRB or GAIL records."
+    },
+    {
+      "asset_id": "HW_012",
+      "reason": "Could not pin referent; 'Line' suffix matches no documented highway asset and Kolkata-Dankuni is only a generic NH-19 stretch."
+    },
+    {
+      "asset_id": "HW_016",
+      "reason": "No documented expressway by the name 'Trans-Haryana Exp' found in NHAI or state PWD records."
+    },
+    {
+      "asset_id": "HW_020",
+      "reason": "Prosperity Corridor is the tagline of the Samruddhi Mahamarg already covered by HW_006; no distinct referent can be pinned."
+    },
+    {
+      "asset_id": "RE_074",
+      "reason": "Could not pin a Kadapa Ultra Mega Solar Park site; several Kadapa-district proposals exist with no authoritative site coordinate."
+    },
+    {
+      "asset_id": "RE_075",
+      "reason": "No documented wind station by the name 'Devasri' found in MNRE, NIWE or state records."
+    },
+    {
+      "asset_id": "RE_077",
+      "reason": "Generic district label; Tirunelveli hosts several wind clusters and no single 'Wind Grid' facility can be pinned."
+    },
+    {
+      "asset_id": "RE_078",
+      "reason": "Cannot distinguish from the Bhadla park cluster in Phalodi district (RE_061); no separate documented 'Phalodi Solar Array' site found."
+    },
+    {
+      "asset_id": "RE_079",
+      "reason": "No documented solar park at Tarikere (Chikkamagaluru district) found in MNRE or KREDL records."
+    },
+    {
+      "asset_id": "RE_080",
+      "reason": "Generic label; no documented 'Belgaum Green Power' facility found in MNRE or state records."
+    },
+    {
+      "asset_id": "TL_041",
+      "reason": "IndiGrid owns several lines and none is documented as 'Line 1'; referent cannot be pinned."
+    },
+    {
+      "asset_id": "TL_042",
+      "reason": "Generic regional label; no defined endpoints found in Powergrid project lists."
+    },
+    {
+      "asset_id": "TL_043",
+      "reason": "Generic owner-region label; Adani Transmission has many northern assets and none matches this name."
+    },
+    {
+      "asset_id": "TL_045",
+      "reason": "Numbered-link label with no documented endpoints in CEA or Powergrid records."
+    },
+    {
+      "asset_id": "TL_046",
+      "reason": "Generic interconnector label; no defined endpoints found."
+    },
+    {
+      "asset_id": "TL_048",
+      "reason": "Generic inter-regional label; several NR-WR links exist and none matches this name."
+    },
+    {
+      "asset_id": "TL_050",
+      "reason": "Names a strengthening programme for the North-Eastern Region, not a single line with endpoints."
+    }
+  ],
+  "anchor_assets": [
+    {
+      "asset_id": "HW_001",
+      "coord_role": "representative_midpoint",
+      "error_km": 0.613
+    },
+    {
+      "asset_id": "HW_004",
+      "coord_role": "representative_midpoint",
+      "error_km": 0.0
+    },
+    {
+      "asset_id": "PT_021",
+      "coord_role": "point",
+      "error_km": 0.0
+    },
+    {
+      "asset_id": "PT_022",
+      "coord_role": "point",
+      "error_km": 0.0
+    },
+    {
+      "asset_id": "PT_030",
+      "coord_role": "point",
+      "error_km": 0.0
+    },
+    {
+      "asset_id": "RE_061",
+      "coord_role": "point",
+      "error_km": 0.0
+    },
+    {
+      "asset_id": "RE_068",
+      "coord_role": "point",
+      "error_km": 0.0
+    }
+  ]
+}

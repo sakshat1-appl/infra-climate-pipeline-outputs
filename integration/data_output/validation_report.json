@@ -1,0 +1,109 @@
+{
+  "gates": [
+    {
+      "name": "schema_dtypes",
+      "status": "pass",
+      "value": {
+        "artifacts_checked": 6,
+        "bad_cells": 0
+      },
+      "threshold": "exact column sets",
+      "message": "all 6 artifacts match their schemas"
+    },
+    {
+      "name": "ranges",
+      "status": "pass",
+      "value": {
+        "daily_rows_scanned": 1176250,
+        "bad_cells": 0,
+        "range_problems": 0
+      },
+      "threshold": "precip 0-500, temp -10..55, non-negative, boolean",
+      "message": "scanned 1176250 daily rows, all in range"
+    },
+    {
+      "name": "anchor_tolerance",
+      "status": "pass",
+      "value": {
+        "anchors": 7,
+        "worst_point_km": 0.0,
+        "worst_midpoint_km": 0.613
+      },
+      "threshold": "point<=2.0km, midpoint<=10.0km",
+      "message": "7 anchors within tolerance"
+    },
+    {
+      "name": "fabricated_tripwire",
+      "status": "pass",
+      "value": {
+        "assets_compared": 81,
+        "min_verified_to_master_km": 26.1,
+        "justified_exceptions": [
+          "PT_040 26.1 km (documented in sidecar notes)"
+        ]
+      },
+      "threshold": ">50 km separation",
+      "message": "min separation 26.1 km over 81 assets; justified: PT_040 26.1 km (documented in sidecar notes)"
+    },
+    {
+      "name": "reconcile_up_point",
+      "status": "pass",
+      "value": {
+        "n_pairs": 2750,
+        "pearson_r": 0.9818,
+        "mad_mm": 8.147
+      },
+      "threshold": "r>=0.95 and MAD<=15mm",
+      "message": "r=0.9818, MAD=8.147 mm over 2750 shared asset-months"
+    },
+    {
+      "name": "determinism",
+      "status": "pass",
+      "value": {
+        "feature_matrix_asset.csv": "3279db4ac9098cbda578fba00baa101ebee857b7ca09c204f52a7b7cd164ad80",
+        "feature_matrix_asset_month.csv": "42237f52efd1df4644109d0c270fcaff3a12944dc64ad9fcf09d4d1a3cfb76ee",
+        "coverage_report.json": "c9dc06fa4664c289445cd1bd2b2236791147560b504268a6a7c230c5739d658a"
+      },
+      "threshold": "byte-identical rebuilds",
+      "message": "3 artifacts reproduce exactly"
+    },
+    {
+      "name": "no_imputation",
+      "status": "pass",
+      "value": {
+        "is_imputed_cells_checked": 618840,
+        "null_cells": 684,
+        "explained": 684
+      },
+      "threshold": "NULLs == explanations",
+      "message": "618840 is_imputed cells all 0; 684 NULLs all explained"
+    },
+    {
+      "name": "licence_attribution",
+      "status": "pass",
+      "value": {
+        "problems": 0
+      },
+      "threshold": "non-empty licence",
+      "message": "all families attributed"
+    },
+    {
+      "name": "coverage_accounting",
+      "status": "pass",
+      "value": {
+        "assets": 100,
+        "sources_per_asset": 6,
+        "problems": 0
+      },
+      "threshold": "6x100 consistent",
+      "message": "100 assets x 6 sources all accounted"
+    }
+  ],
+  "overall": "pass",
+  "artifacts": {
+    "feature_matrix_asset.csv": "3279db4ac9098cbda578fba00baa101ebee857b7ca09c204f52a7b7cd164ad80",
+    "feature_matrix_asset_month.csv": "42237f52efd1df4644109d0c270fcaff3a12944dc64ad9fcf09d4d1a3cfb76ee",
+    "coverage_report.json": "c9dc06fa4664c289445cd1bd2b2236791147560b504268a6a7c230c5739d658a",
+    "weather_coverage.json": "2c97bcfbf882f37a3ca69be5272b81259c7e7e283a946535d6448248627ca5f1"
+  }
+}

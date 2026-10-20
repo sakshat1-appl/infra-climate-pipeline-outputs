@@ -1,0 +1,6155 @@
+{
+  "family": "wx",
+  "sources": [
+    {
+      "name": "up_district_panel",
+      "source_name": "NASA POWER",
+      "description": "UP district panel join: nearest district centroid within 75 km, assets inside the UP bounding box only.",
+      "status_counts": {
+        "covered": 11,
+        "no_coverage": 89
+      },
+      "by_reason_code": {
+        "asset_coordinate_unverified": 19,
+        "no_district_within_75km": 2,
+        "non_UP_asset": 68
+      }
+    },
+    {
+      "name": "nasa_power_point",
+      "source_name": "NASA POWER",
+      "description": "NASA POWER point API fetched at each asset's own coordinate; covers every asset with non-null coordinates.",
+      "status_counts": {
+        "covered": 81,
+        "no_coverage": 19
+      },
+      "by_reason_code": {
+        "asset_coordinate_unverified": 19
+      }
+    }
+  ],
+  "join_rule": {
+    "description": "UP district source: each asset with non-null coordinates and verification_status != 'unverified' is joined to the nearest UP district centroid by haversine distance (mean Earth radius 6371.0088 km) ONLY IF the asset lies inside the Uttar Pradesh bounding box (latitude 23.5..31.0, longitude 77.0..85.0) AND the distance is <= 75 km. The NASA POWER point source is joined at the asset's own coordinate (distance 0) for every asset with non-null coordinates. UP rainfall is never joined to a non-UP asset."
+  },
+  "assets": [
+    {
+      "asset_id": "GP_081",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            22.57,
+            74.99
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 8.639
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 266.98,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 211.69
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_082",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            19.34,
+            77.63
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.689
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 489.052,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 481.641
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_083",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            15.28,
+            75.38
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 10.144
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 135.614,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 130.925
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_084",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            10.35,
+            76.2
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 6.749
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 40.513,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 8.654
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_085",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "no_district_within_75km",
+          "nearest_district": "Ballia",
+          "distance_km": 180.868,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            24.27,
+            84.87
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.598
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 306.375,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 371.708
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_086",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Kanpur",
+          "distance_km": 39.884,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.46,
+            79.93
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 9.216
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 37.054,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 849.123
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_087",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_088",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            17.33,
+            82.78
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 10.938
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.973,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.975
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_089",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.9,
+            73.66
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 18.21
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 543.732,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 517.256
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_090",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            9.37,
+            78.83
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.861
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 95.503,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 12.462
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_091",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            25.61,
+            73.68
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 20.508
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 440.086,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 376.994
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_092",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_093",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            22.43,
+            71.87
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 12.592
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 108.522,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 33.29
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_094",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            24.04,
+            70.19
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "no_nh_in_25km",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 114.202,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 104.711
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_095",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            18.83,
+            82.59
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.838
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 143.406,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 135.56
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_096",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            19.47,
+            82.46
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 11.672
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 212.794,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 199.194
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_097",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            25.97,
+            88.86
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "no_nh_in_25km",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 140.905,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 310.849
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_098",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_099",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            31.47,
+            74.9
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 4.445
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 765.301,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1022.759
+        }
+      ]
+    },
+    {
+      "asset_id": "GP_100",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            19.57,
+            84.5
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 11.802
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 55.627,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 53.058
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_001",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            18.75,
+            73.41
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.6
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 40.102,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 42.102
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_002",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Mathura",
+          "distance_km": 44.869,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            27.89,
+            77.61
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 14.895
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 310.479,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 781.596
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_003",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            12.63,
+            77.12
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.316
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 221.3,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 201.316
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_004",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Aligarh",
+          "distance_km": 33.366,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            27.81,
+            77.74
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 17.687
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 294.955,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 782.763
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_005",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            22.67,
+            72.88
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.681
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 111.599,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 43.114
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_006",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            20.18,
+            76.07
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 12.266
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 352.959,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 332.103
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_007",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Ghaziabad",
+          "distance_km": 12.84,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            28.55,
+            77.4
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 9.411
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 368.824,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 828.445
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_008",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.74,
+            75.33
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.138
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 496.161,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 551.552
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_009",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            21.14,
+            72.73
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.764
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 5.497,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.47
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_010",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            17.4,
+            78.47
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.034
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 319.358,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 269.573
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_011",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            13.05,
+            80.16
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.252
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 13.816,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 13.45
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_012",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_013",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Kannauj",
+          "distance_km": 40.991,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            27.0,
+            79.5
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 15.994
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 99.979,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 847.349
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_014",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Sultanpur",
+          "distance_km": 28.364,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.18,
+            82.34
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 10.31
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 204.865,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 701.495
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_015",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Hamirpur",
+          "distance_km": 21.716,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.0,
+            79.94
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 21.417
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 62.064,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 824.42
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_016",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_017",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Ghaziabad",
+          "distance_km": 42.043,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            28.52,
+            77.04
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.501
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 395.2,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 806.46
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_018",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            24.2,
+            75.4
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 25.469
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 400.475,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 331.901
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_019",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            32.31,
+            74.91
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 34.51
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 833.366,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1107.313
+        }
+      ]
+    },
+    {
+      "asset_id": "HW_020",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_021",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            18.949,
+            72.937
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.653
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.735,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.158
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_022",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            22.73,
+            69.71
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 17.91
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 9.747,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.936
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_023",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            13.099,
+            80.294
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.826
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.042,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.334
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_024",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            17.686,
+            83.281
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 7.939
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.462,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.248
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_025",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            23.033,
+            70.217
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.172
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.648,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.994
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_026",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            20.265,
+            86.683
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.214
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.95,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.188
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_027",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            9.974,
+            76.263
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.652
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.66,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.705
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_028",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            21.096,
+            72.626
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.114
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.341,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.241
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_029",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            22.541,
+            88.304
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.669
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.739,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 40.009
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_030",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            8.75,
+            78.201
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.412
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.622,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.166
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_031",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            13.252,
+            80.332
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 16.724
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.106,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.307
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_032",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            15.41,
+            73.798
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.249
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.0,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.345
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_033",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            12.918,
+            74.802
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.755
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.716,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.171
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_034",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            20.906,
+            71.499
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 11.266
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.472,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.737
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_035",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            20.791,
+            86.96
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 23.016
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 4.068,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.123
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_036",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            16.969,
+            82.281
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.915
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.028,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.552
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_037",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            19.272,
+            84.907
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.052
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 3.737,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.905
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_038",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            10.84,
+            79.831
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.113
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.265,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.627
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_039",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            17.618,
+            83.229
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 11.414
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.0,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.259
+        }
+      ]
+    },
+    {
+      "asset_id": "PT_040",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            14.249,
+            80.132
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.474
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.561,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.93
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_061",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            27.5397,
+            71.9153
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 31.894
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 528.573,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 509.805
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_062",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            14.27,
+            77.28
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "no_nh_in_25km",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 296.723,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 283.251
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_063",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            15.68,
+            77.6
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 16.742
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 309.671,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 270.443
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_064",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "no_district_within_75km",
+          "nearest_district": "Chitrakoot",
+          "distance_km": 95.79,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            24.4802,
+            81.5744
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 8.571
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 252.943,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 644.954
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_065",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            23.91,
+            71.21
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 8.741
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 130.87,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 114.489
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_066",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            8.25,
+            77.57
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.283
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 16.443,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 12.513
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_067",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.9,
+            70.9
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.059
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 436.505,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 394.674
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_068",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            9.35,
+            78.39
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 20.889
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 65.355,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 26.64
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_069",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            14.03,
+            78.02
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.119
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 224.848,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 219.704
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_070",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            24.07,
+            75.76
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 5.256
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 418.901,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 352.666
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_071",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            22.23,
+            72.19
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.669
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 70.622,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.358
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_072",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            23.85,
+            69.65
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 7.576
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 109.61,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 84.435
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_073",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            13.97,
+            78.51
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 17.385
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 173.61,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 167.998
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_074",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_075",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_076",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            8.95,
+            77.79
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 2.222
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 43.662,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 43.784
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_077",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_078",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_079",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "RE_080",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_041",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_042",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_043",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_044",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            22.08,
+            76.09
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 4.877
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 365.612,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 307.692
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_045",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_046",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_047",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            16.49,
+            80.62
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.898
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 69.297,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 58.76
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_048",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_049",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Gautam Buddha Nagar",
+          "distance_km": 37.291,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            28.3,
+            77.18
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 9.03
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 370.259,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 793.426
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_050",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "nearest_asset_coordinate": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": null
+        },
+        {
+          "name": "osm_highways",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "OpenStreetMap",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": null,
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "no_coverage",
+          "reason_code": "asset_coordinate_unverified",
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": null,
+          "distance_km": null
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_051",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            16.91,
+            79.73
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.908
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 174.973,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 142.099
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_052",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Hamirpur",
+          "distance_km": 38.391,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.0,
+            79.77
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 12.685
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 73.265,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 809.52
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_053",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_district": "Mirzpur",
+          "distance_km": 50.684,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            24.68,
+            82.64
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 13.92
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 305.627,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 574.521
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_054",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            17.2,
+            75.07
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 8.055
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 191.402,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 191.019
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_055",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            20.11,
+            79.12
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 0.084
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 479.762,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 474.945
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_056",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            25.75,
+            71.38
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 1.622
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 323.333,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 304.636
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_057",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            23.21,
+            78.67
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 8.623
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 395.517,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 592.105
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_058",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            18.03,
+            78.52
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 7.59
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 349.333,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 317.239
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_059",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            26.99,
+            71.1
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 7.096
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 449.915,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 413.912
+        }
+      ]
+    },
+    {
+      "asset_id": "TL_060",
+      "family": "wx",
+      "sources": [
+        {
+          "name": "up_district_panel",
+          "status": "no_coverage",
+          "reason_code": "non_UP_asset",
+          "nearest_district": null,
+          "distance_km": null,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-14"
+        },
+        {
+          "name": "nasa_power_point",
+          "status": "covered",
+          "reason_code": null,
+          "nearest_asset_coordinate": [
+            28.0,
+            74.55
+          ],
+          "distance_km": 0.0,
+          "source_name": "NASA POWER",
+          "retrieval_date": "2026-10-15"
+        },
+        {
+          "name": "osm_highways",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "OpenStreetMap",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 5.271
+        },
+        {
+          "name": "portwatch_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "IMF PortWatch (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 594.78,
+          "throughput_status": "no_coverage",
+          "throughput_reason_code": "throughput_gated"
+        },
+        {
+          "name": "hdx_sea_ports",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "HOT Sea Ports of India (via HDX)",
+          "retrieval_date": "2026-10-15",
+          "distance_km": null
+        },
+        {
+          "name": "natural_earth_coastline",
+          "status": "covered",
+          "reason_code": null,
+          "source_name": "Natural Earth 1:10m coastline",
+          "retrieval_date": "2026-10-15",
+          "distance_km": 654.789
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "assets": 100,
+    "covered": 81,
+    "no_coverage": 19,
+    "covered_from_at_least_one_source": 81,
+    "per_source": {
+      "up_district_panel": {
+        "covered": 11,
+        "no_coverage": 89
+      },
+      "nasa_power_point": {
+        "covered": 81,
+        "no_coverage": 19
+      }
+    }
+  },
+  "rd": {
+    "family": "rd",
+    "sources": [
+      {
+        "name": "osm_highways",
+        "source_name": "OpenStreetMap",
+        "description": "OpenStreetMap highways (motorway/trunk/primary/secondary) fetched per asset tile (25 km buffer) from the Overpass API; national highways identified by ref tag (see NH_REF_RE in build_highway_features.py).",
+        "status_counts": {
+          "covered": 78,
+          "no_coverage": 22
+        },
+        "by_reason_code": {
+          "asset_coordinate_unverified": 19,
+          "no_nh_in_25km": 3
+        }
+      }
+    ],
+    "join_rule": {
+      "description": "Per asset with non-null coordinates: rd_dist_nh_m is the minimum geodesic distance to the nearest ref-tagged national-highway way in the asset tile; lengths are clipped to 10 km; node degree is the mean incident way-segment count over graph nodes within 10 km; corridor flag is true within 5 km of a corridors.yaml polyline. Assets with unverified coordinates receive no highway features."
+    },
+    "totals": {
+      "assets": 100,
+      "covered": 78,
+      "no_coverage": 22,
+      "per_source": {
+        "osm_highways": {
+          "covered": 78,
+          "no_coverage": 22
+        }
+      }
+    }
+  },
+  "mt": {
+    "family": "mt",
+    "sources": [
+      {
+        "name": "portwatch_ports",
+        "source_name": "IMF PortWatch (via HDX)",
+        "description": "IMF PortWatch global ports via HDX (2,065 rows, 37 for India); per asset the nearest India row with its vessel-call counts and trade shares (activity, not throughput).",
+        "status_counts": {
+          "covered": 81,
+          "no_coverage": 19
+        },
+        "by_reason_code": {
+          "asset_coordinate_unverified": 19
+        }
+      },
+      {
+        "name": "hdx_sea_ports",
+        "source_name": "HOT Sea Ports of India (via HDX)",
+        "description": "HOT Sea Ports of India (ODbL, 772 features); reference port polygons for the asset-inside-polygon test and port-boundary distances.",
+        "status_counts": {
+          "covered": 81,
+          "no_coverage": 19
+        },
+        "by_reason_code": {
+          "asset_coordinate_unverified": 19
+        }
+      },
+      {
+        "name": "natural_earth_coastline",
+        "source_name": "Natural Earth 1:10m coastline",
+        "description": "Natural Earth 1:10m coastline (public domain); geodesic distance to the nearest segment in the India window; coastal iff within 50 km.",
+        "status_counts": {
+          "covered": 81,
+          "no_coverage": 19
+        },
+        "by_reason_code": {
+          "asset_coordinate_unverified": 19
+        }
+      }
+    ],
+    "join_rule": {
+      "description": "Per asset with non-null coordinates (linear assets use their sidecar midpoint coordinate): geodesic distance to the nearest reference port feature (42 reference points plus 60 HOT port polygons; zero when inside a polygon); count of reference features within 100 km; inside-polygon flag; geodesic distance to the Natural Earth coastline. Unverified-coordinate assets receive no maritime features. Throughput is gated (throughput_gated): no licenced programmatic source exists."
+    },
+    "throughput": {
+      "status": "unavailable",
+      "reason_code": "throughput_gated",
+      "explanation": "No licenced programmatic throughput (TEU) source exists: official IPA/Sagarmala tables are HTML/PDF-only and unreachable from this network. PortWatch vessel counts are activity, not throughput, and are never presented as such. mt_throughput_teu_yr is NULL on every row."
+    },
+    "totals": {
+      "assets": 100,
+      "per_source": {
+        "portwatch_ports": {
+          "covered": 81,
+          "no_coverage": 19
+        },
+        "hdx_sea_ports": {
+          "covered": 81,
+          "no_coverage": 19
+        },
+        "natural_earth_coastline": {
+          "covered": 81,
+          "no_coverage": 19
+        }
+      }
+    }
+  }
+}

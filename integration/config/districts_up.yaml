@@ -1,0 +1,204 @@
+# Uttar Pradesh district normalisation map (Phase 3).
+#
+# Canonical list derived FROM THE DATA: each canonical name is the raw
+# DISTRICT label of UP_rainfall_dataset.csv normalised by stripping leading /
+# trailing whitespace, collapsing internal whitespace and title-casing.
+# No canonical name was invented; every alias below is a raw label observed
+# verbatim in the source CSV (73 distinct raw values -> 73 canonical names).
+#
+# Cross-check source (authoritative published list of UP districts):
+#   URL: https://up.gov.in/en/page/districts
+#   (Official State Portal, Government of Uttar Pradesh; 75 districts in
+#   18 divisions. Portal home page https://up.gov.in/en also states 75.)
+#   Retrieved: 2026-10-14.
+#
+# Differences between the canonical list and the published 75-district list
+# (verified by fetching the page on 2026-10-14):
+#   - Renamed districts already use their post-rename names in the rainfall
+#     file: Prayagraj (renamed from Allahabad, 2018) and Ayodhya (renamed
+#     from Faizabad, 2018). No aliasing needed.
+#   - File spellings kept as canonical (data-derived; not "corrected" to the
+#     portal spelling so the map stays a pure function of the data):
+#       Shahajanpur (portal: Shahjahanpur), Lalipur (portal: Lalitpur),
+#       Mirzpur (portal: Mirzapur), Kausambhi (portal: Kaushambi),
+#       Ambedkarnagar one word (portal: Ambedkar Nagar),
+#       Lakhimpur (portal: Lakhimpur Kheri),
+#       Kushinagar (portal district list spells it "Kushi Nagar"; its
+#       Gorakhpur division listing spells it "Kushinagar" - the file matches
+#       the division listing),
+#       Siddharth Nagar (portal uses this spelling in both its district list
+#       and its Basti division listing),
+#       Gautam Buddha Nagar (portal uses this spelling in both listings),
+#       Bijnor (portal uses this spelling in both listings),
+#       Bulandshahr (the portal's own district list spells it "Bulandshahar"),
+#       Budaun (portal district list; its Bareilly division listing spells it
+#       "Badaun"),
+#       Balrampur (portal district list; its Devipatan division listing has
+#       a "Balarampur" typo),
+#       Muzaffarnagar (portal district list spells it "Muzaffar Nagar").
+#     If you cannot confirm a name, it is left as the file spelling per the
+#     rule above; nothing here was invented to match the published list.
+#   - Districts absent from the rainfall file (present in the published 75):
+#       Unnao - no rows at all in UP_rainfall_dataset.csv.
+#       Kanpur Dehat - the file carries a single "kanpur" label whose
+#         centroid (26.44, 80.33) is Kanpur city, i.e. the Kanpur Nagar side;
+#         there is no separate Kanpur Dehat series. Canonical "Kanpur" is
+#         therefore documented as Kanpur-city (Nagar side), not the whole
+#         Kanpur division pair.
+#     75 published - 73 canonical = Unnao + Kanpur Dehat, both missing.
+#   - Amroha, Hapur, Sambhal and Shamli (carved out in 2011) are all present
+#     in the file, consistent with the published list.
+#
+# Rule for readers: normalise a raw label ONLY through the aliases map below.
+# A raw value with no entry here is an error, not a new district.
+
+canonical:
+  - "Agra"
+  - "Aligarh"
+  - "Ambedkarnagar"
+  - "Amethi"
+  - "Amroha"
+  - "Auraiya"
+  - "Ayodhya"
+  - "Azamgarh"
+  - "Baghpat"
+  - "Bahraich"
+  - "Ballia"
+  - "Balrampur"
+  - "Banda"
+  - "Barabanki"
+  - "Bareilly"
+  - "Basti"
+  - "Bhadohi"
+  - "Bijnor"
+  - "Budaun"
+  - "Bulandshahr"
+  - "Chandauli"
+  - "Chitrakoot"
+  - "Deoria"
+  - "Etah"
+  - "Etawah"
+  - "Farrukhabad"
+  - "Fatehpur"
+  - "Firozabad"
+  - "Gautam Buddha Nagar"
+  - "Ghaziabad"
+  - "Ghazipur"
+  - "Gonda"
+  - "Gorakhpur"
+  - "Hamirpur"
+  - "Hapur"
+  - "Hardoi"
+  - "Hathras"
+  - "Jalaun"
+  - "Jaunpur"
+  - "Jhansi"
+  - "Kannauj"
+  - "Kanpur"
+  - "Kasganj"
+  - "Kausambhi"
+  - "Kushinagar"
+  - "Lakhimpur"
+  - "Lalipur"
+  - "Lucknow"
+  - "Maharajganj"
+  - "Mahoba"
+  - "Mainpuri"
+  - "Mathura"
+  - "Mau"
+  - "Meerut"
+  - "Mirzpur"
+  - "Moradabad"
+  - "Muzaffarnagar"
+  - "Pilibhit"
+  - "Pratapgarh"
+  - "Prayagraj"
+  - "Raebareli"
+  - "Rampur"
+  - "Saharanpur"
+  - "Sambhal"
+  - "Sant Kabir Nagar"
+  - "Shahajanpur"
+  - "Shamli"
+  - "Shravasti"
+  - "Siddharth Nagar"
+  - "Sitapur"
+  - "Sonbhadra"
+  - "Sultanpur"
+  - "Varanasi"
+
+# Explicit raw-label -> canonical mapping (every observed variant).
+aliases:
+  "Agra": "Agra"
+  "Aligarh": "Aligarh"
+  "Ambedkarnagar": "Ambedkarnagar"
+  "Amethi": "Amethi"
+  "Auraiya": "Auraiya"
+  "Ayodhya": "Ayodhya"
+  "Azamgarh": "Azamgarh"
+  "Ballia": "Ballia"
+  "Banda": "Banda"
+  "Barabanki": "Barabanki"
+  "Deoria": "Deoria"
+  "Etah": "Etah"
+  "Etawah": "Etawah"
+  "Farrukhabad": "Farrukhabad"
+  "Fatehpur": "Fatehpur"
+  "Firozabad": "Firozabad"
+  "Gautam Buddha Nagar": "Gautam Buddha Nagar"
+  "Ghaziabad": "Ghaziabad"
+  "Ghazipur": "Ghazipur"
+  "Gonda": "Gonda"
+  "Gorakhpur": "Gorakhpur"
+  "Hamirpur": "Hamirpur"
+  "Hapur": "Hapur"
+  "Hardoi": "Hardoi"
+  "Hathras": "Hathras"
+  "Jalaun": "Jalaun"
+  "Jaunpur": "Jaunpur"
+  "Pilibhit": "Pilibhit"
+  "Pratapgarh": "Pratapgarh"
+  "Prayagraj": "Prayagraj"
+  "Rampur ": "Rampur"
+  "Saharanpur ": "Saharanpur"
+  "Sambhal": "Sambhal"
+  "Shahajanpur": "Shahajanpur"
+  "Shravasti": "Shravasti"
+  "Sonbhadra": "Sonbhadra"
+  "Sultanpur": "Sultanpur"
+  "Varanasi": "Varanasi"
+  "amroha": "Amroha"
+  "baghpat": "Baghpat"
+  "bahraich": "Bahraich"
+  "balrampur": "Balrampur"
+  "bareilly": "Bareilly"
+  "basti": "Basti"
+  "bhadohi ": "Bhadohi"
+  "bijnor": "Bijnor"
+  "budaun": "Budaun"
+  "bulandshahr": "Bulandshahr"
+  "chandauli": "Chandauli"
+  "chitrakoot": "Chitrakoot"
+  "jhansi": "Jhansi"
+  "kannauj": "Kannauj"
+  "kanpur": "Kanpur"
+  "kasganj": "Kasganj"
+  "kausambhi": "Kausambhi"
+  "kushinagar": "Kushinagar"
+  "lakhimpur": "Lakhimpur"
+  "lalipur": "Lalipur"
+  "lucknow": "Lucknow"
+  "maharajganj": "Maharajganj"
+  "mahoba": "Mahoba"
+  "mainpuri": "Mainpuri"
+  "mathura": "Mathura"
+  "mau": "Mau"
+  "meerut": "Meerut"
+  "mirzpur": "Mirzpur"
+  "moradabad": "Moradabad"
+  "muzaffarnagar": "Muzaffarnagar"
+  "raebareli": "Raebareli"
+  "sant kabir nagar": "Sant Kabir Nagar"
+  "shamli": "Shamli"
+  "siddharth nagar": "Siddharth Nagar"
+  "sitapur": "Sitapur"

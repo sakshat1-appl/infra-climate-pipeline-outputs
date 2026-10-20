@@ -1,0 +1,108 @@
+asset_id,action,source_consulted,url,outcome,reason
+GP_081,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Hazira%E2%80%93Vijaipur%E2%80%93Jagdishpur_pipeline,approximate_midpoint,"Read 'Vinputs' as Vijaipur; straight midpoint of Hazira (21.10,72.63) to Vijaipur, Guna (24.04,77.35) HVJ section."
+GP_082,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/East%E2%80%93West_Gas_Pipeline_(India),approximate_midpoint,"Straight midpoint of Kakinada (16.97,82.28) to Bharuch (21.71,72.98) East-West pipeline."
+GP_083,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Dabhol%E2%80%93Bangalore_pipeline,approximate_midpoint,"Straight midpoint of Dabhol (17.59,73.17) to Bengaluru (12.97,77.59) pipeline."
+GP_084,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kochi,approximate_midpoint,"Straight midpoint of Kochi (9.93,76.27) to Koottanad, Palakkad (10.78,76.13) pipeline section."
+GP_085,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Jagdishpur%E2%80%93Haldia%E2%80%93Bokaro_pipeline,approximate_midpoint,"Straight midpoint of Jagdishpur, Amethi (26.47,81.65) to Haldia (22.06,88.10) Urja Ganga pipeline."
+GP_086,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Hazira%E2%80%93Vijaipur%E2%80%93Jagdishpur_pipeline,approximate_midpoint,"Straight midpoint of Auraiya (26.47,79.51) to Kanpur (26.45,80.35) HVJ spur."
+GP_087,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Names no defined route; the Assam grid has several proposed sections and none matches this label.
+GP_088,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kakinada_Port,approximate_midpoint,"Straight midpoint of Kakinada (16.97,82.28) to Visakhapatnam (17.69,83.28) spur."
+GP_089,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Mehsana,approximate_midpoint,"Straight midpoint of Mehsana (23.60,72.37) to Bathinda (30.21,74.95) GSPL pipeline."
+GP_090,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Ramanathapuram,approximate_midpoint,Short Ramanathapuram spur represented by the town coordinate; spur-level precision.
+GP_091,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Jamnagar,approximate_midpoint,"Straight midpoint of Jamnagar (22.47,70.07) to Loni, Ghaziabad (28.75,77.29) LPG pipeline."
+GP_092,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Offshore-basin label with no defined onshore route or endpoints.
+GP_093,coordinate_lookup,Wikipedia,"https://en.wikipedia.org/wiki/Anand,_Gujarat",approximate_midpoint,"Straight midpoint of Anand (22.56,72.93) to Rajkot (22.30,70.80) GSPL grid spur."
+GP_094,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Barmer,approximate_midpoint,"Straight midpoint of Barmer (25.75,71.38) to Bhogat, Dwarka coast (22.34,68.97) crude/gas line."
+GP_095,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Paradip_Port,approximate_midpoint,"Straight midpoint of Paradip (20.27,86.68) to Hyderabad (17.39,78.49) product-pipeline corridor."
+GP_096,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Visakhapatnam_Port,approximate_midpoint,"Straight midpoint of Visakhapatnam (17.69,83.28) to Raipur (21.25,81.63) product-pipeline corridor."
+GP_097,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Indradhanush_Gas_Grid,approximate_midpoint,"Straight midpoint of Barauni (25.76,85.97) to Guwahati (26.18,91.75) Indradhanush grid section."
+GP_098,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,No documented pipeline between Chhajli (Sangrur village) and Ludhiana found in PNGRB or GAIL records.
+GP_099,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Bathinda,approximate_midpoint,"Straight midpoint of Bathinda (30.21,74.95) to Jammu (32.73,74.86) on the proposed Mehsana-Bhatinda-Jammu-Srinagar corridor."
+GP_100,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Angul,approximate_midpoint,"Straight midpoint of Srikakulam (18.30,83.90) to Angul (20.84,85.10) GAIL spur."
+HW_001,anchor_crosscheck,independent reference,https://en.wikipedia.org/wiki/Lonavala,error_km=0.613,hand-checked anchor; tolerance 2 km (point) / 10 km (midpoint)
+HW_001,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway,approximate_midpoint,Midpoint near Lonavala between Kalamboli and Dehu Road ends; anchor cross-checked to Lonavala town coordinates.
+HW_002,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/National_Highway_19_(India),approximate_midpoint,"Straight midpoint of Delhi (28.61,77.21) to Agra (27.18,78.01) NH-19 section."
+HW_003,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Bengaluru%E2%80%93Mysuru_Expressway,approximate_midpoint,"Straight midpoint of Bengaluru (12.97,77.59) to Mysuru (12.30,76.64) expressway."
+HW_004,anchor_crosscheck,independent reference,https://en.wikipedia.org/wiki/Yamuna_Expressway,error_km=0.000,hand-checked anchor; tolerance 2 km (point) / 10 km (midpoint)
+HW_004,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Yamuna_Expressway,approximate_midpoint,"Midpoint of Greater Noida (28.47,77.50) to Agra (27.15,77.98) alignment via Jewar; anchor cross-checked to corridor midpoint."
+HW_005,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/National_Expressway_1_(India),approximate_midpoint,"Straight midpoint of Ahmedabad (23.03,72.58) to Vadodara (22.31,73.18) NE-1."
+HW_006,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Mumbai%E2%80%93Nagpur_Expressway,approximate_midpoint,"Straight midpoint of Amane/Thane (19.20,73.05) to Nagpur (21.15,79.09) Samruddhi Mahamarg."
+HW_007,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Eastern_Peripheral_Expressway,approximate_midpoint,"Midpoint of Kundli (28.90,77.13) to Palwal (28.14,77.33) bypass around east Delhi."
+HW_008,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/National_Highway_48_(India),approximate_midpoint,"Straight midpoint of Jaipur (26.91,75.79) to Kishangarh (26.57,74.87) NH-48 section."
+HW_009,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/List_of_National_Highways_in_India_by_highway_number,approximate_midpoint,"Straight midpoint of Surat (21.17,72.83) to Hazira (21.10,72.63) section."
+HW_010,coordinate_lookup,Wikipedia,"https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad",approximate_midpoint,Ring-road centroid near Hyderabad city centre; ring encircles this point.
+HW_011,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Chennai_Bypass,approximate_midpoint,Midpoint of Tambaram-Maduravoyal bypass corridor west of Chennai.
+HW_012,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Could not pin referent; 'Line' suffix matches no documented highway asset and Kolkata-Dankuni is only a generic NH-19 stretch.
+HW_013,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Agra%E2%80%93Lucknow_Expressway,approximate_midpoint,"Straight midpoint of Agra (27.15,78.05) to Lucknow (26.85,80.95) expressway."
+HW_014,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Purvanchal_Expressway,approximate_midpoint,"Straight midpoint of Lucknow (26.77,81.10) to Ghazipur (25.58,83.57) expressway."
+HW_015,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Bundelkhand_Expressway,approximate_midpoint,"Straight midpoint of Chitrakoot (25.21,80.85) to Etawah (26.78,79.02) expressway."
+HW_016,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,No documented expressway by the name 'Trans-Haryana Exp' found in NHAI or state PWD records.
+HW_017,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Dwarka_Expressway,approximate_midpoint,Midpoint of Shiv Murti (Mahipalpur) to Kherki Daula corridor through Dwarka.
+HW_018,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Delhi%E2%80%93Mumbai_Expressway,approximate_midpoint,Corridor midpoint between Kota and Ratlam on the Delhi-Vadodara Phase-1 section.
+HW_019,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Delhi%E2%80%93Amritsar%E2%80%93Katra_Expressway,approximate_midpoint,"Read 'Katia' as Katra; straight midpoint of Amritsar (31.63,74.88) to Katra (32.99,74.93) expressway section."
+HW_020,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Prosperity Corridor is the tagline of the Samruddhi Mahamarg already covered by HW_006; no distinct referent can be pinned.
+PT_021,anchor_crosscheck,independent reference,https://en.wikipedia.org/wiki/Jawaharlal_Nehru_Port,error_km=0.000,hand-checked anchor; tolerance 2 km (point) / 10 km (midpoint)
+PT_021,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Jawaharlal_Nehru_Port,verified,JNPT Nhava Sheva port coordinates; anchor cross-checked to infobox coordinate.
+PT_022,anchor_crosscheck,independent reference,https://en.wikipedia.org/wiki/Mundra_Port,error_km=0.000,hand-checked anchor; tolerance 2 km (point) / 10 km (midpoint)
+PT_022,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Mundra_Port,verified,Mundra Port coordinates; anchor cross-checked to infobox coordinate.
+PT_023,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Chennai_Port,verified,Chennai Port container terminal coordinates.
+PT_024,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Visakhapatnam_Port,verified,Visakhapatnam Port coordinates.
+PT_025,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Deendayal_Port,verified,Deendayal (Kandla) Port coordinates.
+PT_026,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Paradip_Port,verified,Paradip Port coordinates.
+PT_027,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kochi_Port,verified,"Vallarpadam International Container Transhipment Terminal, Kochi."
+PT_028,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Hazira,verified,"Hazira Port coordinates, Gulf of Khambhat."
+PT_029,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Syama_Prasad_Mookerjee_Port,verified,"Kidderpore Dock, Kolkata Port."
+PT_030,anchor_crosscheck,independent reference,https://en.wikipedia.org/wiki/V.O._Chidambaranar_Port,error_km=0.000,hand-checked anchor; tolerance 2 km (point) / 10 km (midpoint)
+PT_030,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/V.O._Chidambaranar_Port,verified,V.O. Chidambaranar (Tuticorin) Port coordinates; anchor cross-checked to infobox coordinate.
+PT_031,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kamarajar_Port,verified,Kamarajar (Ennore) Port coordinates.
+PT_032,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Mormugao_Port,verified,"Mormugao Port, Vasco da Gama, Goa."
+PT_033,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/New_Mangalore_Port,verified,New Mangalore Port coordinates.
+PT_034,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Port_of_Pipavav,verified,"Port of Pipavav, Amreli district, Gujarat."
+PT_035,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Dhamra_Port,verified,"Dhamra Port, Bhadrak district, Odisha."
+PT_036,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kakinada_Port,verified,Kakinada deep-water port coordinates.
+PT_037,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Gopalpur_port,verified,"Gopalpur Port, Ganjam district, Odisha."
+PT_038,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Karaikal_Port,verified,"Karaikal Port, Puducherry."
+PT_039,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Gangavaram_Port,verified,"Gangavaram Port, Visakhapatnam district."
+PT_040,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Krishnapatnam_Port,verified,"Krishnapatnam Port, Nellore district, Andhra Pradesh. Proximity note for the fabricated-coordinate tripwire - the Master fabricated coordinate for this row happens to lie ~26 km away, so this row is within the 50 km tripwire threshold by coincidence; the coordinate above is the real port site per the cited source, not the Master value."
+RE_061,anchor_crosscheck,independent reference,https://en.wikipedia.org/wiki/Bhadla_Solar_Park,error_km=0.000,hand-checked anchor; tolerance 2 km (point) / 10 km (midpoint)
+RE_061,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Bhadla_Solar_Park,verified,Bhadla Solar Park infobox coordinate 27-32-23N 71-54-55E; anchor cross-checked.
+RE_062,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Pavagada_Solar_Park,verified,"Pavagada Solar Park, Tumakuru district, Karnataka."
+RE_063,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kurnool_Ultra_Mega_Solar_Park,verified,"Kurnool Ultra Mega Solar Park, Gani village, Kurnool district."
+RE_064,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Rewa_Ultra_Mega_Solar,verified,"Rewa Ultra Mega Solar infobox coordinate, Gurh tehsil, Rewa district."
+RE_065,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Charanka_Solar_Park,verified,"Charanka (Gujarat Solar Park), Patan district."
+RE_066,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Muppandal_Wind_Farm,verified,"Muppandal Wind Farm, Kanyakumari district, Tamil Nadu."
+RE_067,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Jaisalmer_Wind_Park,verified,Jaisalmer district wind cluster centroid; district-level precision.
+RE_068,anchor_crosscheck,independent reference,https://en.wikipedia.org/wiki/Kamuthi_Solar_Power_Project,error_km=0.000,hand-checked anchor; tolerance 2 km (point) / 10 km (midpoint)
+RE_068,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kamuthi_Solar_Power_Project,verified,"Kamuthi Solar Power Project, Ramanathapuram district; anchor cross-checked to infobox coordinate."
+RE_069,coordinate_lookup,Government of India (PIB),https://www.pib.gov.in/newsite/printrelease.aspx?relid=145542,verified,"Ananthapuramu Ultra Mega Solar Park, Nambulapulakunta mandal, per MNRE solar-park list; mandal-level precision."
+RE_070,coordinate_lookup,World Bank ESIA,https://documents1.worldbank.org/curated/en/530241532406646181/pdf/ESIA-Neemuch-Phase-II-Mandsaur.pdf,verified,Mandsaur Solar Park footprint centroid (Suwasara/Sitamau tehsils) per World Bank ESIA coordinates.
+RE_071,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Dholera,verified,"Dholera SIR solar-park zone centroid, Ahmedabad district; zone-level precision."
+RE_072,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Khavda,verified,"Khavda Renewable Energy Park centroid, Kutch district; park spans tens of km so kilometre-level precision only."
+RE_073,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Galiveedu,verified,"Galiveedu solar-park area, Annamayya district; mandal-centroid precision."
+RE_074,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Could not pin a Kadapa Ultra Mega Solar Park site; several Kadapa-district proposals exist with no authoritative site coordinate.
+RE_075,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,"No documented wind station by the name 'Devasri' found in MNRE, NIWE or state records."
+RE_076,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Kayathar,verified,"Kayathar wind-farm cluster, Thoothukudi district; town-centroid precision."
+RE_077,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Generic district label; Tirunelveli hosts several wind clusters and no single 'Wind Grid' facility can be pinned.
+RE_078,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Cannot distinguish from the Bhadla park cluster in Phalodi district (RE_061); no separate documented 'Phalodi Solar Array' site found.
+RE_079,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,No documented solar park at Tarikere (Chikkamagaluru district) found in MNRE or KREDL records.
+RE_080,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Generic label; no documented 'Belgaum Green Power' facility found in MNRE or state records.
+TL_041,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,IndiGrid owns several lines and none is documented as 'Line 1'; referent cannot be pinned.
+TL_042,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Generic regional label; no defined endpoints found in Powergrid project lists.
+TL_043,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Generic owner-region label; Adani Transmission has many northern assets and none matches this name.
+TL_044,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Sterlite_Power,approximate_midpoint,"Straight midpoint of Bhopal (23.26,77.41) to Dhule (20.90,74.78) Sterlite transmission line."
+TL_045,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Numbered-link label with no documented endpoints in CEA or Powergrid records.
+TL_046,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Generic interconnector label; no defined endpoints found.
+TL_047,coordinate_lookup,Government of India (PIB),https://www.pib.gov.in/PressReleasePage.aspx?PRID=1485607,approximate_midpoint,"Straight midpoint of Raigarh (21.90,83.40) to Pugalur (11.08,77.85) +/-800kV HVDC link commissioned per PIB."
+TL_048,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,Generic inter-regional label; several NR-WR links exist and none matches this name.
+TL_049,coordinate_lookup,Powergrid,https://www.powergrid.in/en/transmission,approximate_midpoint,"Straight midpoint of Gurgaon (28.46,77.03) to Palwal (28.14,77.33) transmission corridor."
+TL_050,marked_unverified,"web research (Wikipedia, MNRE/CEA/Powergrid/PNGRB records)",,unverified,"Names a strengthening programme for the North-Eastern Region, not a single line with endpoints."
+TL_051,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Khammam,approximate_midpoint,"Straight midpoint of Khammam (17.25,80.15) to Nagarjuna Sagar (16.58,79.31)."
+TL_052,coordinate_lookup,Government of India (PIB),https://www.pib.gov.in/PressReleasePage.aspx?PRID=1485607,approximate_midpoint,"Straight midpoint of Champa (22.03,82.65) to Kurukshetra (29.97,76.88) +/-800kV HVDC, 1365 km per Powergrid/PIB."
+TL_053,coordinate_lookup,Powergrid,https://www.powergrid.in/en/transmission,approximate_midpoint,"Straight midpoint of Vindhyachal/Mirzapur (25.15,82.50) to Rihand/Renukoot (24.21,82.79) corridor."
+TL_054,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Solapur,approximate_midpoint,"Straight midpoint of Solapur (17.69,75.91) to Kolhapur (16.71,74.24)."
+TL_055,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Chandrapur_back-to-back_HVDC_station,verified,"Chandrapur back-to-back HVDC station at Bhadravati, Chandrapur district."
+TL_056,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Barmer,approximate_midpoint,Barmer district T&D network centroid; town coordinate used as representative midpoint.
+TL_057,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Jabalpur,approximate_midpoint,"Straight midpoint of Jabalpur (23.16,79.93) to Bhopal (23.26,77.41)."
+TL_058,coordinate_lookup,CEA,https://cea.nic.in/old/reports/committee/scm/wr/agenda_note/35_supp_agenda.pdf,approximate_midpoint,"Straight midpoint of Warora (20.23,79.00) to Kurnool (15.83,78.05) 765kV D/C line."
+TL_059,coordinate_lookup,Powergrid,https://www.powergrid.in/en/transmission,verified,"Fatehgarh-II pooling station, Jaisalmer RE evacuation complex, per Powergrid transmission records."
+TL_060,coordinate_lookup,Wikipedia,https://en.wikipedia.org/wiki/Bikaner,approximate_midpoint,"Straight midpoint of Bikaner (28.02,73.31) to Khetri (27.98,75.79) RE evacuation corridor."
