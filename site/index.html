@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indian Construction Cost Pipeline</title>
+<style>
+
+:root {
+  --bg: #f2f5f9;
+  --card: #ffffff;
+  --ink: #17212f;
+  --muted: #5b6778;
+  --line: #dfe6ef;
+  --accent: #145da0;
+  --teal: #0f766e;
+  --warm: #b45309;
+  --shadow: 0 1px 2px rgba(23, 33, 47, .04), 0 10px 30px rgba(23, 33, 47, .05);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1200px; margin: 0 auto; padding: 36px 28px 48px; }
+.hero { padding: 8px 0 24px; }
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: .78rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent);
+}
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  letter-spacing: -.025em;
+  line-height: 1.08;
+}
+.subtitle { margin: 12px 0 0; max-width: 860px; color: var(--muted); font-size: 1.03rem; }
+.caveat {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  padding: 15px 20px;
+  background: #fff9eb;
+  border: 1px solid #f0d49b;
+  border-left: 5px solid #d99a1f;
+  border-radius: 10px;
+}
+.caveat-title {
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: #8a5a06;
+  padding-top: 2px;
+  white-space: nowrap;
+}
+.caveat ul { margin: 0; padding-left: 18px; color: #5f4a1e; font-size: .9rem; }
+.caveat li + li { margin-top: 3px; }
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 0 0 26px;
+}
+.kpi {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 12px;
+  padding: 17px 18px 15px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 142px;
+}
+.kpi.tone-b { border-top-color: var(--teal); }
+.kpi.tone-c { border-top-color: var(--warm); }
+.kpi.tone-d { border-top-color: #6d4aa8; }
+.kpi.tone-e { border-top-color: #2f7d4f; }
+.kpi-label {
+  margin: 0;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.kpi-value {
+  margin: 2px 0 0;
+  font-size: 1.85rem;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.kpi-note { margin: auto 0 0; font-size: .78rem; color: var(--muted); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.section-kicker {
+  margin: 0;
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  font-weight: 800;
+  color: var(--accent);
+}
+h2 { margin: 3px 0 0; font-size: 1.35rem; letter-spacing: -.01em; }
+.section-note { margin: 0; color: var(--muted); font-size: .87rem; max-width: 540px; text-align: right; }
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 10px 2px 14px;
+  font-size: .84rem;
+  color: #3d4a5c;
+}
+.legend-item { display: inline-flex; align-items: center; gap: 7px; }
+.sw { width: 24px; height: 4px; border-radius: 2px; display: inline-block; flex: 0 0 auto; }
+.sw-obs { background: #145da0; }
+.sw-fc { background: repeating-linear-gradient(90deg, #0f766e 0 5px, transparent 5px 9px); }
+.sw-ci { height: 11px; border-radius: 2px; background: rgba(20, 93, 160, .15); border: 1px solid rgba(20, 93, 160, .28); }
+.sw-mc { height: 11px; border-radius: 2px; background: rgba(217, 119, 6, .16); border: 1px solid rgba(217, 119, 6, .3); }
+.sw-bar { height: 11px; background: #2f6fb0; border-radius: 2px; }
+.sw-whisker {
+  height: 12px;
+  background: linear-gradient(#1e293b, #1e293b) center / 100% 1.5px no-repeat;
+  border-left: 1px solid #1e293b;
+  border-right: 1px solid #1e293b;
+}
+.chart { margin: 0 -4px; }
+.chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+.chart svg text { font-family: inherit; }
+.grid { stroke: #e4eaf2; stroke-width: 1; }
+.axis-line { stroke: #9aa7b8; stroke-width: 1.2; }
+.tick-line { stroke: #9aa7b8; stroke-width: 1; }
+.tick-label { fill: #64748b; font-size: 12px; }
+.axis-title { fill: #64748b; font-size: 12px; font-weight: 600; letter-spacing: .03em; }
+.band-ci { fill: rgba(20, 93, 160, .10); stroke: rgba(20, 93, 160, .55); stroke-width: 1; }
+.band-mc { fill: rgba(217, 119, 6, .12); stroke: rgba(217, 119, 6, .75); stroke-width: 1; }
+.divider { stroke: #94a3b8; stroke-width: 1; stroke-dasharray: 3 4; }
+.annotation { fill: #475569; font-size: 11.5px; font-style: italic; }
+.line-obs { fill: none; stroke: #145da0; stroke-width: 2.4; stroke-linejoin: round; stroke-linecap: round; }
+.line-fc { fill: none; stroke: #0f766e; stroke-width: 2.2; stroke-dasharray: 7 5; stroke-linejoin: round; }
+.connector { fill: none; stroke: #0f766e; stroke-width: 1.6; stroke-dasharray: 4 5; opacity: .8; }
+.pt-obs { fill: #ffffff; stroke: #145da0; stroke-width: 2; }
+.pt-fc { fill: #0f766e; stroke: #ffffff; stroke-width: 2; }
+.bar { fill: #2f6fb0; }
+.bar:hover { fill: #145da0; }
+.marker-line { stroke: #b45309; stroke-width: 1.4; stroke-dasharray: 5 4; }
+.marker-line95 { stroke: #b91c1c; stroke-width: 1.4; stroke-dasharray: 5 4; }
+.marker-label { fill: #7c2d12; font-size: 11.5px; font-weight: 700; }
+.cap-line { stroke: #94a3b8; stroke-width: 1; stroke-dasharray: 2 4; }
+.cap-label { fill: #64748b; font-size: 11px; font-style: italic; }
+.state-bar { fill: #2f6fb0; }
+.whisker { stroke: #1e293b; stroke-width: 1.4; }
+.whisker-cap { stroke: #1e293b; stroke-width: 1.4; }
+.expected-dot { fill: #ffffff; stroke: #1e293b; stroke-width: 1.5; }
+.svg-label { fill: #334155; font-size: 12.5px; }
+.value-label { fill: #ffffff; font-size: 11.5px; font-weight: 700; }
+.caption { margin: 10px 2px 0; color: var(--muted); font-size: .82rem; }
+.note {
+  margin: 14px 0 0;
+  background: #f7f9fc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: .83rem;
+  color: var(--muted);
+}
+.table-wrap { overflow-x: auto; margin-top: 16px; }
+table { width: 100%; border-collapse: collapse; font-size: .86rem; font-variant-numeric: tabular-nums; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+th {
+  background: #f7f9fc;
+  color: #445164;
+  font-weight: 700;
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+tbody tr:hover { background: #f8fafc; }
+.num { text-align: right; }
+.exposure {
+  width: 100%;
+  table-layout: fixed;
+  font-size: .72rem;
+}
+.exposure th,
+.exposure td { padding: 6px; vertical-align: bottom; }
+.exposure th {
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  line-height: 1.2;
+  font-size: .68rem;
+  letter-spacing: .02em;
+}
+.exposure td { white-space: normal; }
+.exposure th:first-child,
+.exposure td:first-child { width: 12%; }
+.percentile-wrap { max-width: 760px; }
+.percentile caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0 0 7px;
+  color: var(--muted);
+  font-size: .8rem;
+}
+.percentile th, .percentile td { text-align: right; }
+.percentile th:first-child, .percentile td:first-child { text-align: left; }
+.footer {
+  margin-top: 30px;
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  display: grid;
+  grid-template-columns: 1.25fr 1.25fr 1fr;
+  gap: 26px;
+  color: var(--muted);
+  font-size: .84rem;
+}
+.footer h3 {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: .76rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.footer ul { margin: 0; padding-left: 17px; }
+.footer li + li { margin-top: 4px; }
+.footer code {
+  background: #eef2f7;
+  color: #334155;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: .78rem;
+}
+.offline-note { margin: 12px 0 0; font-size: .8rem; }
+@media (max-width: 760px) {
+  .wrap { padding: 24px 14px 36px; }
+  .card { padding: 18px 14px; }
+  .section-head { display: block; }
+  .section-note { text-align: left; margin-top: 8px; }
+  .caveat { grid-template-columns: 1fr; gap: 6px; }
+  .footer { grid-template-columns: 1fr; }
+  .kpi-value { font-size: 1.6rem; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <p class="eyebrow">Consolidated pipeline · 2026 outlook</p>
+  <h1>Indian Construction Cost Pipeline</h1>
+  <p class="subtitle">Regression, ARIMA and Monte Carlo results for 800 synthetic BOQ projects, joined to state-level exposure features, with a 2026 state and portfolio projection.</p>
+  <div class="caveat" role="note">
+    <div class="caveat-title">Data caveats</div>
+    <ul><li>BOQ costs are synthetic, not real projects.</li><li>State assignment is nearest-centroid; assets spanning states are approximated.</li><li>Exposure features are state-level averages, not asset-specific.</li></ul>
+  </div>
+</header>
+
+<main>
+<section class="kpi-grid" aria-label="Key performance indicators">
+<article class="kpi tone-a"><p class="kpi-label">Regression fit (INR cost)</p><p class="kpi-value">0.9099</p><p class="kpi-note">R² on the INR cost scale; log-target R² 0.9795 (n=200 test rows)</p></article><article class="kpi tone-c"><p class="kpi-label">MAPE</p><p class="kpi-value">17.33%</p><p class="kpi-note">Mean absolute percentage error on the test set</p></article><article class="kpi tone-b"><p class="kpi-label">Best ARIMA order</p><p class="kpi-value">(0, 1, 1)</p><p class="kpi-note">AIC 914.62 · selected by AIC</p></article><article class="kpi tone-d"><p class="kpi-label">Monte Carlo median project</p><p class="kpi-value">₹515.1 M</p><p class="kpi-note">10,000 draws · p95 ₹1,945.3 M</p></article><article class="kpi tone-e"><p class="kpi-label">2026 portfolio expected total</p><p class="kpi-value">₹546.6 B</p><p class="kpi-note">p5–p95: ₹396.5 B – ₹753.4 B</p></article>
+</section>
+
+<section class="card">
+  <div class="section-head">
+    <div>
+      <p class="section-kicker">Section 3</p>
+      <h2>Quarterly forecast</h2>
+    </div>
+    <p class="section-note">Observed 2021-Q1 to 2025-Q4; eight-quarter ARIMA forecast for 2026-Q1 to 2027-Q4. Amounts in INR billion.</p>
+  </div>
+  <div class="legend" aria-label="Chart legend">
+    <span class="legend-item"><span class="sw sw-obs"></span>Observed quarterly cost</span>
+    <span class="legend-item"><span class="sw sw-fc"></span>ARIMA forecast</span>
+    <span class="legend-item"><span class="sw sw-ci"></span>95% confidence interval</span>
+    <span class="legend-item"><span class="sw sw-mc"></span>Monte Carlo p5–p95 band</span>
+  </div>
+  <div class="chart"><svg viewBox="0 0 1120 470" role="img" aria-label="Quarterly observed cost and eight-quarter ARIMA forecast" preserveAspectRatio="xMidYMid meet"><line x1="78" y1="412.00" x2="1094" y2="412.00" class="grid"/><text x="66" y="416.00" class="tick-label" text-anchor="end">0</text><line x1="78" y1="369.11" x2="1094" y2="369.11" class="grid"/><text x="66" y="373.11" class="tick-label" text-anchor="end">5</text><line x1="78" y1="326.22" x2="1094" y2="326.22" class="grid"/><text x="66" y="330.22" class="tick-label" text-anchor="end">10</text><line x1="78" y1="283.33" x2="1094" y2="283.33" class="grid"/><text x="66" y="287.33" class="tick-label" text-anchor="end">15</text><line x1="78" y1="240.44" x2="1094" y2="240.44" class="grid"/><text x="66" y="244.44" class="tick-label" text-anchor="end">20</text><line x1="78" y1="197.56" x2="1094" y2="197.56" class="grid"/><text x="66" y="201.56" class="tick-label" text-anchor="end">25</text><line x1="78" y1="154.67" x2="1094" y2="154.67" class="grid"/><text x="66" y="158.67" class="tick-label" text-anchor="end">30</text><line x1="78" y1="111.78" x2="1094" y2="111.78" class="grid"/><text x="66" y="115.78" class="tick-label" text-anchor="end">35</text><line x1="78" y1="68.89" x2="1094" y2="68.89" class="grid"/><text x="66" y="72.89" class="tick-label" text-anchor="end">40</text><line x1="78" y1="26.00" x2="1094" y2="26.00" class="grid"/><text x="66" y="30.00" class="tick-label" text-anchor="end">45</text><text x="20" y="219.00" class="axis-title" text-anchor="middle" transform="rotate(-90 20 219.00)">INR billion</text><polygon points="821.86,69.05 858.14,68.85 894.43,68.66 930.71,68.46 967.00,68.26 1003.29,68.07 1039.57,67.87 1075.86,67.68 1075.86,301.55 1039.57,301.36 1003.29,301.16 967.00,300.97 930.71,300.77 894.43,300.57 858.14,300.38 821.86,300.18" class="band-ci"><title>95% confidence interval for the ARIMA forecast</title></polygon><polygon points="821.86,88.26 858.14,86.41 894.43,86.28 930.71,85.29 967.00,89.83 1003.29,85.19 1039.57,85.94 1075.86,86.53 1075.86,281.93 1039.57,284.80 1003.29,282.67 967.00,280.86 930.71,281.16 894.43,283.25 858.14,280.54 821.86,283.61" class="band-mc"><title>Monte Carlo p5–p95 band for forecast quarters</title></polygon><line x1="803.71" y1="26" x2="803.71" y2="412" class="divider"/><text x="810.71" y="40" class="annotation">Forecast horizon →</text><line x1="785.57" y1="189.42" x2="821.86" y2="184.62" class="connector"/><polyline points="96.14,53.79 132.43,186.64 168.71,115.66 205.00,190.49 241.29,168.23 277.57,205.52 313.86,203.66 350.14,223.48 386.43,95.03 422.71,163.32 459.00,258.89 495.29,135.81 531.57,243.31 567.86,117.14 604.14,165.69 640.43,172.61 676.71,124.43 713.00,209.58 749.29,243.51 785.57,189.42" class="line-obs"/><polyline points="821.86,184.62 858.14,184.62 894.43,184.62 930.71,184.62 967.00,184.62 1003.29,184.62 1039.57,184.62 1075.86,184.62" class="line-fc"/><circle cx="96.14" cy="53.79" r="3.6" class="pt-obs"><title>2021-Q1 observed: ₹41.8 B</title></circle><circle cx="132.43" cy="186.64" r="3.6" class="pt-obs"><title>2021-Q2 observed: ₹26.3 B</title></circle><circle cx="168.71" cy="115.66" r="3.6" class="pt-obs"><title>2021-Q3 observed: ₹34.5 B</title></circle><circle cx="205.00" cy="190.49" r="3.6" class="pt-obs"><title>2021-Q4 observed: ₹25.8 B</title></circle><circle cx="241.29" cy="168.23" r="3.6" class="pt-obs"><title>2022-Q1 observed: ₹28.4 B</title></circle><circle cx="277.57" cy="205.52" r="3.6" class="pt-obs"><title>2022-Q2 observed: ₹24.1 B</title></circle><circle cx="313.86" cy="203.66" r="3.6" class="pt-obs"><title>2022-Q3 observed: ₹24.3 B</title></circle><circle cx="350.14" cy="223.48" r="3.6" class="pt-obs"><title>2022-Q4 observed: ₹22.0 B</title></circle><circle cx="386.43" cy="95.03" r="3.6" class="pt-obs"><title>2023-Q1 observed: ₹37.0 B</title></circle><circle cx="422.71" cy="163.32" r="3.6" class="pt-obs"><title>2023-Q2 observed: ₹29.0 B</title></circle><circle cx="459.00" cy="258.89" r="3.6" class="pt-obs"><title>2023-Q3 observed: ₹17.8 B</title></circle><circle cx="495.29" cy="135.81" r="3.6" class="pt-obs"><title>2023-Q4 observed: ₹32.2 B</title></circle><circle cx="531.57" cy="243.31" r="3.6" class="pt-obs"><title>2024-Q1 observed: ₹19.7 B</title></circle><circle cx="567.86" cy="117.14" r="3.6" class="pt-obs"><title>2024-Q2 observed: ₹34.4 B</title></circle><circle cx="604.14" cy="165.69" r="3.6" class="pt-obs"><title>2024-Q3 observed: ₹28.7 B</title></circle><circle cx="640.43" cy="172.61" r="3.6" class="pt-obs"><title>2024-Q4 observed: ₹27.9 B</title></circle><circle cx="676.71" cy="124.43" r="3.6" class="pt-obs"><title>2025-Q1 observed: ₹33.5 B</title></circle><circle cx="713.00" cy="209.58" r="3.6" class="pt-obs"><title>2025-Q2 observed: ₹23.6 B</title></circle><circle cx="749.29" cy="243.51" r="3.6" class="pt-obs"><title>2025-Q3 observed: ₹19.6 B</title></circle><circle cx="785.57" cy="189.42" r="3.6" class="pt-obs"><title>2025-Q4 observed: ₹25.9 B</title></circle><circle cx="821.86" cy="184.62" r="4.2" class="pt-fc"><title>2026-Q1 forecast: ₹26.5 B; 95% CI ₹13.0 B – ₹40.0 B; MC p5–p95 ₹15.0 B – ₹37.7 B</title></circle><circle cx="858.14" cy="184.62" r="4.2" class="pt-fc"><title>2026-Q2 forecast: ₹26.5 B; 95% CI ₹13.0 B – ₹40.0 B; MC p5–p95 ₹15.3 B – ₹38.0 B</title></circle><circle cx="894.43" cy="184.62" r="4.2" class="pt-fc"><title>2026-Q3 forecast: ₹26.5 B; 95% CI ₹13.0 B – ₹40.0 B; MC p5–p95 ₹15.0 B – ₹38.0 B</title></circle><circle cx="930.71" cy="184.62" r="4.2" class="pt-fc"><title>2026-Q4 forecast: ₹26.5 B; 95% CI ₹13.0 B – ₹40.0 B; MC p5–p95 ₹15.3 B – ₹38.1 B</title></circle><circle cx="967.00" cy="184.62" r="4.2" class="pt-fc"><title>2027-Q1 forecast: ₹26.5 B; 95% CI ₹12.9 B – ₹40.1 B; MC p5–p95 ₹15.3 B – ₹37.6 B</title></circle><circle cx="1003.29" cy="184.62" r="4.2" class="pt-fc"><title>2027-Q2 forecast: ₹26.5 B; 95% CI ₹12.9 B – ₹40.1 B; MC p5–p95 ₹15.1 B – ₹38.1 B</title></circle><circle cx="1039.57" cy="184.62" r="4.2" class="pt-fc"><title>2027-Q3 forecast: ₹26.5 B; 95% CI ₹12.9 B – ₹40.1 B; MC p5–p95 ₹14.8 B – ₹38.0 B</title></circle><circle cx="1075.86" cy="184.62" r="4.2" class="pt-fc"><title>2027-Q4 forecast: ₹26.5 B; 95% CI ₹12.9 B – ₹40.1 B; MC p5–p95 ₹15.2 B – ₹37.9 B</title></circle><line x1="78" y1="412" x2="1094" y2="412" class="axis-line"/><line x1="96.14" y1="412" x2="96.14" y2="416" class="tick-line"/><line x1="132.43" y1="412" x2="132.43" y2="416" class="tick-line"/><line x1="168.71" y1="412" x2="168.71" y2="416" class="tick-line"/><line x1="205.00" y1="412" x2="205.00" y2="416" class="tick-line"/><line x1="241.29" y1="412" x2="241.29" y2="416" class="tick-line"/><line x1="277.57" y1="412" x2="277.57" y2="416" class="tick-line"/><line x1="313.86" y1="412" x2="313.86" y2="416" class="tick-line"/><line x1="350.14" y1="412" x2="350.14" y2="416" class="tick-line"/><line x1="386.43" y1="412" x2="386.43" y2="416" class="tick-line"/><line x1="422.71" y1="412" x2="422.71" y2="416" class="tick-line"/><line x1="459.00" y1="412" x2="459.00" y2="416" class="tick-line"/><line x1="495.29" y1="412" x2="495.29" y2="416" class="tick-line"/><line x1="531.57" y1="412" x2="531.57" y2="416" class="tick-line"/><line x1="567.86" y1="412" x2="567.86" y2="416" class="tick-line"/><line x1="604.14" y1="412" x2="604.14" y2="416" class="tick-line"/><line x1="640.43" y1="412" x2="640.43" y2="416" class="tick-line"/><line x1="676.71" y1="412" x2="676.71" y2="416" class="tick-line"/><line x1="713.00" y1="412" x2="713.00" y2="416" class="tick-line"/><line x1="749.29" y1="412" x2="749.29" y2="416" class="tick-line"/><line x1="785.57" y1="412" x2="785.57" y2="416" class="tick-line"/><line x1="821.86" y1="412" x2="821.86" y2="416" class="tick-line"/><line x1="858.14" y1="412" x2="858.14" y2="416" class="tick-line"/><line x1="894.43" y1="412" x2="894.43" y2="416" class="tick-line"/><line x1="930.71" y1="412" x2="930.71" y2="416" class="tick-line"/><line x1="967.00" y1="412" x2="967.00" y2="416" class="tick-line"/><line x1="1003.29" y1="412" x2="1003.29" y2="416" class="tick-line"/><line x1="1039.57" y1="412" x2="1039.57" y2="416" class="tick-line"/><line x1="1075.86" y1="412" x2="1075.86" y2="416" class="tick-line"/><text x="96.14" y="435" class="tick-label" text-anchor="middle">2021</text><text x="241.29" y="435" class="tick-label" text-anchor="middle">2022</text><text x="386.43" y="435" class="tick-label" text-anchor="middle">2023</text><text x="531.57" y="435" class="tick-label" text-anchor="middle">2024</text><text x="676.71" y="435" class="tick-label" text-anchor="middle">2025</text><text x="821.86" y="435" class="tick-label" text-anchor="middle">2026</text><text x="967.00" y="435" class="tick-label" text-anchor="middle">2027</text><text x="586.00" y="458" class="axis-title" text-anchor="middle">Calendar quarter</text></svg></div>
+  <p class="caption">Hover any point for its exact value. The dashed connector links the last observed quarter to the first forecast quarter; bands cover the forecast horizon only.</p>
+</section>
+
+<section class="card">
+  <div class="section-head">
+    <div>
+      <p class="section-kicker">Section 4</p>
+      <h2>Monte Carlo project-cost distribution</h2>
+    </div>
+    <p class="section-note">10,000 simulated projects · 40 bins · x-axis capped at p99.5</p>
+  </div>
+  <div class="legend" aria-label="Chart legend">
+    <span class="legend-item"><span class="sw sw-bar"></span>Simulated projects per bin</span>
+    <span class="legend-item"><span class="sw sw-whisker"></span>p50 / p95 percentile markers</span>
+  </div>
+  <div class="chart"><svg viewBox="0 0 1120 410" role="img" aria-label="Histogram of 10,000 simulated project total costs" preserveAspectRatio="xMidYMid meet"><line x1="78" y1="348.00" x2="1094" y2="348.00" class="grid"/><text x="66" y="352.00" class="tick-label" text-anchor="end">0</text><line x1="78" y1="268.50" x2="1094" y2="268.50" class="grid"/><text x="66" y="272.50" class="tick-label" text-anchor="end">500</text><line x1="78" y1="189.00" x2="1094" y2="189.00" class="grid"/><text x="66" y="193.00" class="tick-label" text-anchor="end">1000</text><line x1="78" y1="109.50" x2="1094" y2="109.50" class="grid"/><text x="66" y="113.50" class="tick-label" text-anchor="end">1500</text><line x1="78" y1="30.00" x2="1094" y2="30.00" class="grid"/><text x="66" y="34.00" class="tick-label" text-anchor="end">2000</text><text x="20" y="189.00" class="axis-title" text-anchor="middle" transform="rotate(-90 20 189.00)">Projects (count)</text><rect x="79.46" y="103.62" width="24.38" height="244.38" class="bar"><title>₹0.00 B–₹0.08 B: 1,537 projects</title></rect><rect x="104.84" y="257.53" width="24.38" height="90.47" class="bar"><title>₹0.08 B–₹0.16 B: 569 projects</title></rect><rect x="130.21" y="271.04" width="24.38" height="76.96" class="bar"><title>₹0.16 B–₹0.24 B: 484 projects</title></rect><rect x="155.59" y="235.59" width="24.38" height="112.41" class="bar"><title>₹0.24 B–₹0.32 B: 707 projects</title></rect><rect x="180.96" y="229.55" width="24.38" height="118.45" class="bar"><title>₹0.32 B–₹0.39 B: 745 projects</title></rect><rect x="206.34" y="249.74" width="24.38" height="98.26" class="bar"><title>₹0.39 B–₹0.47 B: 618 projects</title></rect><rect x="231.72" y="258.32" width="24.38" height="89.68" class="bar"><title>₹0.47 B–₹0.55 B: 564 projects</title></rect><rect x="257.09" y="269.30" width="24.38" height="78.70" class="bar"><title>₹0.55 B–₹0.63 B: 495 projects</title></rect><rect x="282.47" y="278.99" width="24.38" height="69.01" class="bar"><title>₹0.63 B–₹0.71 B: 434 projects</title></rect><rect x="307.84" y="281.70" width="24.38" height="66.30" class="bar"><title>₹0.71 B–₹0.79 B: 417 projects</title></rect><rect x="333.22" y="289.17" width="24.38" height="58.83" class="bar"><title>₹0.79 B–₹0.86 B: 370 projects</title></rect><rect x="358.60" y="289.81" width="24.38" height="58.19" class="bar"><title>₹0.86 B–₹0.94 B: 366 projects</title></rect><rect x="383.97" y="300.94" width="24.38" height="47.06" class="bar"><title>₹0.94 B–₹1.02 B: 296 projects</title></rect><rect x="409.35" y="301.89" width="24.38" height="46.11" class="bar"><title>₹1.02 B–₹1.10 B: 290 projects</title></rect><rect x="434.72" y="306.34" width="24.38" height="41.66" class="bar"><title>₹1.10 B–₹1.18 B: 262 projects</title></rect><rect x="460.10" y="313.02" width="24.38" height="34.98" class="bar"><title>₹1.18 B–₹1.25 B: 220 projects</title></rect><rect x="485.48" y="317.79" width="24.38" height="30.21" class="bar"><title>₹1.25 B–₹1.33 B: 190 projects</title></rect><rect x="510.85" y="319.86" width="24.38" height="28.14" class="bar"><title>₹1.33 B–₹1.41 B: 177 projects</title></rect><rect x="536.23" y="323.99" width="24.38" height="24.01" class="bar"><title>₹1.41 B–₹1.49 B: 151 projects</title></rect><rect x="561.60" y="327.49" width="24.38" height="20.51" class="bar"><title>₹1.49 B–₹1.57 B: 129 projects</title></rect><rect x="586.98" y="329.56" width="24.38" height="18.44" class="bar"><title>₹1.57 B–₹1.65 B: 116 projects</title></rect><rect x="612.36" y="328.92" width="24.38" height="19.08" class="bar"><title>₹1.65 B–₹1.72 B: 120 projects</title></rect><rect x="637.73" y="332.89" width="24.38" height="15.11" class="bar"><title>₹1.72 B–₹1.80 B: 95 projects</title></rect><rect x="663.11" y="333.69" width="24.38" height="14.31" class="bar"><title>₹1.80 B–₹1.88 B: 90 projects</title></rect><rect x="688.48" y="337.51" width="24.38" height="10.49" class="bar"><title>₹1.88 B–₹1.96 B: 66 projects</title></rect><rect x="713.86" y="337.19" width="24.38" height="10.81" class="bar"><title>₹1.96 B–₹2.04 B: 68 projects</title></rect><rect x="739.24" y="340.21" width="24.38" height="7.79" class="bar"><title>₹2.04 B–₹2.12 B: 49 projects</title></rect><rect x="764.61" y="339.57" width="24.38" height="8.43" class="bar"><title>₹2.12 B–₹2.19 B: 53 projects</title></rect><rect x="789.99" y="340.69" width="24.38" height="7.31" class="bar"><title>₹2.19 B–₹2.27 B: 46 projects</title></rect><rect x="815.36" y="341.80" width="24.38" height="6.20" class="bar"><title>₹2.27 B–₹2.35 B: 39 projects</title></rect><rect x="840.74" y="343.39" width="24.38" height="4.61" class="bar"><title>₹2.35 B–₹2.43 B: 29 projects</title></rect><rect x="866.12" y="343.87" width="24.38" height="4.13" class="bar"><title>₹2.43 B–₹2.51 B: 26 projects</title></rect><rect x="891.49" y="343.71" width="24.38" height="4.29" class="bar"><title>₹2.51 B–₹2.58 B: 27 projects</title></rect><rect x="916.87" y="343.87" width="24.38" height="4.13" class="bar"><title>₹2.58 B–₹2.66 B: 26 projects</title></rect><rect x="942.24" y="344.18" width="24.38" height="3.82" class="bar"><title>₹2.66 B–₹2.74 B: 24 projects</title></rect><rect x="967.62" y="345.30" width="24.38" height="2.70" class="bar"><title>₹2.74 B–₹2.82 B: 17 projects</title></rect><rect x="993.00" y="346.41" width="24.38" height="1.59" class="bar"><title>₹2.82 B–₹2.90 B: 10 projects</title></rect><rect x="1018.37" y="346.25" width="24.38" height="1.75" class="bar"><title>₹2.90 B–₹2.98 B: 11 projects</title></rect><rect x="1043.75" y="346.25" width="24.38" height="1.75" class="bar"><title>₹2.98 B–₹3.05 B: 11 projects</title></rect><rect x="1069.12" y="339.10" width="24.38" height="8.90" class="bar"><title>₹3.05 B–₹3.13 B: 56 projects (includes draws above the p99.5 cap)</title></rect><line x1="78" y1="348" x2="1094" y2="348" class="axis-line"/><line x1="78.00" y1="348" x2="78.00" y2="352" class="tick-line"/><text x="78.00" y="371" class="tick-label" text-anchor="middle">0</text><line x1="240.16" y1="348" x2="240.16" y2="352" class="tick-line"/><text x="240.16" y="371" class="tick-label" text-anchor="middle">5e+08</text><line x1="402.32" y1="348" x2="402.32" y2="352" class="tick-line"/><text x="402.32" y="371" class="tick-label" text-anchor="middle">1e+09</text><line x1="564.48" y1="348" x2="564.48" y2="352" class="tick-line"/><text x="564.48" y="371" class="tick-label" text-anchor="middle">1.5e+09</text><line x1="726.64" y1="348" x2="726.64" y2="352" class="tick-line"/><text x="726.64" y="371" class="tick-label" text-anchor="middle">2e+09</text><line x1="888.81" y1="348" x2="888.81" y2="352" class="tick-line"/><text x="888.81" y="371" class="tick-label" text-anchor="middle">2.5e+09</text><line x1="1050.97" y1="348" x2="1050.97" y2="352" class="tick-line"/><text x="1050.97" y="371" class="tick-label" text-anchor="middle">3e+09</text><text x="586.00" y="398" class="axis-title" text-anchor="middle">Predicted total project cost (INR billion)</text><line x1="245.07" y1="30" x2="245.07" y2="348" class="marker-line"/><text x="250.07" y="44" class="marker-label">p50 ₹515.1 M</text><line x1="708.89" y1="30" x2="708.89" y2="348" class="marker-line95"/><text x="713.89" y="60" class="marker-label">p95 ₹1,945.3 M</text><line x1="1094.00" y1="30" x2="1094.00" y2="348" class="cap-line"/><text x="1089.00" y="42" class="cap-label" text-anchor="end">p99.5 cap = ₹3.13 B</text></svg></div>
+  <p class="caption">Histogram uses 40 equal-width bins from ₹2.96 M to the p99.5 cap of ₹3.13 B. 50 of 10,000 draws above the cap are folded into the final bin; the x-axis is capped at p99.5.</p>
+  <div class="table-wrap percentile-wrap"><table class="percentile"><caption>Project total-cost percentiles (INR million; M = million)</caption><thead><tr><th>p5</th><th>p25</th><th>p50</th><th>p75</th><th>p95</th></tr></thead><tbody><tr><td>₹10.4 M</td><td>₹223.8 M</td><td>₹515.1 M</td><td>₹993.3 M</td><td>₹1,945.3 M</td></tr></tbody></table></div>
+</section>
+
+<section class="card">
+  <div class="section-head">
+    <div>
+      <p class="section-kicker">Section 5</p>
+      <h2>2026 state projection</h2>
+    </div>
+    <p class="section-note">Expected 2026 total cost by state, sorted high to low. Bars show the expected total; whiskers span p5–p95.</p>
+  </div>
+  <div class="legend" aria-label="Chart legend">
+    <span class="legend-item"><span class="sw sw-bar"></span>Expected total</span>
+    <span class="legend-item"><span class="sw sw-whisker"></span>p5–p95 interval</span>
+  </div>
+  <div class="chart"><svg viewBox="0 0 1120 462" role="img" aria-label="Expected 2026 total cost by state with p5-p95 whiskers" preserveAspectRatio="xMidYMid meet"><rect x="150" y="62.00" width="940" height="38.00" fill="#f7f9fc"/><rect x="150" y="138.00" width="940" height="38.00" fill="#f7f9fc"/><rect x="150" y="214.00" width="940" height="38.00" fill="#f7f9fc"/><rect x="150" y="290.00" width="940" height="38.00" fill="#f7f9fc"/><rect x="150" y="366.00" width="940" height="38.00" fill="#f7f9fc"/><line x1="150.00" y1="24" x2="150.00" y2="404" class="grid"/><text x="150.00" y="425" class="tick-label" text-anchor="middle">0</text><line x1="385.00" y1="24" x2="385.00" y2="404" class="grid"/><text x="385.00" y="425" class="tick-label" text-anchor="middle">50</text><line x1="620.00" y1="24" x2="620.00" y2="404" class="grid"/><text x="620.00" y="425" class="tick-label" text-anchor="middle">100</text><line x1="855.00" y1="24" x2="855.00" y2="404" class="grid"/><text x="855.00" y="425" class="tick-label" text-anchor="middle">150</text><line x1="1090.00" y1="24" x2="1090.00" y2="404" class="grid"/><text x="1090.00" y="425" class="tick-label" text-anchor="middle">200</text><text x="620.00" y="452" class="axis-title" text-anchor="middle">Expected total cost, 2026 (INR billion)</text><line x1="150" y1="404" x2="1090" y2="404" class="axis-line"/><rect x="150" y="32.00" width="670.07" height="22" rx="3" class="state-bar"/><line x1="635.47" y1="43.00" x2="1073.00" y2="43.00" class="whisker"/><line x1="635.47" y1="38.00" x2="635.47" y2="48.00" class="whisker-cap"/><line x1="1073.00" y1="38.00" x2="1073.00" y2="48.00" class="whisker-cap"/><circle cx="820.07" cy="43.00" r="3.2" class="expected-dot"/><text x="138" y="47.00" class="svg-label" text-anchor="end">Maharashtra</text><text x="812.07" y="47.00" class="value-label" text-anchor="end">₹142.6 B</text><rect x="150" y="24.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Maharashtra: expected ₹142.6 B; p5 ₹103.3 B; p95 ₹196.4 B; 180 projects</title></rect><rect x="150" y="70.00" width="327.33" height="22" rx="3" class="state-bar"/><line x1="387.71" y1="81.00" x2="601.66" y2="81.00" class="whisker"/><line x1="387.71" y1="76.00" x2="387.71" y2="86.00" class="whisker-cap"/><line x1="601.66" y1="76.00" x2="601.66" y2="86.00" class="whisker-cap"/><circle cx="477.33" cy="81.00" r="3.2" class="expected-dot"/><text x="138" y="85.00" class="svg-label" text-anchor="end">Gujarat</text><text x="469.33" y="85.00" class="value-label" text-anchor="end">₹69.6 B</text><rect x="150" y="62.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Gujarat: expected ₹69.6 B; p5 ₹50.6 B; p95 ₹96.1 B; 124 projects</title></rect><rect x="150" y="108.00" width="311.50" height="22" rx="3" class="state-bar"/><line x1="376.25" y1="119.00" x2="578.75" y2="119.00" class="whisker"/><line x1="376.25" y1="114.00" x2="376.25" y2="124.00" class="whisker-cap"/><line x1="578.75" y1="114.00" x2="578.75" y2="124.00" class="whisker-cap"/><circle cx="461.50" cy="119.00" r="3.2" class="expected-dot"/><text x="138" y="123.00" class="svg-label" text-anchor="end">Tamil Nadu</text><text x="453.50" y="123.00" class="value-label" text-anchor="end">₹66.3 B</text><rect x="150" y="100.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Tamil Nadu: expected ₹66.3 B; p5 ₹48.1 B; p95 ₹91.2 B; 111 projects</title></rect><rect x="150" y="146.00" width="218.22" height="22" rx="3" class="state-bar"/><line x1="307.83" y1="157.00" x2="452.71" y2="157.00" class="whisker"/><line x1="307.83" y1="152.00" x2="307.83" y2="162.00" class="whisker-cap"/><line x1="452.71" y1="152.00" x2="452.71" y2="162.00" class="whisker-cap"/><circle cx="368.22" cy="157.00" r="3.2" class="expected-dot"/><text x="138" y="161.00" class="svg-label" text-anchor="end">Karnataka</text><text x="360.22" y="161.00" class="value-label" text-anchor="end">₹46.4 B</text><rect x="150" y="138.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Karnataka: expected ₹46.4 B; p5 ₹33.6 B; p95 ₹64.4 B; 56 projects</title></rect><rect x="150" y="184.00" width="183.98" height="22" rx="3" class="state-bar"/><line x1="283.70" y1="195.00" x2="403.57" y2="195.00" class="whisker"/><line x1="283.70" y1="190.00" x2="283.70" y2="200.00" class="whisker-cap"/><line x1="403.57" y1="190.00" x2="403.57" y2="200.00" class="whisker-cap"/><circle cx="333.98" cy="195.00" r="3.2" class="expected-dot"/><text x="138" y="199.00" class="svg-label" text-anchor="end">Delhi</text><text x="325.98" y="199.00" class="value-label" text-anchor="end">₹39.1 B</text><rect x="150" y="176.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Delhi: expected ₹39.1 B; p5 ₹28.4 B; p95 ₹54.0 B; 52 projects</title></rect><rect x="150" y="222.00" width="183.55" height="22" rx="3" class="state-bar"/><line x1="282.55" y1="233.00" x2="404.04" y2="233.00" class="whisker"/><line x1="282.55" y1="228.00" x2="282.55" y2="238.00" class="whisker-cap"/><line x1="404.04" y1="228.00" x2="404.04" y2="238.00" class="whisker-cap"/><circle cx="333.55" cy="233.00" r="3.2" class="expected-dot"/><text x="138" y="237.00" class="svg-label" text-anchor="end">Telangana</text><text x="325.55" y="237.00" class="value-label" text-anchor="end">₹39.1 B</text><rect x="150" y="214.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Telangana: expected ₹39.1 B; p5 ₹28.2 B; p95 ₹54.1 B; 62 projects</title></rect><rect x="150" y="260.00" width="172.03" height="22" rx="3" class="state-bar"/><line x1="275.22" y1="271.00" x2="386.54" y2="271.00" class="whisker"/><line x1="275.22" y1="266.00" x2="275.22" y2="276.00" class="whisker-cap"/><line x1="386.54" y1="266.00" x2="386.54" y2="276.00" class="whisker-cap"/><circle cx="322.03" cy="271.00" r="3.2" class="expected-dot"/><text x="138" y="275.00" class="svg-label" text-anchor="end">West Bengal</text><text x="314.03" y="275.00" class="value-label" text-anchor="end">₹36.6 B</text><rect x="150" y="252.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>West Bengal: expected ₹36.6 B; p5 ₹26.6 B; p95 ₹50.3 B; 53 projects</title></rect><rect x="150" y="298.00" width="169.71" height="22" rx="3" class="state-bar"/><line x1="273.81" y1="309.00" x2="383.09" y2="309.00" class="whisker"/><line x1="273.81" y1="304.00" x2="273.81" y2="314.00" class="whisker-cap"/><line x1="383.09" y1="304.00" x2="383.09" y2="314.00" class="whisker-cap"/><circle cx="319.71" cy="309.00" r="3.2" class="expected-dot"/><text x="138" y="313.00" class="svg-label" text-anchor="end">Uttar Pradesh</text><text x="311.71" y="313.00" class="value-label" text-anchor="end">₹36.1 B</text><rect x="150" y="290.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Uttar Pradesh: expected ₹36.1 B; p5 ₹26.3 B; p95 ₹49.6 B; 60 projects</title></rect><rect x="150" y="336.00" width="169.40" height="22" rx="3" class="state-bar"/><line x1="272.51" y1="347.00" x2="382.96" y2="347.00" class="whisker"/><line x1="272.51" y1="342.00" x2="272.51" y2="352.00" class="whisker-cap"/><line x1="382.96" y1="342.00" x2="382.96" y2="352.00" class="whisker-cap"/><circle cx="319.40" cy="347.00" r="3.2" class="expected-dot"/><text x="138" y="351.00" class="svg-label" text-anchor="end">Madhya Pradesh</text><text x="311.40" y="351.00" class="value-label" text-anchor="end">₹36.0 B</text><rect x="150" y="328.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Madhya Pradesh: expected ₹36.0 B; p5 ₹26.1 B; p95 ₹49.6 B; 50 projects</title></rect><rect x="150" y="374.00" width="163.39" height="22" rx="3" class="state-bar"/><line x1="268.41" y1="385.00" x2="374.62" y2="385.00" class="whisker"/><line x1="268.41" y1="380.00" x2="268.41" y2="390.00" class="whisker-cap"/><line x1="374.62" y1="380.00" x2="374.62" y2="390.00" class="whisker-cap"/><circle cx="313.39" cy="385.00" r="3.2" class="expected-dot"/><text x="138" y="389.00" class="svg-label" text-anchor="end">Rajasthan</text><text x="305.39" y="389.00" class="value-label" text-anchor="end">₹34.8 B</text><rect x="150" y="366.00" width="940" height="38.00" fill="transparent" pointer-events="all"><title>Rajasthan: expected ₹34.8 B; p5 ₹25.2 B; p95 ₹47.8 B; 52 projects</title></rect></svg></div>
+  <p class="caption">Hover a row for its state-level expected total, interval and project count. Amounts in INR billion.</p>
+  <div class="table-wrap"><table><thead><tr><th>State</th><th class="num">Projects</th><th class="num">Expected total (INR B)</th><th class="num">Expected per project (INR M)</th><th class="num">p5 total (INR B)</th><th class="num">p95 total (INR B)</th></tr></thead><tbody><tr><td>Maharashtra</td><td class="num">180</td><td class="num">₹142.6 B</td><td class="num">₹792.0 M</td><td class="num">₹103.3 B</td><td class="num">₹196.4 B</td></tr><tr><td>Gujarat</td><td class="num">124</td><td class="num">₹69.6 B</td><td class="num">₹561.7 M</td><td class="num">₹50.6 B</td><td class="num">₹96.1 B</td></tr><tr><td>Tamil Nadu</td><td class="num">111</td><td class="num">₹66.3 B</td><td class="num">₹597.1 M</td><td class="num">₹48.1 B</td><td class="num">₹91.2 B</td></tr><tr><td>Karnataka</td><td class="num">56</td><td class="num">₹46.4 B</td><td class="num">₹829.1 M</td><td class="num">₹33.6 B</td><td class="num">₹64.4 B</td></tr><tr><td>Delhi</td><td class="num">52</td><td class="num">₹39.1 B</td><td class="num">₹752.8 M</td><td class="num">₹28.4 B</td><td class="num">₹54.0 B</td></tr><tr><td>Telangana</td><td class="num">62</td><td class="num">₹39.1 B</td><td class="num">₹629.9 M</td><td class="num">₹28.2 B</td><td class="num">₹54.1 B</td></tr><tr><td>West Bengal</td><td class="num">53</td><td class="num">₹36.6 B</td><td class="num">₹690.6 M</td><td class="num">₹26.6 B</td><td class="num">₹50.3 B</td></tr><tr><td>Uttar Pradesh</td><td class="num">60</td><td class="num">₹36.1 B</td><td class="num">₹601.8 M</td><td class="num">₹26.3 B</td><td class="num">₹49.6 B</td></tr><tr><td>Madhya Pradesh</td><td class="num">50</td><td class="num">₹36.0 B</td><td class="num">₹720.8 M</td><td class="num">₹26.1 B</td><td class="num">₹49.6 B</td></tr><tr><td>Rajasthan</td><td class="num">52</td><td class="num">₹34.8 B</td><td class="num">₹668.5 M</td><td class="num">₹25.2 B</td><td class="num">₹47.8 B</td></tr></tbody></table></div>
+</section>
+
+<section class="card">
+  <div class="section-head">
+    <div>
+      <p class="section-kicker">Section 6</p>
+      <h2>State exposure features</h2>
+    </div>
+    <p class="section-note">All 10 states and all exposure columns from state_exposure.csv, rounded to 3 decimals.</p>
+  </div>
+  <div class="table-wrap"><table class="exposure"><thead><tr><th title="state">state</th><th title="exp_n_assets">exp_<wbr>n_<wbr>assets</th><th title="exp_on_corridor_share">exp_<wbr>on_<wbr>corridor_<wbr>share</th><th title="exp_log_dist_nh">exp_<wbr>log_<wbr>dist_<wbr>nh</th><th title="exp_log_dist_port">exp_<wbr>log_<wbr>dist_<wbr>port</th><th title="exp_in_port_polygon_share">exp_<wbr>in_<wbr>port_<wbr>polygon_<wbr>share</th><th title="exp_coastal_share">exp_<wbr>coastal_<wbr>share</th><th title="exp_anomaly_index">exp_<wbr>anomaly_<wbr>index</th><th title="exp_anomaly_index_sd">exp_<wbr>anomaly_<wbr>index_<wbr>sd</th><th title="exp_precip_month">exp_<wbr>precip_<wbr>month</th><th title="exp_monsoon">exp_<wbr>monsoon</th><th title="exp_rain_days">exp_<wbr>rain_<wbr>days</th></tr></thead><tbody><tr><td>Delhi</td><td>7.000</td><td>0.571</td><td>9.237</td><td>12.993</td><td>0.000</td><td>0.000</td><td>10.849</td><td>0.836</td><td>67.006</td><td>624.983</td><td>7.364</td></tr><tr><td>Gujarat</td><td>11.000</td><td>0.273</td><td>8.133</td><td>10.091</td><td>0.000</td><td>0.727</td><td>9.736</td><td>1.961</td><td>71.759</td><td>806.832</td><td>5.807</td></tr><tr><td>Karnataka</td><td>7.000</td><td>0.000</td><td>8.434</td><td>9.732</td><td>0.143</td><td>0.286</td><td>14.515</td><td>4.271</td><td>118.440</td><td>1077.351</td><td>10.618</td></tr><tr><td>Madhya Pradesh</td><td>2.000</td><td>0.000</td><td>8.815</td><td>12.917</td><td>0.000</td><td>0.000</td><td>11.085</td><td>0.256</td><td>95.016</td><td>1037.080</td><td>8.296</td></tr><tr><td>Maharashtra</td><td>5.000</td><td>0.200</td><td>8.156</td><td>11.056</td><td>0.000</td><td>0.400</td><td>11.158</td><td>0.863</td><td>143.005</td><td>1549.741</td><td>9.347</td></tr><tr><td>Rajasthan</td><td>9.000</td><td>0.222</td><td>8.861</td><td>13.042</td><td>0.000</td><td>0.000</td><td>9.260</td><td>1.704</td><td>40.170</td><td>411.371</td><td>5.048</td></tr><tr><td>Tamil Nadu</td><td>14.000</td><td>0.143</td><td>7.622</td><td>8.976</td><td>0.000</td><td>0.857</td><td>15.333</td><td>2.426</td><td>110.546</td><td>550.782</td><td>12.760</td></tr><tr><td>Telangana</td><td>12.000</td><td>0.000</td><td>7.604</td><td>9.674</td><td>0.083</td><td>0.333</td><td>12.507</td><td>0.957</td><td>102.577</td><td>908.943</td><td>11.073</td></tr><tr><td>Uttar Pradesh</td><td>7.000</td><td>0.429</td><td>9.438</td><td>11.653</td><td>0.000</td><td>0.000</td><td>11.209</td><td>0.485</td><td>71.645</td><td>728.657</td><td>7.923</td></tr><tr><td>West Bengal</td><td>7.000</td><td>0.000</td><td>7.862</td><td>9.549</td><td>0.000</td><td>0.571</td><td>13.807</td><td>1.767</td><td>139.419</td><td>1209.700</td><td>13.136</td></tr></tbody></table></div>
+  <p class="note">Exposure features are state-level averages; exp_n_assets is a state asset count. These values are joined to BOQ projects by nearest-centroid state.</p>
+</section>
+</main>
+
+<footer class="footer">
+  <div>
+    <h3>Data sources</h3>
+    <ul><li><code>combined_pipeline_results.json</code></li><li><code>forecast_quarterly.csv</code></li><li><code>quarterly_series.csv</code></li><li><code>future_projection_by_state_2026.csv</code></li><li><code>monte_carlo_projects.csv</code></li><li><code>state_exposure.csv</code></li></ul>
+  </div>
+  <div>
+    <h3>Method summary</h3>
+    <ul>
+      <li>Join key = state (nearest-centroid assignment).</li>
+      <li>Regression target = log1p(total cost).</li>
+      <li>ARIMA order search by AIC.</li>
+      <li>Monte Carlo: 10,000 draws.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Generation</h3>
+    <p>Generated 2026-10-20 16:01:50 India Standard Time</p>
+    <p>Units: M = INR million; B = INR billion. All amounts nominal INR.</p>
+    <p class="offline-note">Static offline HTML with inline CSS and inline SVG. No network requests.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
