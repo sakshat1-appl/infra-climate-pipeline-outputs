@@ -1,0 +1,269 @@
+{
+  "dataset": {
+    "boq": "kaiwalyaatulraut/construction-and-electrical-boq-dataset (synthetic, CC0)",
+    "integration": "integration/data_output/feature_matrix_asset[_month].csv (100 assets)",
+    "join": "BOQ state -> nearest-centroid state of integration assets -> state-mean exposure"
+  },
+  "caveats": [
+    "BOQ costs are synthetic, not real projects.",
+    "State assignment is nearest-centroid; assets spanning states are approximated.",
+    "Exposure features are state-level averages, not asset-specific."
+  ],
+  "n_projects": 800,
+  "n_modeling_rows": 800,
+  "exposure_features": [
+    "exp_n_assets",
+    "exp_on_corridor_share",
+    "exp_log_dist_nh",
+    "exp_log_dist_port",
+    "exp_in_port_polygon_share",
+    "exp_coastal_share",
+    "exp_anomaly_index",
+    "exp_anomaly_index_sd",
+    "exp_precip_month",
+    "exp_monsoon",
+    "exp_rain_days"
+  ],
+  "regression": {
+    "n_train": 600,
+    "n_test": 200,
+    "n_features_encoded": 57,
+    "r2_log": 0.9795168976329715,
+    "r2_cost": 0.9099311686047508,
+    "rmse_inr": 188604447.9474829,
+    "mae_inr": 112739580.24259254,
+    "mape_pct": 17.329730569941802,
+    "resid_sd_log": 0.19631892661257136
+  },
+  "top_coefficients": {
+    "num__log_area": 1.5539205871430604,
+    "cat__city_Mumbai": 0.12375656079511244,
+    "cat__city_Nagpur": -0.10567171357326992,
+    "cat__city_Coimbatore": -0.06733684739566394,
+    "cat__city_Chennai": 0.06383284518395362,
+    "cat__building_type_Residential - Independent House": 0.053609499076231824,
+    "num__exp_on_corridor_share": 0.04317454032332232,
+    "num__n_subcategories": 0.0366575018472886,
+    "num__max_rate": 0.03665750184728708,
+    "num__n_items": 0.03665750184728635,
+    "num__avg_rate": 0.03665750184727881,
+    "cat__state_Delhi": 0.031558238216189326,
+    "cat__city_Delhi": 0.031558238216187424,
+    "cat__city_Nashik": -0.02966056860439469,
+    "cat__city_Lucknow": -0.02621609966433041
+  },
+  "timeseries": {
+    "n_quarters": 20,
+    "adf_p_levels": 7.173405294173373e-08,
+    "adf_p_diff": 1.2109631010231648e-05
+  },
+  "arima": {
+    "best_order": [
+      0,
+      1,
+      1
+    ],
+    "aic": 914.6221528729214,
+    "top_models_aic": {
+      "(0, 1, 1, 'n')": 914.6221528729214,
+      "(0, 1, 2, 'n')": 915.8457437244467,
+      "(1, 1, 1, 'n')": 916.0224757188787,
+      "(1, 1, 2, 'n')": 917.0756798774831,
+      "(2, 1, 1, 'n')": 917.7848930553282,
+      "(1, 1, 0, 'n')": 917.8262647149551
+    },
+    "params": {
+      "ma.L1": -0.9412795201139983,
+      "sigma2": 4.67937865233074e+19
+    }
+  },
+  "forecast": [
+    {
+      "quarter": "2026-Q1",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 13036095564.23711,
+      "ci95_upper_inr": 39981054483.722946,
+      "mc_p5_inr": 14968211460.548262,
+      "mc_p50_inr": 26464677104.656208,
+      "mc_p95_inr": 37741218436.37696
+    },
+    {
+      "quarter": "2026-Q2",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 13013112086.106062,
+      "ci95_upper_inr": 40004037961.85399,
+      "mc_p5_inr": 15325957006.037489,
+      "mc_p50_inr": 26482605891.126312,
+      "mc_p95_inr": 37957784611.53614
+    },
+    {
+      "quarter": "2026-Q3",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 12990167683.547325,
+      "ci95_upper_inr": 40026982364.41273,
+      "mc_p5_inr": 15009912317.799814,
+      "mc_p50_inr": 26500245396.820793,
+      "mc_p95_inr": 37972984816.29202
+    },
+    {
+      "quarter": "2026-Q4",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 12967262157.931927,
+      "ci95_upper_inr": 40049887890.02812,
+      "mc_p5_inr": 15252958471.709175,
+      "mc_p50_inr": 26418433631.614754,
+      "mc_p95_inr": 38088499870.423454
+    },
+    {
+      "quarter": "2027-Q1",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 12944395312.30801,
+      "ci95_upper_inr": 40072754735.65204,
+      "mc_p5_inr": 15288387242.862375,
+      "mc_p50_inr": 26462631060.50679,
+      "mc_p95_inr": 37559052187.7833
+    },
+    {
+      "quarter": "2027-Q2",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 12921566951.381048,
+      "ci95_upper_inr": 40095583096.579,
+      "mc_p5_inr": 15077330805.32701,
+      "mc_p50_inr": 26571786006.28662,
+      "mc_p95_inr": 38099072586.06306
+    },
+    {
+      "quarter": "2027-Q3",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 12898776881.494417,
+      "ci95_upper_inr": 40118373166.46564,
+      "mc_p5_inr": 14829210755.820473,
+      "mc_p50_inr": 26490782014.07681,
+      "mc_p95_inr": 38011916873.64831
+    },
+    {
+      "quarter": "2027-Q4",
+      "forecast_inr": 26508575023.980026,
+      "ci95_lower_inr": 12876024910.610197,
+      "ci95_upper_inr": 40141125137.34985,
+      "mc_p5_inr": 15163694119.250624,
+      "mc_p50_inr": 26535108828.142315,
+      "mc_p95_inr": 37942839290.82113
+    }
+  ],
+  "monte_carlo": {
+    "n_sim": 10000,
+    "total_cost_inr": {
+      "n": 10000,
+      "mean": 686414016.9036523,
+      "std": 632012205.0168902,
+      "p5": 10415059.514080236,
+      "p25": 223793089.7376042,
+      "p50": 515140824.52513105,
+      "p75": 993298546.2003841,
+      "p95": 1945262613.7397263,
+      "min": 2959510.9655104135,
+      "max": 4841983996.712475
+    },
+    "cost_per_sqft_inr": {
+      "n": 10000,
+      "mean": 5327.451092327389,
+      "std": 1458.3420218540134,
+      "p5": 3345.477579605169,
+      "p25": 4288.501959977541,
+      "p50": 5109.985322626761,
+      "p75": 6132.056702298313,
+      "p95": 8024.044430235644,
+      "min": 1709.1344668948082,
+      "max": 16198.90215120724
+    }
+  },
+  "future_projection_2026": {
+    "basis": "all modelling rows re-dated to 2026-Q1, regression + residual noise",
+    "portfolio_expected_total_inr": 546635356308.81244,
+    "portfolio_p5_total_inr": 396480491593.3773,
+    "portfolio_p95_total_inr": 753390517071.9048,
+    "by_state": [
+      {
+        "state": "Maharashtra",
+        "n_projects": 180,
+        "expected_total_cost_inr": 142567788660.77588,
+        "expected_project_cost_inr": 792043270.3376437,
+        "p5_total_inr": 103291768822.09683,
+        "p95_total_inr": 196382788877.8009
+      },
+      {
+        "state": "Gujarat",
+        "n_projects": 124,
+        "expected_total_cost_inr": 69645136220.70409,
+        "expected_project_cost_inr": 561654324.3605168,
+        "p5_total_inr": 50576719321.54832,
+        "p95_total_inr": 96098132311.63931
+      },
+      {
+        "state": "Tamil Nadu",
+        "n_projects": 111,
+        "expected_total_cost_inr": 66277308507.677216,
+        "expected_project_cost_inr": 597092869.4385334,
+        "p5_total_inr": 48138402516.57077,
+        "p95_total_inr": 91222736796.75311
+      },
+      {
+        "state": "Karnataka",
+        "n_projects": 56,
+        "expected_total_cost_inr": 46429552895.69912,
+        "expected_project_cost_inr": 829099158.85177,
+        "p5_total_inr": 33581071061.991425,
+        "p95_total_inr": 64407220077.16452
+      },
+      {
+        "state": "Delhi",
+        "n_projects": 52,
+        "expected_total_cost_inr": 39144871280.588196,
+        "expected_project_cost_inr": 752785986.1651576,
+        "p5_total_inr": 28447783352.168083,
+        "p95_total_inr": 53950577571.35481
+      },
+      {
+        "state": "Telangana",
+        "n_projects": 62,
+        "expected_total_cost_inr": 39053872914.28659,
+        "expected_project_cost_inr": 629901176.0368805,
+        "p5_total_inr": 28201286995.847393,
+        "p95_total_inr": 54051304754.18339
+      },
+      {
+        "state": "West Bengal",
+        "n_projects": 53,
+        "expected_total_cost_inr": 36601495462.816795,
+        "expected_project_cost_inr": 690594254.0154113,
+        "p5_total_inr": 26642631167.258198,
+        "p95_total_inr": 50326845455.13622
+      },
+      {
+        "state": "Uttar Pradesh",
+        "n_projects": 60,
+        "expected_total_cost_inr": 36109234554.461815,
+        "expected_project_cost_inr": 601820575.907697,
+        "p5_total_inr": 26342026045.49602,
+        "p95_total_inr": 49593568467.09147
+      },
+      {
+        "state": "Madhya Pradesh",
+        "n_projects": 50,
+        "expected_total_cost_inr": 36042187323.701454,
+        "expected_project_cost_inr": 720843746.4740291,
+        "p5_total_inr": 26065258348.584072,
+        "p95_total_inr": 49566292770.17542
+      },
+      {
+        "state": "Rajasthan",
+        "n_projects": 52,
+        "expected_total_cost_inr": 34763908488.10134,
+        "expected_project_cost_inr": 668536701.6942565,
+        "p5_total_inr": 25193543961.816185,
+        "p95_total_inr": 47791049990.605705
+      }
+    ]
+  }
+}
